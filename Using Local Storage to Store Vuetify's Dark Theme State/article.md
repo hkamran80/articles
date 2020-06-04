@@ -4,7 +4,7 @@
 
 I've been working on a project for a while, and it needed a redesign. I chose to go with Material Design. But it wasn't a seamless integration. After failing to use Material Components, and not wanting to learn React or Angular, I went with [Vue.js](https://vuejs.org). They had an amazing plugin called [Vuetify](https://vuetifyjs.com), which allows Vue developers to use Material Design.
 
-After getting the main layout of my project complete, I went on to my next task, dark theme support. Vuetify has built-in functionality for setting the theme! There are two ways of setting the theme. We're going to set it using the theme variable because it's easier than the other way, which is setting it in your Vuetify initalizer. My initalizer was in `<PROJECT_ROOT>/src/plugins/vuetify.js`, but yours may be different:
+After getting the main layout of my project complete, I went on to my next task, dark theme support. Vuetify has built-in functionality for setting the theme! There are two ways of setting the theme. We're going to set it using the theme variable because it's easier than the other way, which is setting it in your Vuetify initalizer. My initalizer was in `<PROJECT_ROOT>/src/plugins/vuetify.js`, but yours may be different. By adding the `theme` object and the `dark: true` parameter inside of it, the dark theme is enabled by default. Here's the initializer with the `theme` object.
 ```javascript
 export default new Vuetify({
     theme: {
@@ -14,6 +14,8 @@ export default new Vuetify({
 ```
 
 You can use both methods together, but I prefer to not use the `dark: true` parameter, favoring the `this.$vuetify.theme.dark` variable.
+
+---
 
 Go to your main `.vue` file (mine is `App.vue`), and add a button (this will toggle dark mode). Specifically, I added an icon button into my app bar. My app bar's code now looks like this:
 ```html
@@ -114,5 +116,3 @@ export default {
 ```
 
 That's it. Your Vue app now has dark theme support via a button!
-
-*All snippets available at: https://gist.github.com/hkamran80/aa50b5c55519ee1bbc0d3dd7310d435d*
