@@ -2,11 +2,20 @@
 # <!--Title-->Using Local Storage to Store Vuetify's Dark Theme State
 ## <!--Subtitle-->Ever wondered how to use Vuetify's `this.$vuetify.theme.dark` with a button and local storage? You've come to the right place.
 
-I've been working on a project for a while, and it needed a redesign. I chose to go with Material Design. But it wasn't a seamless integration--After failing to use Material Components, and not wanting to learn React or Angular, I went with [Vue.js](https://vuejs.org). They had an amazing plugin called [Vuetify](https://vuetifyjs.com), which allows Vue developers to use Material Design.
+I've been working on a project for a while, and it needed a redesign. I chose to go with Material Design. But it wasn't a seamless integration. After failing to use Material Components, and not wanting to learn React or Angular, I went with [Vue.js](https://vuejs.org). They had an amazing plugin called [Vuetify](https://vuetifyjs.com), which allows Vue developers to use Material Design.
 
-After getting the main layout of my project complete, I went on to my next task, dark theme support. Vuetify has it built-in with 2 two ways of setting it! We're going to set it using the theme variable because it's easier than the other way, **TK (TODO)...?**
+After getting the main layout of my project complete, I went on to my next task, dark theme support. Vuetify has built-in functionality for setting the theme! There are two ways of setting the theme. We're going to set it using the theme variable because it's easier than the other way, which is setting it in your Vuetify initalizer. My initalizer was in `<PROJECT_ROOT>/src/plugins/vuetify.js`, but yours may be different:
+```javascript
+export default new Vuetify({
+    theme: {
+        dark: true,
+    }
+});
+```
 
-Go to your main `.vue` file (mine is `App.vue`), and add a button (this will toggle dark mode). Specifically, I added an icon button into my app bar--My app bar's code now looks like this:
+You can use both methods together, but I prefer to not use the `dark: true` parameter, favoring the `this.$vuetify.theme.dark` variable.
+
+Go to your main `.vue` file (mine is `App.vue`), and add a button (this will toggle dark mode). Specifically, I added an icon button into my app bar. My app bar's code now looks like this:
 ```html
 <v-app-bar app>
     <v-toolbar-title>Project Name</v-toolbar-title>
