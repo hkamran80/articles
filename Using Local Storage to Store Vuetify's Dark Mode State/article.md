@@ -4,30 +4,9 @@
 
 I've been working on a project for a while, and it needed a redesign. I chose to go with Material Design. After failing to use Material Components, and not wanting to learn React or Angular, I went with [Vue.js](https://vuejs.org). They had an amazing plugin called [Vuetify](https://vuetifyjs.com), which allowed Vue developers to use Material Design.
 
-After getting the main layout of my project complete, I went on to my next task, dark theme support. Vuetify has dark theme support built-in, and there are two ways of setting it.
+After getting the main layout of my project complete, I went on to my next task, dark theme support. Vuetify has dark theme support built-in, and out of the two ways to set it, we're going to use the theme variable.
 
-### Option One: Declare it in the Vuetify initalizer
-```javascript
-export default new Vuetify({
-});
-```
-Mine was located at `<PROJECT_ROOT>/src/plugins/vuetify.js` on lines six and seven. Between the curly braces, add:
-```javascript
-theme: {
-    dark: true,
-}
-```
-The final code should be something like the following:
-```javascript
-export default new Vuetify({
-    theme: {
-        dark: true,
-    }
-});
-```
-
-### Option Two: Use the `this.$vuetify.theme.dark` variable
-Go to your main `.vue` file (mine is `App.vue`), and add a button. I added an icon button into my app bar. My app bar's code looks like:
+Go to your main `.vue` file (mine is `App.vue`), and add a button. I added an icon button into my app bar. My app bar's code now looks like:
 ```html
 <v-app-bar app>
     <v-toolbar-title>Project Name</v-toolbar-title>
@@ -99,4 +78,6 @@ mounted() {
 ```
 `mounted()` is a Vue lifecycle hook ([this](https://michaelnthiessen.com/call-method-on-page-load/) is a good article that explains Vue lifecycle hooks) that is called when the DOM (Document Object Model) is mounted. It's really just a function that's called at a certain point in time.
 
-Our function starts by fetching the theme value from local storage with `localStorage.getItem("dark_theme")`. Remember, `dark_theme` is the key we assigned our dark theme value to. Next, we check if the variable actually contains anything, which can happen if the local storage item has not yet been written to. After that check, we then check whether said variable contains `"true"`. Notice the quotation marks around it. That means it's a string, not a boolean. This is because, when we saved the value, we converted it to a string with `this.$vuetify.theme.dark.toString()`.
+Our function starts by fetching the theme value from local storage with `localStorage.getItem("dark_theme")`. Remember, `dark_theme` is the key we assigned our dark theme value to. Next, we check if the variable actually contains anything, which can happen if the local storage item has not yet been written to. After that check, we then check whether said variable contains `"true"`. Notice the quotation marks around it. That means it's a string, not a boolean. This is because, when we saved the value, we converted it to a string with `this.$vuetify.theme.dark.toString()`. If the variable is `"true"`, we set the Vuetify theme variable to `true` with `this.$vuetify.theme.dark = true;`. If the variable is `"false"`, the Vuetify theme variable is set to `false` with `this.$vuetify.theme.dark = false;`.
+
+That's it. Your Vue app now has dark theme support via a button!
