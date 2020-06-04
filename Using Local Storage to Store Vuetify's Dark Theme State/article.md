@@ -52,14 +52,14 @@ This adds the method called `toggle_dark_mode`, which is a function, that sets t
 Our `export default` should look similar to the following:
 ```javascript
 export default {
-  name: 'App',
-  data: () => ({}),
-  methods: {
-    toggle_dark_mode: function () {
-        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-        localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
-    }
-  },
+    name: 'App',
+    data: () => ({}),
+    methods: {
+        toggle_dark_mode: function () {
+            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+            localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
+        }
+    },
 };
 ```
 
@@ -80,4 +80,30 @@ mounted() {
 
 Our function starts by fetching the theme value from local storage with `localStorage.getItem("dark_theme")`. Remember, `dark_theme` is the key we assigned our dark theme value to. Next, we check if the variable actually contains anything, which can happen if the local storage item has not yet been written to. After that check, we then check whether said variable contains `"true"`. Notice the quotation marks around it. That means it's a string, not a boolean. This is because, when we saved the value, we converted it to a string with `this.$vuetify.theme.dark.toString()`. If the variable is `"true"`, we set the Vuetify theme variable to `true` with `this.$vuetify.theme.dark = true;`. If the variable is `"false"`, the Vuetify theme variable is set to `false` with `this.$vuetify.theme.dark = false;`.
 
+The final `export default` should look like:
+```javascript
+export default {
+    name: 'App',
+    data: () => ({}),
+    methods: {
+        toggle_dark_mode: function () {
+            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+            localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
+        }
+    },
+    mounted() {
+        const theme = localStorage.getItem("dark_theme");
+        if (theme) {
+            if (theme == "true") {
+                this.$vuetify.theme.dark = true;
+            } else {
+                this.$vuetify.theme.dark = false;
+            }
+        }
+    },
+};
+```
+
 That's it. Your Vue app now has dark theme support via a button!
+
+*All snippets available at: https://gist.github.com/hkamran80/aa50b5c55519ee1bbc0d3dd7310d435d*
