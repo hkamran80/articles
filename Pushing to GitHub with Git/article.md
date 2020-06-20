@@ -6,7 +6,7 @@ I've been a heavy GitHub user for the past few years, but one thing has always s
 
 The following instructions are written assuming that the operating system being used is macOS. These instructions will work perfectly on Linux, but Windows may need some additional configuration prior to using the `git` utility.
 
-And before making any command-line instructions, make sure you have a GitHub repository already created. If not, go to [github.com/new](https://github.com/new) and create one.
+And *before* making any command-line instructions, make sure you have a GitHub repository already created. If not, go to [github.com/new](https://github.com/new) and create one.
 
 Open a terminal, and navigate to the folder you want to push from. First, list and search the contents of the folder to see if there is an existing Git instance there. I used the command `ls -a | grep '.git'`.
 
