@@ -2,11 +2,11 @@
 # <!--Title-->Pushing to GitHub with Git
 ## <!--Subtitle-->Want to know how to push to GitHub? Read on.
 
-I've been a heavy GitHub user for the past few years. One thing has always stumped me: pushing to GitHub. In this article, I'll cover how you can easily push to GitHub using the `git` command-line utility.
+I've been a heavy GitHub user for the past few years, but one thing has always stumped me: pushing to GitHub. In this article, I'll cover how you can easily push to GitHub using the `git` command-line utility.
 
-The following instructions are written assuming that the operating system being used is macOS. These instructions will work perfectly on Linux, but Windows may need some other configuration, prior to using the `git` utility.
+The following instructions are written assuming that the operating system being used is macOS. These instructions will work perfectly on Linux, but Windows may need some additional configuration prior to using the `git` utility.
 
-Prior to any command-line instructions, make sure you have a GitHub repository already created. If not, go to [github.com/new](https://github.com/new) and create one.
+And before making any command-line instructions, make sure you have a GitHub repository already created. If not, go to [github.com/new](https://github.com/new) and create one.
 
 Open a terminal, and navigate to the folder you want to push from. First, list and search the contents of the folder to see if there is an existing Git instance there. I used the command `ls -a | grep '.git'`.
 
@@ -14,7 +14,7 @@ The `ls` command on a \*nix system lists the contents of a directory, the defaul
 
 If you do find a `.git` folder, you can remove the folder with the destructive command `rm -r .git`. Unlike using a graphical file manager, **you cannot undo a deletion**! The `rm` command's `-r` flag means that it *will* remove all files and folders followed by the command.
 
-When you have a folder without the `.git` folder, we can initalize the repository.
+When you have a folder without the `.git` folder, we need to initalize the repository.
   1. Start by typing `git init`. This will create a `.git` folder that contains basic information.
   2. Add `.gitignore` file. A `.gitignore` tells Git not to add the files and directories that are listed in the file.
       * Examples include the `node_modules/` directory, a `.env`, etc. GitHub has a good list of premade `.gitignore` files [in this repository](https://github.com/github/gitignore).
