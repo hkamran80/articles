@@ -51,7 +51,7 @@ export default {
 
 I'm going to call my method `toggle_dark_mode`, but feel free to call it whatever you'd like. This method is going to:
 1. Set the dark mode variable (`this.$vuetify.theme.dark`) to the opposite of whatever it is currently set to (so `true` if it's `false`, `false` if it's `true`)
-2. Set a local storage variable called `dark_theme` to the value of that variable. If you'd like to learn more about local storage, check out this [article](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) from the MDN Web Docs. <!-- I usually remove "this" from links, makes it a bit cleaner... I prefer links with 2 or less words also -->
+2. Set a local storage variable called `dark_theme` to the value of that variable. If you'd like to learn more about local storage, check out this [article](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) from the MDN Web Docs.
 
 Replace `methods: {}` with the following:
 
@@ -64,7 +64,7 @@ methods: {
 }
 ```
 
-With the function implemented, we now need to read it. We can have the site automatically pick up the theme state from the browser with the `prefers-color-scheme` CSS media query ([read more](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)) and/or the local storage state. The `prefers-color-scheme` state is set by your system -- to set the dark mode state on your computer, check out the following guides for [macOS](https://support.apple.com/en-us/HT208976) or [Windows](https://blogs.windows.com/windowsexperience/2019/04/01/windows-10-tip-dark-theme-in-file-explorer/).
+With the toggle function implemented, we now need to create a function to load the data and set it when the page starts. We can have the site automatically pick up the theme state from the browser with the `prefers-color-scheme` CSS media query ([read more](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)) and/or the local storage state. The `prefers-color-scheme` state is set by your system -- to set the dark mode state on your computer, check out the following guides for [macOS](https://support.apple.com/en-us/HT208976) or [Windows](https://blogs.windows.com/windowsexperience/2019/04/01/windows-10-tip-dark-theme-in-file-explorer/).
 
 To do this, we will use a Vue [lifecycle hook](https://michaelnthiessen.com/call-method-on-page-load) named `mounted` which is called, you guessed it (I hope), when the page is mounted. We'll add `mounted() {}` underneath the `methods` object.
 
@@ -108,7 +108,7 @@ All that's left is to add a button to toggle the state. I'll use the Material De
 </v-btn>
 ```
 
-The code above is simple. It creates a Vuetify icon button, tells it to use the `theme-light-dark` icon -- and also to, on click, call the `toggle_dark_mode` method.
+The code above is simple. It creates a Vuetify icon button, tells it to use the `theme-light-dark` icon, and to, on click, call the `toggle_dark_mode` method.
 
 That's it. You're finished! If you want to see an example, check out [Reprint](https://reprint.hkamran.com) (unless you're already reading this article there), or check out [my personal website](https://hkamran.com). As I mentioned earlier, the final code is available at [this GitHub Gist](https://gist.github.com/hkamran80/9bba61e1d2f0c2cfae8209e7d8dca4f1).
 
