@@ -1,8 +1,6 @@
 # Dark Mode Toggle for Vue.js Apps with Vuetify
 ## Here's a simple way to set Vuetify's dark mode state and make it user-changeable
 
-![Join the Dark Side GIF](https://tenor.com/blk7w.gif)
-
 I use [Vue.js](https://vuejs.org) and [Vuetify](https://vuetifyjs.com) for almost all of my websites and I'm a huge supporter of dark mode. One of the many reasons I chose Vuetify is because it has dark mode support out-of-the-box. So, without further ado, let me guide you through easily changing the dark mode state.
 
 ## Setting the Default Dark Mode State
