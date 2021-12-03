@@ -1,5 +1,0 @@
-{
-  "oauth_access_token": "<DROPBOX_OAUTH_ACCESS_TOKEN>",
-  "output": "<PATH_TO_DROPBOX_FOLDER__OPTIONAL>",
-  "keep_last": 1
-}
