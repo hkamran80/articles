@@ -1,0 +1,52 @@
+{
+    "blog": [
+        {
+            "id": "expanding-pkgs-on-macos",
+            "title": "Expanding PKGs on macOS",
+            "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
+            "tags": [
+                "macOS"
+            ],
+            "heroImage": "https://imgix.cosmicjs.com/8cefe590-438b-11ec-9580-ebf669758fed-extracting-pkgs-on-macos.jpg",
+            "published": "2020-01-30",
+            "filename": "2020-01-30-expanding-pkgs-on-macos"
+        },
+        {
+            "id": "getting-balenaetcher-to-work-on-macos-catalina",
+            "title": "Getting balenaEtcher to Work on macOS Catalina",
+            "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
+            "tags": [
+                "macOS"
+            ],
+            "heroImage": "https://imgix.cosmicjs.com/d8140ab0-438b-11ec-9580-ebf669758fed-getting-balenaetcher-to-work-on-macos-catalina.png",
+            "published": "2020-01-30",
+            "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
+        },
+        {
+            "id": "vuetify-dark-mode-toggle",
+            "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
+            "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
+            "tags": [
+                "Vuetify",
+                "Development",
+                "Theming",
+                "Vue.js"
+            ],
+            "heroImage": "https://imgix.cosmicjs.com/1bd45c60-438b-11ec-9580-ebf669758fed-vuetify-dark-mode-toggle.png",
+            "published": "2020-01-30",
+            "filename": "2020-06-04-vuetify-dark-mode-toggle"
+        }
+    ],
+    "notes": [
+        {
+            "id": "converting-local-dates-to-utc-with-python",
+            "title": "Converting Local Dates to UTC with Python",
+            "description": "A quick and easy way to convert local dates to UTC",
+            "tags": [
+                "Development"
+            ],
+            "published": "2022-01-26",
+            "filename": "2021-12-12-converting-local-dates-to-utc-python"
+        }
+    ]
+}
