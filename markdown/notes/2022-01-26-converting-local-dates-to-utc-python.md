@@ -1,8 +1,3 @@
----
-title: Converting Local Dates to UTC with Python
-description: A quick and easy way to convert local dates to UTC
----
-
 You'll need to install one package before we begin, unless you already have it: `pytz`. If you don't have it installed, install it with `pip3 install pytz`.
 
 To begin, start by importing `pytz` and `datetime`.
