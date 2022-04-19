@@ -35,6 +35,18 @@
             "heroImage": "https://i.ibb.co/TmTzFJX/Dark-Mode-Toggle-for-Vue-js-Apps-with-Vuetify.png",
             "published": "2020-06-04",
             "filename": "2020-06-04-vuetify-dark-mode-toggle"
+        },
+        {
+            "id": "changing-google-docs-default-styles",
+            "title": "Changing Google Docs' Default Styles",
+            "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
+            "tags": [
+                "Styling",
+                "Google Docs"
+            ],
+            "heroImage": "https://i.ibb.co/TmTzFJX/Dark-Mode-Toggle-for-Vue-js-Apps-with-Vuetify.png",
+            "published": "",
+            "filename": "2022-04-19-changing-google-docs-default-styles"
         }
     ],
     "notes": [
