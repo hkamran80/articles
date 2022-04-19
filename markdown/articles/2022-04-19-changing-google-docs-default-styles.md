@@ -6,6 +6,11 @@
 
    For example, select the text and change the font to Nunito Sans.
 
+   Side note: I hate Arial. It's very ugly. I also dislike serif fonts.
+
+   ![Text](https://i.ibb.co/VJ6F41c/Text.png)
+   ![Styled Text](https://i.ibb.co/DDM9rrP/Styled-Text.png)
+
 3. Select your newly-fomatted text, and apply it
 
    1. Click where it says "Normal text" next to the font name in the toolbar
@@ -14,6 +19,14 @@
    4. Repeat for each text element you want styled differently
         - For example, I styled my normal text, title, and headings with Nunito Sans
 
+    ![Update 'Normal text' to match](https://i.ibb.co/ZWWynbK/Update-Normal-Text-To-Match.png)
+
 4. After making all the styling changes you want, open the dropdown, and hover over "Options", then click "Save as my default styles"
 
-Now, if you are ever in a document that does not yet have your default styles, simply open the dropdown in that document, hover over "Options", and click "Use my default styles". It's that simple
+![Save as my default styles](https://i.ibb.co/4FNw8x8/Save-As-My-Default-Styles.png)
+
+Now, if you are ever in a document that does not yet have your default styles, simply open the dropdown in that document, hover over "Options", and click "Use my default styles".
+
+![Use my default styles](https://i.ibb.co/dtzVcM5/Use-My-Default-Styles.png)
+
+Thanks for reading!
