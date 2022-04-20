@@ -1,3 +1,5 @@
+*Photo: Screenshot of Google Docs*
+
 1. Open a Google Docs file
 
    It can be any file, but I recommend a blank file.
