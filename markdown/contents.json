@@ -47,6 +47,19 @@
             "heroImage": "https://i.ibb.co/DDM9rrP/Styled-Text.png",
             "published": "2022-04-19",
             "filename": "2022-04-19-changing-google-docs-default-styles"
+        },
+        {
+            "id": "generate-typescript-declarations-js-files",
+            "title": "Generate TypeScript Declaration Files for JavaScript Files",
+            "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
+            "tags": [
+                "Development",
+                "TypeScript",
+                "JavaScript"
+            ],
+            "heroImage": "",
+            "published": "",
+            "filename": "2022-05-06-generate-typescript-declarations-js-files"
         }
     ],
     "notes": [
