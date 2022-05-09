@@ -24,3 +24,5 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
    - With `pnpm`: `pnpm prepare` or `pnpm run prepare`
    - With `npm`: `npm run prepare`
    - With `yarn`: `yarn run prepare`
+
+If you have any questions, send a tweet my way. I hope that this guide comes in handy for you, thanks for reading!
