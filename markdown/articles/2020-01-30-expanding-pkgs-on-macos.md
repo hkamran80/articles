@@ -15,7 +15,7 @@ Now is where we have to use the terminal. In your terminal, navigate to the fold
 
 You can then proceed to extract the PKG with: `pkgutil --expand-full [package to PKG] [folder to extract to]`. For example, `pkgutil --expand-full /Volumes/SFSymbols/SF\ Symbols.pkg extracted_package`.
 
-The contents of the PKG are now available in the `extracted_package` folder. With the `SF Symbols.pkg` extracted, it has three directories: `Distribution` and `Resources`, ´SFSymbols.pkg`.
+The contents of the PKG are now available in the `extracted_package` folder. With the `SF Symbols.pkg` extracted, it has three directories: `Distribution` and `Resources`, `SFSymbols.pkg`.
 
 The content of the PKG is stored in the (in my case) `SFSymbols.pkg` folder.
 
