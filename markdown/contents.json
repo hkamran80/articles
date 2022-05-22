@@ -7,7 +7,7 @@
             "tags": [
                 "macOS"
             ],
-            "heroImage": "https://i.ibb.co/VLXLT3G/seth-schwiet-WB3uji-KLJw-Q-unsplash.jpg",
+            "heroImage": "https://i.imgur.com/RsrznUe.jpg",
             "published": "2020-01-30",
             "filename": "2020-01-30-expanding-pkgs-on-macos"
         },
@@ -18,7 +18,7 @@
             "tags": [
                 "macOS"
             ],
-            "heroImage": "https://i.ibb.co/6mRHJYV/Getting-balena-Etcher-to-Work-on-mac-OS-Catalina.png",
+            "heroImage": "https://i.imgur.com/BUdH8wn.png",
             "published": "2020-01-30",
             "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
         },
@@ -32,7 +32,7 @@
                 "Theming",
                 "Vue.js"
             ],
-            "heroImage": "https://i.ibb.co/TmTzFJX/Dark-Mode-Toggle-for-Vue-js-Apps-with-Vuetify.png",
+            "heroImage": "https://i.imgur.com/UWGmQ55.png",
             "published": "2020-06-04",
             "filename": "2020-06-04-vuetify-dark-mode-toggle"
         },
@@ -44,7 +44,7 @@
                 "Styling",
                 "Google Docs"
             ],
-            "heroImage": "https://i.ibb.co/DDM9rrP/Styled-Text.png",
+            "heroImage": "https://i.imgur.com/xr2AW4O.png",
             "published": "2022-04-19",
             "filename": "2022-04-19-changing-google-docs-default-styles"
         },
@@ -57,7 +57,7 @@
                 "TypeScript",
                 "JavaScript"
             ],
-            "heroImage": "https://i.ibb.co/T41yXWb/Generate-Type-Script-Declaration-Files-for-Java-Script-Files.png",
+            "heroImage": "https://i.imgur.com/nKR3Fb9.png",
             "published": "2022-05-06",
             "filename": "2022-05-06-generate-typescript-declarations-js-files"
         }
@@ -66,7 +66,7 @@
         {
             "id": "converting-local-dates-to-utc-with-python",
             "title": "Converting Local Dates to UTC with Python",
-            "description": "A quick and easy way to convert local dates to UTC",
+            "description": "A quick and easy way to convert∑ local dates to UTC",
             "tags": [
                 "Development"
             ],
