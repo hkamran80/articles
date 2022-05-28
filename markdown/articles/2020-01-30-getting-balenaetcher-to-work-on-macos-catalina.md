@@ -10,4 +10,4 @@ After doing a bit of research, I found that balenaEtcher, and Etcher (the former
 
 The command booted up a graphical interface of balenaEtcher, the difference that, because of the “sudo” in the command, it ran under the root user. This bypassed the security/privacy restrictions placed (wisely) by Apple on Catalina.
 
-![Image: balenaEtcher after being opened with sudo from the command-line](https://imgix.cosmicjs.com/f9e82ae0-438b-11ec-9580-ebf669758fed-getting-balenaetcher-to-work-on-macos-catalina-1.png)
+![Image: balenaEtcher after being opened with sudo from the command-line](https://i.imgur.com/EDFFWhw.png)
