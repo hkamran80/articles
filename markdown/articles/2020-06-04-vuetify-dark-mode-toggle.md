@@ -3,6 +3,7 @@
 I use [Vue.js](https://vuejs.org) and [Vuetify](https://vuetifyjs.com) for almost all of my websites and I’m a huge supporter of dark mode. One of the many reasons I chose Vuetify is because it has dark mode support out-of-the-box. So, without further ado, let me guide you through easily changing the dark mode state.
 
 ## Setting the Default Dark Mode State
+
 In order to set the default dark mode state, we have to open the plugin file for Vuetify, which is available at `src/plugins/vuetify.js`. By default, the file should look like the following.
 
 ```javascript
@@ -27,6 +28,7 @@ export default new Vuetify({
 But if we want to change it from the user-facing interface, we have to use the variable provided by Vuetify.
 
 ## Setting the Dark Mode State From the Interface
+
 *A copy of the final code is available at the bottom.*
 
 Before even adding the theme state-changing code, you have to decide where to put the code. You only have to put it in one location, preferably a location that is persistent, such as your `App.vue` or a component that is present on all pages, such as a navigation bar. With that decided, we can actually get to work.
@@ -47,7 +49,6 @@ export default {
     methods: {}
 }
 ```
-
 
 I’m going to call my method `toggleDarkMode`, but feel free to call it whatever you’d like. This method is going to set the dark mode variable (`this.$vuetify.theme.dark`) to the inverse of what it is currently set to (if the theme is currently light, then this variable will be `false`), then set a [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) variable called `darkTheme` to the value of that variable.
 

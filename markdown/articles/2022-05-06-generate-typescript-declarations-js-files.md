@@ -11,6 +11,7 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
 3. Add [JSDoc tags](https://jsdoc.app/) to your functions, variables, classes, etc.
 
    For example, here's a snippet from [one of my utilities](https://www.npmjs.com/package/@hkamran/utility-web):
+
    ```javascript
    /**
    * Apply classes that result in a true condition
@@ -28,6 +29,7 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
 4. Add the [`prepare` script](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts) (or whichever one you want to use) to the `scripts` object in `package.json`
 
    For example, mine looks like this:
+
    ```json
    "scripts": {
        "prepare": "tsc --declaration --emitDeclarationOnly --allowJs index.js"
@@ -45,6 +47,7 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
    - With `yarn`: `yarn run prepare`
 
 Using the `classNames` function above, the TypeScript compiler generated the following declaration:
+
 ```typescript
 export function classNames(...classes: string[]): string;
 ```
