@@ -172,7 +172,7 @@ The first parameter is the index file, or the file with the `registerRoot` funct
 
 I decided to add a new script as well, this one simply called `render`, that called both `render:video` and `render:thumbnail`. This allows me to simply call `pnpm render` (or `pnpm run render`) and save time by having the renderings run sequentially, instead of me manually triggering them.
 
-# Conclusion
+## Conclusion
 
 Now you have a (hopefully) fully-functioning visualizer and thumbnail! Hopefully this was a helpful guide to you! If you have any questions, contact me on Twitter.
 
