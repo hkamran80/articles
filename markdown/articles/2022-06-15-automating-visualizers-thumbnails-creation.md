@@ -62,7 +62,7 @@ But here's where I ran into a problem: how to dynamically change the length of t
 />
 ```
 
-*The variables `title`, `author`, and `chapter` are from a separate TypeScript file imported here*
+*The variables `title`, `author`, and `chapter` are from a separate TypeScript file imported here.*
 
 Remotion provides a `getAudioDurationInSeconds` function which is part of `@remotion/media-utils`. It takes a single parameter: the path to an audio file. It can use the source path from an `import` statement, a remote URL, or a static file on the system itself. To use a static file, which is what I did, you have to use the `staticFile` function, which allows you to load files from the `public` directory. I copied one of the audio files into the `public` directory, which I had to create, then used `await getAudioDurationInSeconds(staticFile("audio.mp3"))` to get the audio duration. Perfect, right? Well, no. TypeScript threw an error saying that `'await' expressions are only allowed within async functions and at the top levels of modules.`, and recommended that I change the `Video` component to be asynchronous. I did that, but then another error was thrown, this time saying that:
 
@@ -71,7 +71,7 @@ Type '() => Promise<JSX.Element>' is not assignable to type 'FC<{}>'.
   Type 'Promise<Element>' is missing the following properties from type 'ReactElement<any, any>': type, props, key
 ```
 
-This is because the `registerRoot` function (in `src/index.tsx`) takes a `React.FC<{}>`, but the asynchronous `Video` component was returning a `Promise`. So back to the drawing board. On Remotion's [Dynamic duration, FPS, & dimensions page](https://www.remotion.dev/docs/dynamic-metadata#change-metadata-based-on-asynchronous-information), I found the use of a `useEffect` hook, combined with a `delayRender` and a `continueRender` function from Remotion. I placed the `await getAudioDurationInSeconds(...)` function in the `useEffect` hook, and added a `handle` variable (based on the example provided), but it threw the same error regarding async functions and at the top levels of modules. React doesn't like `useEffect`s containing `async` functions, so I wrapped it in a function and came up with the following:
+This is because the `registerRoot` function (in `src/index.tsx`) takes a `React.FC<{}>`, but the asynchronous `Video` component was returning a `Promise`. So back to the drawing board. On Remotion's [Dynamic duration, FPS, & dimensions page](https://www.remotion.dev/docs/dynamic-metadata#change-metadata-based-on-asynchronous-information), I found the use of a `useEffect` hook, combined with a `delayRender` and a `continueRender` function from Remotion. I placed the `await getAudioDurationInSeconds(...)` function in the `useEffect` hook, and added a `handle` variable (based on the example provided), but it threw the same error regarding async functions and at the top levels of modules. React doesn't like `useEffect`s containing top-level asynchronous functions ([read more on Robin Wieruch's site](https://www.robinwieruch.de/react-hooks-fetch-data/)), so I wrapped it in a function and came up with the following:
 
 ```typescript
 const [handle] = useState(() => delayRender());
@@ -133,7 +133,7 @@ With the video's length dynamically changing depending on the length of the audi
 </>
 ```
 
-# Thumbnail
+## Thumbnail
 
 To create the thumbnail, I copied the `Visualizer.tsx` file's content over to `Thumbnail.tsx`, a file I had just created, with the modifications being that the progress bar and `<Audio />` element were removed. I also copied the contents of `Video.tsx` over to `Still.tsx`, changing `<Composition />` to `<Still />`. The code for the new composition is as follows:
 
@@ -161,7 +161,6 @@ I also needed to create another index file, because the way Remotion chooses to 
 
 The first parameter is the index file, or the file with the `registerRoot` function. The second parameter is the composition ID, which is passed via the `id` prop. The third and final parameter is the output destination. I changed the name of the default `build` script to `render:video`, then duplicated it with a new key of `render:thumbnail`. In the thumbnail script, I changed the index file to a new file, `thumbnailIndex.tsx`, which registers the root for the thumbnail, instead of the video. I also needed to change the compositon ID (to `thumbnail`) and the output destination, which I changed to `out/video.png`. I also changed the image format in `remotion.config.ts` to `png`.
 
-I decided to add a new script as well, this one simply called `render`, that called both `render:video` and `render:thumbnail`.
 
 ```json
 "scripts": {
@@ -170,6 +169,8 @@ I decided to add a new script as well, this one simply called `render`, that cal
     "render:thumbnail": "remotion render src/thumbnailIndex.tsx thumbnail out/video.png"
 }
 ```
+
+I decided to add a new script as well, this one simply called `render`, that called both `render:video` and `render:thumbnail`. This allows me to simply call `pnpm render` (or `pnpm run render`) and save time by having the renderings run sequentially, instead of me manually triggering them.
 
 # Conclusion
 
