@@ -62,7 +62,7 @@
             "filename": "2022-05-06-generate-typescript-declarations-js-files"
         },
         {
-            "id": "automating-visualizer-and-thumbnail",
+            "id": "automating-visualizers-thumbnail-creation",
             "title": "How I Automated the Creation of Visualizers and Thumbnails",
             "description": "I needed to create many visualizers and thumbnails for a YouTube channel, so I automated it with a tool called Remotion",
             "tags": [

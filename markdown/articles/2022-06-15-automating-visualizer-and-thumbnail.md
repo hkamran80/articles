@@ -1,8 +1,10 @@
-I recently was asked to create a set of visualizers and thumbnails for a series of YouTube videos. As the number of videos was about ten, I decided to automate the task with TypeScript. I began my search for a library or tool that could help me by doing a search for "create a youtube video with javascript". This returned a link to a [Fireship YouTube video](https://www.youtube.com/watch?v=deg8bOoziaE) that led to [Remotion](https://www.remotion.dev/). Remotion uses React to render content, then renders it out. To quote Remotion,
+I was recently asked to create a series of visualizers and thumbnails for an ongoing series of YouTube videos. Given that I did not want to spend a lot of time retiming compositions, messing around wihh animations, or dealing with editing multiple text fields per render, I decided to automate the generation with TypeScript. My first task was to find a tool that would help me, so naturally, I did a search for "create a youtube video with javascript" (I used JavaScript because it tends to have more results than TypeScript, and most of the results are usually easy enough to convert to TypeScript). One of the results that drew my attention was a Fireship video titled ["This was video was made with code. But how?"](https://www.youtube.com/watch?v=deg8bOoziaE), which spotlighted [Remotion](https://www.remotion.dev/).
 
 > The basic idea behind Remotion is that we'll give you a frame number and a blank canvas, and the freedom to render anything you want using React.js.
+>
+> *&mdash; Remotion*
 
-**Note: I used [`pnpm`](https://pnpm.io/) instead of `npm`, but you can use whatever you want**
+Before we get started, just a heads up that I'm using [`pnpm`](https://pnpm.io) (**p**erformant **npm**), but you can use whatever package manager tickles your fancy.
 
 First, I created the project using `pnpm create video`, as listed by Remotion's [Getting Started page](https://www.remotion.dev/docs). With the sample Hello World project ready, I opened it up in Visual Studio Code (my text editor of choice) via the interactive prompt's "open in VS Code" option.
 
@@ -10,7 +12,7 @@ First, I created the project using `pnpm create video`, as listed by Remotion's 
 
 Next, I opened the main files: `src/Video.tsx` and `src/HelloWorld.tsx`. I renamed the `HelloWorld.tsx` file to `Visualizer.tsx`, and removed both the preexisting code and the `HelloWorld` directory, leaving only a blank component.
 
-At this point, I got annoyed with the base formatting, and so I installed my personal Prettier config ([@hkamran/prettier-config](https://www.npmjs.com/package/@hkamran/prettier-config)), Prettier, and the [Prettier ESLint config (`eslint-config-prettier`)](https://github.com/prettier/eslint-config-prettier). I then renamed the `.eslintrc` file to `.eslintrc.json`, changed the `extends` key to a list, and added `prettier` to the list.
+At this point, I got annoyed with the base formatting (e.g. `import {Config} from 'remotion'` as opposed to `import { Config } from "remotion"`), and so I installed my personal Prettier config ([@hkamran/prettier-config](https://www.npmjs.com/package/@hkamran/prettier-config)), Prettier, and the [Prettier ESLint config](https://github.com/prettier/eslint-config-prettier) (`eslint-config-prettier`). I then renamed the `.eslintrc` file to `.eslintrc.json`, changed the `extends` key to a list, and added `prettier` to the list.
 
 ```json
 {
@@ -55,11 +57,14 @@ But here's where I ran into a problem: how to dynamically change the length of t
         title,
         author,
         chapter,
+        duration,
     }}
 />
 ```
 
-Remotion provides a `getAudioDurationInSeconds` function which is part of `@remotion/media-utils`. It takes a single parameter: the path to an audio file. It can use the source path from an `import` statement, a remote URL, or a static file on the system itself. To use a static file, which is what I did, you have to use the `staticFile` function, which "turns a file in your public/ folder into an URL which you can then load into your project." I copied one of the audio files into the `public` directory, which I had to create, then used `await getAudioDurationInSeconds(staticFile("audio.mp3"))` to get the audio duration. Perfect, right? Well, no. TypeScript threw an error saying that `'await' expressions are only allowed within async functions and at the top levels of modules.`, and recommended that I change the `Video` component to be asynchronous. I did that, but then another error was thrown, this time saying that:
+*The variables `title`, `author`, and `chapter` are from a separate TypeScript file imported here*
+
+Remotion provides a `getAudioDurationInSeconds` function which is part of `@remotion/media-utils`. It takes a single parameter: the path to an audio file. It can use the source path from an `import` statement, a remote URL, or a static file on the system itself. To use a static file, which is what I did, you have to use the `staticFile` function, which allows you to load files from the `public` directory. I copied one of the audio files into the `public` directory, which I had to create, then used `await getAudioDurationInSeconds(staticFile("audio.mp3"))` to get the audio duration. Perfect, right? Well, no. TypeScript threw an error saying that `'await' expressions are only allowed within async functions and at the top levels of modules.`, and recommended that I change the `Video` component to be asynchronous. I did that, but then another error was thrown, this time saying that:
 
 ```text
 Type '() => Promise<JSX.Element>' is not assignable to type 'FC<{}>'.
@@ -116,7 +121,7 @@ In the visualizer, there is a progress bar. But how would one go about connectin
 
 ### Adding Audio
 
-With the video's length dynamically changing depending on the length of the audio provided and the progress bar linked to the visualizer, we need a way to actually play the audio. Fortunately, Remotion makes this very easy with the `<Audio />` tag. To utilize this, we wrap the base `<AbsoluteFill />` tag with the shorthand of React Fragments, then add the `<Audio />` tag with the `src` prop set to use `staticFile`.
+With the video's length dynamically changing depending on the length of the audio provided and the progress bar linked to the visualizer, I needed a way to actually play the audio. Fortunately, Remotion makes this very easy with the `<Audio />` tag. To utilize this, I wrapped the base `<AbsoluteFill />` tag with the shorthand for React Fragments, then add the `<Audio />` tag with the `src` prop set to use `staticFile`.
 
 ```jsx
 <>
@@ -128,6 +133,46 @@ With the video's length dynamically changing depending on the length of the audi
 </>
 ```
 
-## Thumbnail
+# Thumbnail
 
-TBA
+To create the thumbnail, I copied the `Visualizer.tsx` file's content over to `Thumbnail.tsx`, a file I had just created, with the modifications being that the progress bar and `<Audio />` element were removed. I also copied the contents of `Video.tsx` over to `Still.tsx`, changing `<Composition />` to `<Still />`. The code for the new composition is as follows:
+
+```tsx
+<Still
+    id="thumbnail"
+    component={Thumbnail}
+    width={1920}
+    height={1080}
+    defaultProps={{
+        title,
+        author,
+        chapter,
+    }}
+/>
+```
+
+I also needed to create another index file, because the way Remotion chooses to render media, is via their command-line interface, which is patched into a package script. This pre-made `build` shows how the Remotion `render` command is structured.
+
+```json
+"scripts": {
+    "build": "remotion render src/index.tsx visualizer out/video.mp4"
+}
+```
+
+The first parameter is the index file, or the file with the `registerRoot` function. The second parameter is the composition ID, which is passed via the `id` prop. The third and final parameter is the output destination. I changed the name of the default `build` script to `render:video`, then duplicated it with a new key of `render:thumbnail`. In the thumbnail script, I changed the index file to a new file, `thumbnailIndex.tsx`, which registers the root for the thumbnail, instead of the video. I also needed to change the compositon ID (to `thumbnail`) and the output destination, which I changed to `out/video.png`. I also changed the image format in `remotion.config.ts` to `png`.
+
+I decided to add a new script as well, this one simply called `render`, that called both `render:video` and `render:thumbnail`.
+
+```json
+"scripts": {
+    "render": "pnpm run render:video && pnpm run render:thumbnail",
+    "render:video": "remotion render src/index.tsx visualizer out/video.mp4",
+    "render:thumbnail": "remotion render src/thumbnailIndex.tsx thumbnail out/video.png"
+}
+```
+
+# Conclusion
+
+Now you have a (hopefully) fully-functioning visualizer and thumbnail! Hopefully this was a helpful guide to you! If you have any questions, contact me on Twitter.
+
+Until next time, see you later!
