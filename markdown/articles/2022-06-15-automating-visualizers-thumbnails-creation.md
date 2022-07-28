@@ -1,10 +1,10 @@
-I was recently asked to create a series of visualizers and thumbnails for an ongoing series of YouTube videos. Given that I did not want to spend a lot of time retiming compositions, messing around wihh animations, or dealing with editing multiple text fields per render, I decided to automate the generation with TypeScript. My first task was to find a tool that would help me, so naturally, I did a search for "create a youtube video with javascript" (I used JavaScript because it tends to have more results than TypeScript, and most of the results are usually easy enough to convert to TypeScript). One of the results that drew my attention was a Fireship video titled ["This video was made with code. But how??"](https://www.youtube.com/watch?v=deg8bOoziaE), which spotlighted [Remotion](https://www.remotion.dev/).
+I was recently asked to create a series of visualizers and thumbnails for an ongoing series of YouTube videos. Given that I did not want to spend a lot of time retiming compositions, messing around with animations, or dealing with editing multiple text fields per render, I decided to automate the generation with TypeScript. My first task was to find a tool that would help me, so naturally, I did a search for "create a YouTube video with JavaScript" (I used JavaScript because it tends to have more results than TypeScript, and most of the results are usually easy enough to convert to TypeScript). One of the results that drew my attention was a Fireship video titled ["This video was made with code. But how??"](https://www.youtube.com/watch?v=deg8bOoziaE), which spotlighted [Remotion](https://www.remotion.dev/).
 
 > The basic idea behind Remotion is that we'll give you a frame number and a blank canvas, and the freedom to render anything you want using React.js.
 >
 > *&mdash; Remotion*
 
-Before we get started, just a heads up that I'm using [`pnpm`](https://pnpm.io) (**p**erformant **npm**), but you can use whatever package manager tickles your fancy.
+Before we get started, just a heads-up that I'm using [`pnpm`](https://pnpm.io) (**p**erformant **npm**), but you can use whatever package manager tickles your fancy.
 
 First, I created the project using `pnpm create video`, as listed by Remotion's [Getting Started page](https://www.remotion.dev/docs). With the sample Hello World project ready, I opened it up in Visual Studio Code (my text editor of choice) via the interactive prompt's "open in VS Code" option.
 
@@ -161,8 +161,7 @@ I also needed to create another index file, because the way Remotion chooses to 
 }
 ```
 
-The first parameter is the index file, or the file with the `registerRoot` function. The second parameter is the composition ID, which is passed via the `id` prop. The third and final parameter is the output destination. I changed the name of the default `build` script to `render:video`, then duplicated it with a new key of `render:thumbnail`. In the thumbnail script, I changed the index file to a new file, `thumbnailIndex.tsx`, which registers the root for the thumbnail, instead of the video. I also needed to change the compositon ID (to `thumbnail`) and the output destination, which I changed to `out/video.png`. I also changed the image format in `remotion.config.ts` to `png`.
-
+The first parameter is the index file, or the file with the `registerRoot` function. The second parameter is the composition ID, which is passed via the `id` prop. The third and final parameter is the output destination. I changed the name of the default `build` script to `render:video`, then duplicated it with a new key of `render:thumbnail`. In the thumbnail script, I changed the index file to a new file, `thumbnailIndex.tsx`, which registers the root for the thumbnail, instead of the video. I also needed to change the composition ID (to `thumbnail`) and the output destination, which I changed to `out/video.png`. I also changed the image format in `remotion.config.ts` to `png`.
 
 ```json
 "scripts": {
@@ -172,7 +171,7 @@ The first parameter is the index file, or the file with the `registerRoot` funct
 }
 ```
 
-I decided to add a new script as well, this one simply called `render`, that called both `render:video` and `render:thumbnail`. This allows me to simply call `pnpm render` (or `pnpm run render`) and save time by having the renderings run sequentially, instead of me manually triggering them.
+Not only that, but I decided to add a new script as well, this one simply called `render`, that calls both `render:video` and `render:thumbnail`. This allows me to simply call `pnpm render` (or `pnpm run render`) and save time by having the renderings run sequentially, instead of me manually triggering them.
 
 ## Conclusion
 
