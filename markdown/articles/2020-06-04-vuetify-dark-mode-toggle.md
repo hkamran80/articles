@@ -1,6 +1,6 @@
 *Photo: [Material.io](https://material.io/design/color/dark-theme.html)*
 
-I use [Vue.js](https://vuejs.org) and [Vuetify](https://vuetifyjs.com) for almost all of my websites and I’m a huge supporter of dark mode. One of the many reasons I chose Vuetify is because it has dark mode support out-of-the-box. So, without further ado, let me guide you through easily changing the dark mode state.
+I use [Vue.js](https://vuejs.org) and [Vuetify](https://vuetifyjs.com) for almost all of my websites, and I’m a huge supporter of dark mode. One of the many reasons I chose Vuetify is because it has dark mode support out-of-the-box. So, without further ado, let me guide you through easily changing the dark mode state.
 
 ## Setting the Default Dark Mode State
 
@@ -15,7 +15,7 @@ Vue.use(Vuetify);
 export default new Vuetify({});
 ```
 
-To set the default state, we have to create a new object in the constructor called `theme`, and inside of that, set a variable called `dark` to `true`.
+To set the default state, we have to create a new object in the constructor called `theme`, and inside that, set a variable called `dark` to `true`.
 
 ```javascript
 export default new Vuetify({

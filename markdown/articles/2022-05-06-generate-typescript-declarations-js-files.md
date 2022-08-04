@@ -22,7 +22,7 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
    * classNames("block truncate", selected ? "font-medium" : "font-normal")
    */
    export const classNames = (...classes) => {
-    return classes.filter(Boolean).join(" ");
+       return classes.filter(Boolean).join(" ");
    };
    ```
 

@@ -13,7 +13,7 @@
    ![Text](https://i.ibb.co/VJ6F41c/Text.png)
    ![Styled Text](https://i.ibb.co/DDM9rrP/Styled-Text.png)
 
-3. Select your newly-fomatted text, and apply it
+3. Select your newly-formatted text, and apply it
 
    1. Click where it says "Normal text" next to the font name in the toolbar
    2. Hover over where the arrow is next to "Normal text" in the dropdown that opens
