@@ -2,9 +2,14 @@
     "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
         "&mdash",
         "balenaetcher",
+        "dnsmasq",
+        "homelab",
+        "homeserver",
         "jsdoc",
         "nunito",
+        "plist",
         "schwiet",
+        "traefik",
         "vuetify"
     ]
 }
