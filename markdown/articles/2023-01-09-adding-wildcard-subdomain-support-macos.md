@@ -18,16 +18,15 @@ it up properly, but once set up, it worked wonderfully.
 
 I used [Homebrew](https://brew.sh/) to install and configure dnsmasq:
 `brew install dnsmasq`. Then, I opened the configuration file for dnsmasq from its
-place in `/usr/local/etc/dnsmasq.conf`. If you changed the location of your Homebrew
-install, run `brew --prefix`, then replace `/usr/local` with the value.
-
-I added one line to the bottom:
+place in `/usr/local/etc/dnsmasq.conf` and added the line below. If you changed
+the location of your Homebrew install, run `brew --prefix`, then replace `/usr/local`
+with the value.
 
 ```text
 address=/servername.mydomain.com/10.90.100.1
 ```
 
-This line actually configures the routing, and redirects all requests made to
+This line configures the routing, and redirects all requests made to
 `servername.mydomain.com` and its subdomains to `10.90.100.1`. Make sure to replace
 `10.90.100.1` with the IP you want to redirect to. If you're interested in why
 dnsmasq redirects all redirects to both the base domain and its subdomains to the
