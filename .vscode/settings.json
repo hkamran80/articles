@@ -1,0 +1,10 @@
+{
+    "languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+        "&mdash",
+        "balenaetcher",
+        "jsdoc",
+        "nunito",
+        "schwiet",
+        "vuetify"
+    ]
+}
