@@ -1,4 +1,6 @@
-I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) that I use in multiple projects to npm libraries. But I needed an easy, reliable way to generate TypeScript declarations, since I primarily use TypeScript.
+I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) that
+I use in multiple projects to npm libraries. But I needed an easy, reliable way
+to generate TypeScript declarations, since I primarily use TypeScript.
 
 1. Open your project and ensure you have a `package.json`
 
@@ -26,7 +28,8 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
    };
    ```
 
-4. Add the [`prepare` script](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts) (or whichever one you want to use) to the `scripts` object in `package.json`
+4. Add the [`prepare` script](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
+5. (or whichever one you want to use) to the `scripts` object in `package.json`
 
    For example, mine looks like this:
 
@@ -36,20 +39,25 @@ I've been moving a few [utilities](https://github.com/hkamran80/utilities-js) th
    },
    ```
 
-    This command runs `tsc`, the TypeScript compiler, and tells it to only generate `.d.ts` files (declaration files). Be sure to replace `index.js` with your JavaScript files.
+    This command runs `tsc`, the TypeScript compiler, and tells it to only generate
+    `.d.ts` files (declaration files). Be sure to replace `index.js` with your
+    JavaScript files.
 
-    The `prepare` script runs before a npm package is packed (typically with `npm publish` or `npm pack`, or the equivalents with other package managers).
+    The `prepare` script runs before a npm package is packed (typically with
+    `npm publish` or `npm pack`, or the equivalents with other package managers).
 
-5. Run your npm script
+6. Run your npm script
 
    - With `pnpm`: `pnpm prepare` or `pnpm run prepare`
    - With `npm`: `npm run prepare`
    - With `yarn`: `yarn run prepare`
 
-Using the `classNames` function above, the TypeScript compiler generated the following declaration:
+Using the `classNames` function above, the TypeScript compiler generated the following
+declaration:
 
 ```typescript
 export function classNames(...classes: string[]): string;
 ```
 
-If you have any questions, send a tweet my way. I hope that this guide comes in handy for you, thanks for reading!
+If you have any questions, send a tweet my way. I hope that this guide comes in
+handy for you, thanks for reading!

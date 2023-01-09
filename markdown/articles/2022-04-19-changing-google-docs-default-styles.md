@@ -23,11 +23,14 @@
 
     ![Update 'Normal text' to match](https://i.ibb.co/ZWWynbK/Update-Normal-Text-To-Match.png)
 
-4. After making all the styling changes you want, open the dropdown, and hover over "Options", then click "Save as my default styles"
+4. After making all the styling changes you want, open the dropdown, and hover over
+   "Options", then click "Save as my default styles"
 
 ![Save as my default styles](https://i.ibb.co/4FNw8x8/Save-As-My-Default-Styles.png)
 
-Now, if you are ever in a document that does not yet have your default styles, simply open the dropdown in that document, hover over "Options", and click "Use my default styles".
+Now, if you are ever in a document that does not yet have your default styles,
+simply open the dropdown in that document, hover over "Options", and click "Use
+my default styles".
 
 ![Use my default styles](https://i.ibb.co/dtzVcM5/Use-My-Default-Styles.png)
 
