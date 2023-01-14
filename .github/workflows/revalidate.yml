@@ -88,6 +88,7 @@ jobs:
     revalidate:
       runs-on: ubuntu-latest
       needs: merge-compiled-ids
+      if: ${{ needs.merge-compiled-ids.outputs.merged != "[]" }}
       steps:
         - name: Revalidate
           id: revalidate
