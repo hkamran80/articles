@@ -45,10 +45,9 @@ click "Advanced", and go to the "DNS" tab. Click the plus button and type in `12
 and then hit enter. For more information on `127.0.0.1`, check out
 [its Wikipedia article](https://en.wikipedia.org/wiki/Localhost). Back to System
 Preferences, click the OK button, then click Apply. Once the icon is disabled and
-greyed out, flush your DNS cache. You can do that with
-`sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`. Now, try your
-`ping` command again, and you should get a response. If it does, try accessing the
-service through your browser.
+greyed out, flush your DNS cache. You can do that with `sudo dscacheutil -flushcache`
+and `sudo killall -HUP mDNSResponder`. Now, try your `ping` command again, and you
+should get a response. If it does, try accessing the service through your browser.
 
 If you have any questions or need any help, feel free to contact me on
 [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
