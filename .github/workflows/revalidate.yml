@@ -75,13 +75,15 @@ jobs:
         steps:
             - name: Checkout Branch
               uses: actions/checkout@v3
-            - name: Test MD
-              run: echo "${{ needs.compile-markdown.outputs.changed }}"
-            - name: Test JSON
-              run: echo "${{ needs.compile-json.outputs.changed }}"
+            - name: Log Markdown
+              run: echo '${{ needs.compile-markdown.outputs.changed }}'
+            - name: Log JSON
+              run: echo '${{ needs.compile-json.outputs.changed }}'
             - name: Merge IDs
               id: merge-ids
               run: echo ::set-output name=merged::$(jq --argjson mdpaths '${{ needs.compile-markdown.outputs.changed }}' --argjson jsonpaths '${{ needs.compile-json.outputs.changed }}' -n '$mdpaths + $jsonpaths | unique')
+            - name: Log Merged IDs
+              run: echo '${{ steps.merge-ids.outputs.merged }}'
 
     revalidate:
       runs-on: ubuntu-latest
@@ -90,4 +92,4 @@ jobs:
         - name: Revalidate
           id: revalidate
           run: |
-            echo '${{ needs.merge-compiled-ids.outputs.merged }}' | jq '.[]' | while read -r urlpath; do curl -X POST "https://hkamran.com/api/revalidate?path=$urlpath" -H 'X-API-Key: ${{ secrets.REVALIDATION_TOKEN }}'; done
+            echo '${{ needs.merge-compiled-ids.outputs.merged }}' | jq '.[]' | while read -r urlpath; do curl -X POST "https://hkamran.com/api/revalidate?path=$(echo $urlpath | tr -d '"')" -H 'X-API-Key: ${{ secrets.REVALIDATION_TOKEN }}'; done
