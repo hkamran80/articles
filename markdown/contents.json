@@ -63,13 +63,13 @@
         },
         {
             "id": "adding-wildcard-subdomain-support-macos",
-            "title": "Adding Wildcard Subomain Support to macOS",
+            "title": "Adding Wildcard Subdomain Support to macOS",
             "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
             "tags": [
                 "macOS",
                 "Networking"
             ],
-            "heroImage": "https://i.imgur.com/nKR3Fb9.png",
+            "heroImage": "https://i.imgur.com/jgfOuQS.png",
             "published": "2023-01-13",
             "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
         }
