@@ -1,0 +1,93 @@
+name: Revalidate Paths
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - "markdown/**"
+    workflow_dispatch:
+jobs:
+    evaluate:
+        runs-on: ubuntu-latest
+        if: github.repository == 'hkamran80/articles'
+        outputs:
+            markdown: ${{ steps.changes.outputs.markdown }}
+            json: ${{ steps.changes.outputs.json }}
+        steps:
+            - name: Checkout Branch
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 2
+            - name: Get Changed Files
+              id: changes
+              run: |
+                  echo ::set-output name=markdown::$(git diff --name-only --diff-filter=ACMRT ${{ github.sha }}^1 ${{ github.sha }} | grep .md$ | xargs)
+                  echo ::set-output name=json::$(git diff --name-only --diff-filter=ACMRT ${{ github.sha }}^1 ${{ github.sha }} | grep .json$ | xargs)
+
+    compile-markdown:
+        runs-on: ubuntu-latest
+        needs: evaluate
+        outputs:
+            changed: ${{ steps.changed.outputs.changed || steps.empty.outputs.changed }}
+        steps:
+            - name: Load Changed Markdown
+              id: changed
+              if: ${{ needs.evaluate.outputs.markdown }}
+              run: echo ::set-output name=changed::$(echo ${{ needs.evaluate.outputs.markdown }} | tr " " "\n" | sed -E "s/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))//g" | sed -E "s/articles\//article\//" | sed -Ee 's/^/"/' -Ee 's/$/"/' | sed -Ee 's/$/,/' | sed -Ee '$ s/.$/\]/' | sed '1 s/"/\["/')
+
+            - name: Output Empty Array
+              id: empty
+              if: ${{ !needs.evaluate.outputs.markdown }}
+              run: echo ::set-output name=changed::'[]'
+
+    compile-json:
+        runs-on: ubuntu-latest
+        needs: evaluate
+        outputs:
+            changed: ${{ steps.changed.outputs.changed || steps.empty.outputs.changed }}
+        steps:
+            - name: Checkout Branch
+              uses: actions/checkout@v3
+
+            - name: Install jd
+              if: ${{ needs.evaluate.outputs.json }}
+              uses: supplypike/setup-bin@v3
+              with:
+                  uri: "https://github.com/josephburnett/jd/releases/download/v1.6.1/jd-amd64-linux"
+                  name: jd
+                  version: "1.6.1"
+            - name: Get Changed JSON
+              id: changed
+              if: ${{ needs.evaluate.outputs.json }}
+              run: echo ::set-output name=changed::$(echo $(git show ${{ github.sha }}^1:markdown/contents.json | jd -f patch markdown/contents.json | jq '.[].path' | awk '! seen[$0]++' | tr -d '"' | cut -f2,3 -d '/' | sed -e 's/^/\./'  -e 's/$/) .id/' | sed -e 's/\// | nth(/g' | while read filter; do jq "$filter" markdown/contents.json | tr -d '"' | sed -e "s/^/$(echo $filter | sed -E 's/(\.|\||nth\([0-9]\)|id)//g' | sed -E 's/s//g' | awk '{$1=$1};1')\//"; done) | jq -Rc 'split(" ")')
+
+            - name: Output Empty Array
+              id: empty
+              if: ${{ !needs.evaluate.outputs.json }}
+              run: echo ::set-output name=changed::'[]'
+
+    merge-compiled-ids:
+        runs-on: ubuntu-latest
+        needs: [compile-markdown, compile-json]
+        if: always() && !cancelled() && !contains(needs.*.result, 'failure')
+        outputs:
+            merged: ${{ steps.merge-ids.outputs.merged }}
+        steps:
+            - name: Checkout Branch
+              uses: actions/checkout@v3
+            - name: Test MD
+              run: echo "${{ needs.compile-markdown.outputs.changed }}"
+            - name: Test JSON
+              run: echo "${{ needs.compile-json.outputs.changed }}"
+            - name: Merge IDs
+              id: merge-ids
+              run: echo ::set-output name=merged::$(jq --argjson mdpaths '${{ needs.compile-markdown.outputs.changed }}' --argjson jsonpaths '${{ needs.compile-json.outputs.changed }}' -n '$mdpaths + $jsonpaths | unique')
+
+    revalidate:
+      runs-on: ubuntu-latest
+      needs: merge-compiled-ids
+      steps:
+        - name: Revalidate
+          id: revalidate
+          run: |
+            echo '${{ needs.merge-compiled-ids.outputs.merged }}' | jq '.[]' | while read -r urlpath; do curl -X POST "https://hkamran.com/api/revalidate?path=$urlpath" -H 'X-API-Key: ${{ secrets.REVALIDATION_TOKEN }}'; done
