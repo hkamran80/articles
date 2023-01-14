@@ -33,7 +33,7 @@ jobs:
             - name: Load Changed Markdown
               id: changed
               if: ${{ needs.evaluate.outputs.markdown }}
-              run: echo ::set-output name=changed::$(echo ${{ needs.evaluate.outputs.markdown }} | tr " " "\n" | sed -E "s/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))//g" | sed -E "s/articles\//article\//" | sed -Ee 's/^/"/' -Ee 's/$/"/' | sed -Ee 's/$/,/' | sed -Ee '$ s/.$/\]/' | sed '1 s/"/\["/')
+              run: echo ::set-output name=changed::$(echo ${{ needs.evaluate.outputs.markdown }} | tr " " "\n" | sed -E "s/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))//g" | sed -E "s/articles\//\/article\//" | jq -Rc 'split(" ")')
 
             - name: Output Empty Array
               id: empty
@@ -59,7 +59,7 @@ jobs:
             - name: Get Changed JSON
               id: changed
               if: ${{ needs.evaluate.outputs.json }}
-              run: echo ::set-output name=changed::$(echo $(git show ${{ github.sha }}^1:markdown/contents.json | jd -f patch markdown/contents.json | jq '.[].path' | awk '! seen[$0]++' | tr -d '"' | cut -f2,3 -d '/' | sed -e 's/^/\./'  -e 's/$/) .id/' | sed -e 's/\// | nth(/g' | while read filter; do jq "$filter" markdown/contents.json | tr -d '"' | sed -e "s/^/$(echo $filter | sed -E 's/(\.|\||nth\([0-9]\)|id)//g' | sed -E 's/s//g' | awk '{$1=$1};1')\//"; done) | jq -Rc 'split(" ")')
+              run: echo ::set-output name=changed::$(echo $(git show ${{ github.sha }}^1:markdown/contents.json | jd -f patch markdown/contents.json | jq '.[].path' | awk '! seen[$0]++' | tr -d '"' | cut -f2,3 -d '/' | sed -e 's/^/\./' -e 's/$/) .id/' | sed -e 's/\// | nth(/g' | while read filter; do jq "$filter" markdown/contents.json | tr -d '"' | sed -e "s/^/$(echo $filter | sed -E 's/(\.|\||nth\([0-9]\)|id)//g' | sed -E 's/s//g' | awk '{$1=$1};1')\//" | sed -e 's/^/\//;'; done) | jq -Rc 'split(" ")')
 
             - name: Output Empty Array
               id: empty
