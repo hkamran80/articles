@@ -29,7 +29,7 @@ to generate TypeScript declarations, since I primarily use TypeScript.
    ```
 
 4. Add the [`prepare` script](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
-   (or whichever one you want to use) to the `scripts` object in `package.json`
+   (or whichever script you want to use) to the `scripts` object in `package.json`
 
    For example, mine looks like this:
 
