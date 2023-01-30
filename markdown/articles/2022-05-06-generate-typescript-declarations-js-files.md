@@ -29,7 +29,7 @@ to generate TypeScript declarations, since I primarily use TypeScript.
    ```
 
 4. Add the [`prepare` script](https://docs.npmjs.com/cli/v8/using-npm/scripts#life-cycle-scripts)
-5. (or whichever one you want to use) to the `scripts` object in `package.json`
+   (or whichever one you want to use) to the `scripts` object in `package.json`
 
    For example, mine looks like this:
 
@@ -46,7 +46,7 @@ to generate TypeScript declarations, since I primarily use TypeScript.
     The `prepare` script runs before a npm package is packed (typically with
     `npm publish` or `npm pack`, or the equivalents with other package managers).
 
-6. Run your npm script
+5. Run your npm script
 
    - With `pnpm`: `pnpm prepare` or `pnpm run prepare`
    - With `npm`: `npm run prepare`
