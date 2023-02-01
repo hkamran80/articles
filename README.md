@@ -19,19 +19,5 @@ then submit a pull request ([learn about pull requests](https://docs.github.com/
 
 ## License
 
-You may use the articles and notes in this repository, provided you comply with
-a few conditions.
-
-1. **Attribution Required**
-
-   You must place my name and a link to my website in a noticeable area, such as
-   under the title or in a sidebar.
-
-2. **No Advertising**
-
-   You cannot place ads alongside my articles or notes.
-
-3. **Editing**
-
-   If you edit, revise, or modify my articles, my name should be listed first in
-   the list of authors.
+The license for my articles and notes can be found on [my website](https://hkamran.com/legal/license).
+Unpublished articles and notes are still subject to this license.
