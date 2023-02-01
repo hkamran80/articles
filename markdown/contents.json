@@ -72,6 +72,23 @@
             "heroImage": "https://i.imgur.com/jgfOuQS.png",
             "published": "2023-01-13",
             "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
+        },
+        {
+            "id": "automated-dynamic-selective-website-rebuilds",
+            "title": "Automated Dynamic Selective Rebuilds of My Website",
+            "description": "I recently added dynamic rebuild support to my Next.js website to simplify updating articles and notes",
+            "tags": [
+                "Development",
+                "Next.js",
+                "TypeScript",
+                "GitHub Actions",
+                "CI/CD",
+                "Scripting",
+                "Automation"
+            ],
+            "heroImage": "https://i.imgur.com/B3ojeoC.png",
+            "published": "",
+            "filename": "2023-01-29-automated-dynamic-selective-website-rebuilds"
         }
     ],
     "notes": [
