@@ -24,8 +24,8 @@ a few conditions.
 
 1. **Attribution Required**
 
-   If you are to use my name and a link to my website, you must make it noticeable,
-   such as under the title or in a sidebar.
+   You must place my name and a link to my website in a noticeable area, such as
+   under the title or in a sidebar.
 
 2. **No Advertising**
 
