@@ -3,12 +3,14 @@
         "&mdash",
         "balenaetcher",
         "dnsmasq",
+        "grep",
         "homelab",
         "homeserver",
         "jsdoc",
         "nunito",
         "plist",
         "schwiet",
+        "supplypike",
         "traefik",
         "vuetify"
     ]
