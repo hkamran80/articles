@@ -1,4 +1,4 @@
-If you're on macOS, you'll need to upgrade OpenSSH, which I've detailed in a
+If you're on macOS, you'll first need to upgrade OpenSSH, which I've detailed in a
 [separate article](https://hkamran.com/article/upgrade-openssh-macos).
 
 Plug in your security key, then generate a `ed25519-sk` or `ecdsa-sk` public key.
@@ -58,7 +58,7 @@ You should see a message like the following:
 Confirm user presence for key ED25519-SK SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-Click the button on your security key, then you should see "User presence confirmed",
+Click the button on your security key. Then, you should see "User presence confirmed",
 at which point you should be logged in.
 
 ## Conclusion
