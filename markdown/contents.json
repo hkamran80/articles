@@ -89,6 +89,31 @@
             "heroImage": "https://i.imgur.com/B3ojeoC.png",
             "published": "",
             "filename": "2023-01-29-automated-dynamic-selective-website-rebuilds"
+        },
+        {
+            "id": "upgrade-openssh-macos",
+            "title": "Upgrading OpenSSH on macOS",
+            "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or newer",
+            "tags": [
+                "macOS",
+                "SSH"
+            ],
+            "heroImage": "https://i.imgur.com/B3ojeoC.png",
+            "published": "",
+            "filename": "2023-02-13-upgrade-openssh-macos"
+        },
+        {
+            "id": "fido2-ssh-keys",
+            "title": "Creating FIDO2 SSH Keys",
+            "description": "Secure your SSH keys with a physical security key",
+            "tags": [
+                "SSH",
+                "FIDO2",
+                "Security"
+            ],
+            "heroImage": "https://i.imgur.com/B3ojeoC.png",
+            "published": "",
+            "filename": "2023-02-13-fido2-ssh-keys"
         }
     ],
     "notes": [
@@ -101,17 +126,6 @@
             ],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
-        },
-        {
-            "id": "upgrade-openssh-macos",
-            "title": "Upgrading OpenSSH on macOS",
-            "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or newer",
-            "tags": [
-                "macOS",
-                "SSH"
-            ],
-            "published": "2023-02-13",
-            "filename": "2023-02-13-upgrade-openssh-macos"
         }
     ]
 }
