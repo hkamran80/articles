@@ -93,7 +93,7 @@
         {
             "id": "upgrade-openssh-macos",
             "title": "Upgrading OpenSSH on macOS",
-            "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or newer",
+            "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
             "tags": [
                 "macOS",
                 "SSH"
@@ -105,7 +105,7 @@
         {
             "id": "fido2-ssh-keys",
             "title": "Creating FIDO2 SSH Keys",
-            "description": "Secure your SSH keys with a physical security key",
+            "description": "Secure your SSH keys with a FIDO2 security key",
             "tags": [
                 "SSH",
                 "FIDO2",
