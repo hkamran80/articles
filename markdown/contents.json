@@ -98,9 +98,9 @@
                 "macOS",
                 "SSH"
             ],
-            "heroImage": "https://i.imgur.com/B3ojeoC.png",
-            "published": "",
-            "filename": "2023-02-13-upgrade-openssh-macos"
+            "heroImage": "https://i.imgur.com/f5kMZjx.png",
+            "published": "2023-02-14",
+            "filename": "2023-02-14-upgrade-openssh-macos"
         },
         {
             "id": "fido2-ssh-keys",
@@ -111,9 +111,9 @@
                 "FIDO2",
                 "Security"
             ],
-            "heroImage": "https://i.imgur.com/B3ojeoC.png",
-            "published": "",
-            "filename": "2023-02-13-fido2-ssh-keys"
+            "heroImage": "https://i.imgur.com/T3m4kR3.png",
+            "published": "2023-02-14",
+            "filename": "2023-02-14-fido2-ssh-keys"
         }
     ],
     "notes": [
