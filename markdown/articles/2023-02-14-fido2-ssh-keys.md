@@ -1,5 +1,5 @@
-If you're on macOS, you'll first need to upgrade OpenSSH, which I've detailed in a
-[separate article](https://hkamran.com/article/upgrade-openssh-macos).
+If you're on macOS, you'll first need to upgrade OpenSSH, which I've detailed in
+a [separate article](https://hkamran.com/article/upgrade-openssh-macos).
 
 Plug in your security key, then generate a `ed25519-sk` or `ecdsa-sk` public key.
 The `-sk` stands for "security key". If your YubiKey is running firmware version
