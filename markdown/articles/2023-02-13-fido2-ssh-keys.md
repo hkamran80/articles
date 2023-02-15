@@ -1,4 +1,4 @@
-If you're on macOS, you'll need to upgrade OpenSSH, which I've detailed in a
+If you're on macOS, you'll first need to upgrade OpenSSH, which I've detailed in a
 [separate article](https://hkamran.com/article/upgrade-openssh-macos).
 
 Plug in your security key, then generate a `ed25519-sk` or `ecdsa-sk` public key.
@@ -9,7 +9,7 @@ type.
 Additionally, choose whether you want to use the security key as a resident key,
 or a non-resident key. A resident key stores the private key on the security key,
 which may not be supported by all security keys and may also be limited in capacity
-(the YubiKey 5 series is limited to 25 — [source](https://docs.yubico.com/hardware/yubikey/yk-5/tech-manual/yk5-apps.html#fido2)).
+(the YubiKey 5 series is limited to 25 resident keys — [source](https://docs.yubico.com/hardware/yubikey/yk-5/tech-manual/yk5-apps.html#fido2)).
 A resident key can also reduce the security of your SSH key if the security key
 is stolen. Ensure you have a good PIN set. A non-resident key requires you to send
 the key to the hosts you would like to authenticate to.
@@ -58,7 +58,7 @@ You should see a message like the following:
 Confirm user presence for key ED25519-SK SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-Click the button on your security key, then you should see "User presence confirmed",
+Click the button on your security key. Then, you should see "User presence confirmed",
 at which point you should be logged in.
 
 ## Conclusion

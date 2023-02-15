@@ -13,7 +13,7 @@ launchctl disable user/$UID/com.openssh.ssh-agent
 
 Next, I added my own launch agent at `~/Library/LaunchAgents/com.hkamran.ssh_agent.plist`:
 
-```plist
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
