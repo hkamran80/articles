@@ -57,14 +57,16 @@ resolver #8
 ```
 
 After that, add the DNS server to macOS via the Network panel in System Preferences
-or System Settings. If your Mac is running Ventura or newer, click "Details", otherwise
-click "Advanced". Then, navigate to the "DNS" tab. Click the plus button and type
-in `127.0.0.1` and then hit enter. For more information on `127.0.0.1`, check out
-[its Wikipedia article](https://en.wikipedia.org/wiki/Localhost). Back to System
-Preferences, click the OK button, then click Apply. Once the icon is disabled and
-greyed out, flush your DNS cache. You can do that with `sudo dscacheutil -flushcache`
-and `sudo killall -HUP mDNSResponder`. Now, try your `ping` command again, and you
-should get a response. If it does, try accessing the service through your browser.
+or the Wi-Fi panel in System Settings. If your Mac is running Ventura or newer,
+click "Details", otherwise click "Advanced". Then, navigate to the "DNS" tab. Click
+the plus button and type in `127.0.0.1` and then hit enter. For more information
+on `127.0.0.1`, check out [its Wikipedia article](https://en.wikipedia.org/wiki/Localhost).
+Back to System Preferences, click the OK button, then click Apply. If you're running
+Ventura or newer, just click the OK button and it will save and apply the settings.
+Once the icon is disabled and greyed out, flush your DNS cache. You can do that
+with `sudo dscacheutil -flushcache` and `sudo killall -HUP mDNSResponder`. Now,
+try your `ping` command again, and you should get a response. If it does, try accessing
+the service through your browser.
 
 If you have any questions or need any help, feel free to contact me on
 [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
