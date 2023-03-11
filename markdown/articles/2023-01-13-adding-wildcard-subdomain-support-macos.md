@@ -46,7 +46,7 @@ add `nameserver 127.0.0.1`. This tells macOS' DNS resolution to use your new dns
 as a DNS server. For example, I would run `sudo mkdir /etc/resolver`, then
 `sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/my-computer-hostname'`.
 Verify that the entry was added with `scutil --dns`. An output similar to the following
-should be shown:
+should be shown.
 
 ```text
 resolver #8
