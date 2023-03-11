@@ -39,15 +39,34 @@ method of copying the Homebrew launch daemon [plist](https://en.wikipedia.org/wi
 to `/Library/LaunchDaemons` and manually telling `launchctl` to load it.
 
 If you were to try running a command such as `ping` to see if your wildcard subdomain
-redirection worked, you'd be sorely disappointed, because there's one more step.
-I found it easiest to use the GUI for this. Open the Network panel in System Preferences,
-click "Advanced", and go to the "DNS" tab. Click the plus button and type in `127.0.0.1`
-and then hit enter. For more information on `127.0.0.1`, check out
-[its Wikipedia article](https://en.wikipedia.org/wiki/Localhost). Back to System
-Preferences, click the OK button, then click Apply. Once the icon is disabled and
-greyed out, flush your DNS cache. You can do that with `sudo dscacheutil -flushcache`
-and `sudo killall -HUP mDNSResponder`. Now, try your `ping` command again, and you
-should get a response. If it does, try accessing the service through your browser.
+redirection worked, you'd be sorely disappointed, because there are two more steps.
+Create a folder in `/etc` named `resolver`, and place a file in there. The file
+can be named anything, but I like to use the hostname of my computer. In that file,
+add `nameserver 127.0.0.1`. This tells macOS' DNS resolution to use your new dnsmasq
+as a DNS server. For example, I would run `sudo mkdir /etc/resolver`, then
+`sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/my-computer-hostname'`.
+Verify that the entry was added with `scutil --dns`. An output similar to the following
+should be shown.
+
+```text
+resolver #8
+  domain   : my-computer-hostname
+  nameserver[0] : 127.0.0.1
+  flags    : Request A records, Request AAAA records
+  reach    : 0x00030002 (Reachable,Local Address,Directly Reachable Address)
+```
+
+After that, add the DNS server to macOS via the Network panel in System Preferences
+or the Wi-Fi panel in System Settings. If your Mac is running Ventura or newer,
+click "Details", otherwise click "Advanced". Then, navigate to the "DNS" tab. Click
+the plus button and type in `127.0.0.1` and then hit enter. For more information
+on `127.0.0.1`, check out [its Wikipedia article](https://en.wikipedia.org/wiki/Localhost).
+Back to System Preferences, click the OK button, then click Apply. If you're running
+Ventura or newer, just click the OK button and it will save and apply the settings.
+Once the icon is disabled and greyed out, flush your DNS cache. You can do that
+with `sudo dscacheutil -flushcache` and `sudo killall -HUP mDNSResponder`. Now,
+try your `ping` command again, and you should get a response. If it does, try accessing
+the service through your browser.
 
 If you have any questions or need any help, feel free to contact me on
 [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
