@@ -4,9 +4,7 @@
             "id": "expanding-pkgs-on-macos",
             "title": "Expanding PKGs on macOS",
             "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
-            "tags": [
-                "macOS"
-            ],
+            "tags": ["macOS"],
             "heroImage": "https://i.imgur.com/SmQv46m.png",
             "published": "2020-01-30",
             "filename": "2020-01-30-expanding-pkgs-on-macos"
@@ -15,9 +13,7 @@
             "id": "getting-balenaetcher-to-work-on-macos-catalina",
             "title": "Getting balenaEtcher to Work on macOS Catalina",
             "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
-            "tags": [
-                "macOS"
-            ],
+            "tags": ["macOS"],
             "heroImage": "https://i.imgur.com/HVXIBLr.png",
             "published": "2020-01-30",
             "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
@@ -26,12 +22,7 @@
             "id": "vuetify-dark-mode-toggle",
             "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
             "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
-            "tags": [
-                "Vuetify",
-                "Development",
-                "Theming",
-                "Vue.js"
-            ],
+            "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
             "heroImage": "https://i.imgur.com/3dHGVAS.png",
             "published": "2020-06-04",
             "filename": "2020-06-04-vuetify-dark-mode-toggle"
@@ -40,10 +31,7 @@
             "id": "changing-google-docs-default-styles",
             "title": "Changing Google Docs' Default Styles",
             "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
-            "tags": [
-                "Styling",
-                "Google Docs"
-            ],
+            "tags": ["Styling", "Google Docs"],
             "heroImage": "https://i.imgur.com/inyNDFq.png",
             "published": "2022-04-19",
             "filename": "2022-04-19-changing-google-docs-default-styles"
@@ -52,11 +40,7 @@
             "id": "generate-typescript-declarations-js-files",
             "title": "Generate TypeScript Declaration Files for JavaScript Files",
             "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
-            "tags": [
-                "Development",
-                "TypeScript",
-                "JavaScript"
-            ],
+            "tags": ["Development", "TypeScript", "JavaScript"],
             "heroImage": "https://i.imgur.com/nKR3Fb9.png",
             "published": "2022-05-06",
             "filename": "2022-05-06-generate-typescript-declarations-js-files"
@@ -65,10 +49,7 @@
             "id": "adding-wildcard-subdomain-support-macos",
             "title": "Adding Wildcard Subdomain Support to macOS",
             "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
-            "tags": [
-                "macOS",
-                "Networking"
-            ],
+            "tags": ["macOS", "Networking"],
             "heroImage": "https://i.imgur.com/jgfOuQS.png",
             "published": "2023-01-13",
             "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
@@ -94,10 +75,7 @@
             "id": "upgrade-openssh-macos",
             "title": "Upgrading OpenSSH on macOS",
             "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
-            "tags": [
-                "macOS",
-                "SSH"
-            ],
+            "tags": ["macOS", "SSH"],
             "heroImage": "https://i.imgur.com/f5kMZjx.png",
             "published": "2023-02-14",
             "filename": "2023-02-14-upgrade-openssh-macos"
@@ -106,14 +84,28 @@
             "id": "fido2-ssh-keys",
             "title": "Creating FIDO2 SSH Keys",
             "description": "Secure your SSH keys with a FIDO2 security key",
-            "tags": [
-                "SSH",
-                "FIDO2",
-                "Security"
-            ],
+            "tags": ["SSH", "FIDO2", "Security"],
             "heroImage": "https://i.imgur.com/T3m4kR3.png",
             "published": "2023-02-14",
             "filename": "2023-02-14-fido2-ssh-keys"
+        },
+        {
+            "id": "logging-testers-cleaning-testflight-csvs",
+            "title": "Logging Testers and Cleaning TestFlight CSVs",
+            "description": "Log testers with Google Sheets and then clean them with my tool",
+            "tags": [
+                "Development",
+                "TestFlight",
+                "Google Docs",
+                "JavaScript",
+                "TypeScript",
+                "CSV",
+                "Cleaning"
+            ],
+            "heroImage": "https://assets.hkamran.com/graphics/article/unpublished",
+            "published": "",
+            "filename": "2023-04-22-logging-testers-cleaning-testflight-csvs",
+            "branchName": "logging-testers-cleaning-testflight-csvs"
         }
     ],
     "notes": [
@@ -121,9 +113,7 @@
             "id": "converting-local-dates-to-utc-with-python",
             "title": "Converting Local Dates to UTC with Python",
             "description": "A quick and easy way to convert local dates to UTC",
-            "tags": [
-                "Development"
-            ],
+            "tags": ["Development"],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
         }
