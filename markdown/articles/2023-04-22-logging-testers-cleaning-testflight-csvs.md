@@ -51,6 +51,8 @@ some entries.
 
 ## TestFlight Cleaner
 
+(**note:** insert screenshot)
+
 The first thing I had to do was figure out how to import a CSV and parse it using
 JavaScript^[I use TypeScript, but the only difference is that TypeScript is, well, typed, and JavaScript isn't.]. After reading through Stack Overflow, I stumbled
 upon the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
@@ -75,3 +77,37 @@ which checks if an email contains an `@` sign and matches
 If this check fails, it lets the user know and continues, because it can bypass
 these rows. Finally, another `useState` hook is used to inform another `useEffect`
 hook that this step is complete.^[[`checkForErrors`, lines 53-101](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L53-L101)]
+
+The third step is to clean the CSV using a reducer. There are two settings the user
+can apply that affect this function: specifying the first row as the header row,
+and leaving malformed/duplicated rows in the preview. The first part of this step
+is to check if the email has appeared in any preceding rows. If it has and the leave
+duplicated rows setting is active, it outputs a "duplicate" flag, and adds it to
+the array. If it has and the setting is inactive, it returns the existing array.
+The next part is to check for malformed emails, achieved by performing a similar
+check as step two. If the leave malformed rows setting is active, it outputs a "malformed"
+flag, then adds it to the array. If neither of these parts are triggered, the reducer
+returns the same cleaned rows that are output in every step. The [cleaning](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L103-L104)
+strips all characters that aren't alphanumeric, periods, dashes, spaces or
+non-English characters from the first and last names. The email gets line break
+characters stripped. Finally, the function sets a `useState` hook with the cleaned
+data, and another `useState` hook with any duplicated emails. The duplicated emails
+hook is set only if the leave duplicated rows setting is active.^[[`cleanCsv`, lines 106-185](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L106-L185)]
+
+The final step is to make the preview. It loops over the two-dimensional cleaned
+CSV data to create a table, and if a malformed or duplicate flag is set, it places
+a colour on the email. Red signifies malformed and yellow signifies duplicated.^[[Table generation, lines 437-520](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L437-L520)]
+
+After a user requests an export using the button below the preview, a [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
+is created by iterating over the cleaned rows to form it back into a CSV. An
+[anchor element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) is
+created, with its URL set to the output of
+[`URL.createObjectURL`](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL).
+A download attribute is also set, which sets the filename to "TestFlight Testers
+- Cleaned.csv". This element is then added to the
+DOM^[[Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)],
+clicked, then removed. The object URL is also revoked.^[[`exportCsv`, lines 221-241](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L221-L241)]
+
+I hope that this tool comes in handy for you. If it does or you have any feedback,
+please contact me on [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
+Thank you for reading!
