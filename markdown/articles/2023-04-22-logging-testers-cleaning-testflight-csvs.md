@@ -64,7 +64,8 @@ then begins to process the CSV.^[[`upload`, lines 187-206](https://github.com/hk
 
 The first step is to turn the raw data into a two-dimensional array. The CSV text
 was split using the newline character `\n`, then each row was split using a comma
-as a delimiter. This output was stored in another `useState` hook.^[[`processCsv`, lines 50-51](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L50-L51)]
+as a delimiter. This output was stored in another `useState`
+hook.^[[`processCsv`, lines 50-51](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L50-L51)]
 
 The next step is triggered via a [`useEffect` hook](https://react.dev/reference/react/useEffect)
 monitoring the `csvData` `useState` hook, which is set by the `processCsv` function
@@ -92,7 +93,8 @@ strips all characters that aren't alphanumeric, periods, dashes, spaces or
 non-English characters from the first and last names. The email gets line break
 characters stripped. Finally, the function sets a `useState` hook with the cleaned
 data, and another `useState` hook with any duplicated emails. The duplicated emails
-hook is set only if the leave duplicated rows setting is active.^[[`cleanCsv`, lines 106-185](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L106-L185)]
+hook is set only if the leave duplicated rows setting is
+active.^[[`cleanCsv`, lines 106-185](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L106-L185)]
 
 The final step is to make the preview. It loops over the two-dimensional cleaned
 CSV data to create a table, and if a malformed or duplicate flag is set, it places
@@ -104,7 +106,7 @@ is created by iterating over the cleaned rows to form it back into a CSV. An
 created, with its URL set to the output of
 [`URL.createObjectURL`](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL).
 A download attribute is also set, which sets the filename to "TestFlight Testers
-- Cleaned.csv". This element is then added to the
+\- Cleaned.csv". This element is then added to the
 DOM^[[Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)],
 clicked, then removed. The object URL is also revoked.^[[`exportCsv`, lines 221-241](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L221-L241)]
 
