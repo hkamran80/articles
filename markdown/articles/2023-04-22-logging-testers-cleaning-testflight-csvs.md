@@ -1,22 +1,22 @@
-My friend [Andrew Zheng](https://twitter.com/aheze0) recently started accepting beta testers for his new app — via Google Forms. Forms comes with Google Sheets support built-in, so it's easy to get set up. However, a couple problems quickly surfaced.
+My friend [Andrew Zheng](https://twitter.com/aheze0) recently started accepting
+beta testers for his new app via Google Forms. Forms comes with Google Sheets support
+built-in, so it's easy to get set up. However, a couple problems quickly surfaced.
 
 First up, Andrew's form was set up with two fields: name and email.
 
-Name | Email
---- | ---
+Name         | Email
+-------------|--------------------
 Andrew Zheng | `aheze@getfind.app`
-Joe Smith | `joe@smith.com`
+Joe Smith    | `joe@smith.com`
 
 TestFlight requires a CSV with three columns: first name, last name, and email.
 
 First Name | Last Name | Email
---- | --- | ---
-Andrew | Zheng | `aheze@getfind.app`
-Joe | Smith | `joe@smith.com`
+-----------|-----------|--------------------
+Andrew     | Zheng     | `aheze@getfind.app`
+Joe        | Smith     | `joe@smith.com`
 
-We need to parse the data first.
-
-(**note:** insert image of redacted spreadsheet responses)
+The data needs to be converted first.
 
 ## Parsing the Responses
 
@@ -94,21 +94,26 @@ hook that this step is complete.^[[`checkForErrors`, lines 53-101](https://githu
 
 The third step is to clean the CSV using a reducer. There are two settings the user
 can apply that affect this function: specifying the first row as the header row,
-and leaving malformed/duplicated rows in the preview. 
+and leaving malformed/duplicated rows in the preview.
 
-### Detect Duplicates
+### Detecting Duplicates
+
 The first part of this step
 is to check if the email has appeared in any preceding rows. If it has and the leave
 duplicated rows setting is active, it outputs a "duplicate" flag, and adds it to
 the array. If it has and the setting is inactive, it returns the existing array.
 
 ### Checking for Malformed Emails
+
 The next part is to check for malformed emails, achieved by performing a similar
 check as step two. If the leave malformed rows setting is active, it outputs a "malformed"
-flag, then adds it to the array. If neither of these parts are triggered, the reducer does the regular invalid character cleaning.
+flag, then adds it to the array. If neither of these parts are triggered, the reducer
+does the regular invalid character cleaning.
 
-### Cleaning up invalid characters
-The [cleaning](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L103-L104) process strips all characters that aren't alphanumeric, periods, dashes, spaces or
+### Cleaning Up Invalid Characters
+
+The [cleaning](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L103-L104)
+process strips all characters that aren't alphanumeric, periods, dashes, spaces or
 non-English characters from the first and last names. The email gets line break
 characters stripped. Finally, the function sets a `useState` hook with the cleaned
 data, and another `useState` hook with any duplicated emails. The duplicated emails
