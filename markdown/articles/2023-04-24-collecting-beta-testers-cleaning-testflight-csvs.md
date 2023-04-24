@@ -73,7 +73,7 @@ API, which has a convenient `readAsText` function. Since my website uses Next.js
 (which uses React), I used a [`useState` hook](https://react.dev/reference/react/useState)
 to store the `File` object that the file input would provide, then I accessed that
 in a function. The function converts the file to text using the aforementioned function,
-then begins to process the CSV.^[[`upload`, lines 187-206](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L187-L206)]
+then begins to process the CSV.^[[`upload`, lines 193-212](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L193-L212)]
 
 The first step is to turn the raw data into a two-dimensional array. The CSV text
 was split using the newline character `\n`, then each row was split using a comma
@@ -101,14 +101,15 @@ and leaving malformed/duplicated rows in the preview.
 The first part of this step
 is to check if the email has appeared in any preceding rows. If it has and the leave
 duplicated rows setting is active, it outputs a "duplicate" flag, and adds it to
-the array. If it has and the setting is inactive, it returns the existing array.
+the array. If it has and the setting is inactive, it returns the existing
+array.^[[`cleanCsv`, lines 132-152](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L132-L152)]
 
 ### Checking for Malformed Emails
 
 The next part is to check for malformed emails, achieved by performing a similar
 check as step two. If the leave malformed rows setting is active, it outputs a "malformed"
 flag, then adds it to the array. If neither of these parts are triggered, the reducer
-does the regular invalid character cleaning.
+does the regular invalid character cleaning.^[[`cleanCsv`, lines 154-168](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L154-L168)]
 
 ### Cleaning Up Invalid Characters
 
@@ -118,11 +119,12 @@ non-English characters from the first and last names. The email gets line break
 characters stripped. Finally, the function sets a `useState` hook with the cleaned
 data, and another `useState` hook with any duplicated emails. The duplicated emails
 hook is set only if the leave duplicated rows setting is
-active.^[[`cleanCsv`, lines 106-185](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L106-L185)]
+active.^[[`cleanCsv`, lines 106-191](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L106-L191)]
 
 The final step is to make the preview. It loops over the two-dimensional cleaned
 CSV data to create a table, and if a malformed or duplicate flag is set, it places
-a colour on the email. Red signifies malformed and yellow signifies duplicated.^[[Table generation, lines 437-520](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L437-L520)]
+a colour on the email. Red signifies malformed and yellow signifies
+duplicated.^[[Table generation, lines 443-526](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L443-L526)]
 
 After a user requests an export using the button below the preview, a [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
 is created by iterating over the cleaned rows to form it back into a CSV. An
@@ -132,7 +134,8 @@ created, with its URL set to the output of
 A download attribute is also set, which sets the filename to "TestFlight Testers
 \- Cleaned.csv". This element is then added to the
 DOM^[[Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)],
-clicked, then removed. The object URL is also revoked.^[[`exportCsv`, lines 221-241](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L221-L241)]
+clicked, then removed. The object URL is also
+revoked.^[[`exportCsv`, lines 227-247](https://github.com/hkamran80/website/blob/redesign-nextjs/pages/program/testflight-cleaner.tsx#L227-L247)]
 
 I hope that this tool comes in handy for you. If it does or you have any feedback,
 please contact me on [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
