@@ -32,7 +32,7 @@ function to create a substring up to that space:
 content of the cell. The full formula for the first name column is as follows.
 
 ```excel-formula
-=IF( ISNUMBER(SEARCH(" ", Testers!$B2)), LEFT(Testers!$B2, SEARCH(" ", Testers!$B2)), Testers!$B2 )
+=IF(ISNUMBER(SEARCH(" ", Testers!$B2)), LEFT(Testers!$B2, SEARCH(" ", Testers!$B2)), Testers!$B2)
 ```
 
 The last name column has a similar formula, with two differences. The first is that
@@ -43,7 +43,7 @@ inside it has to be subtracted from the total length of the string:
 column is below.
 
 ```excel-formula
-=IF( ISNUMBER(SEARCH(" ", Testers!$B2)), RIGHT( Testers!$B2, LEN(Testers!$B2) - SEARCH(" ", Testers!$B2) ), Testers!$B2 )
+=IF(ISNUMBER(SEARCH(" ", Testers!$B2)), RIGHT(Testers!$B2, LEN(Testers!$B2) - SEARCH(" ", Testers!$B2)), Testers!$B2)
 ```
 
 The email formula is very simple, just a reference to the cell in the responses
