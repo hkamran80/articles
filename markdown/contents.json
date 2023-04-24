@@ -90,21 +90,20 @@
             "filename": "2023-02-14-fido2-ssh-keys"
         },
         {
-            "id": "logging-testers-cleaning-testflight-csvs",
-            "title": "Logging Testers and Cleaning TestFlight CSVs",
-            "description": "Log testers with Google Sheets and then clean them with my tool",
+            "id": "collecting-beta-testers-cleaning-testflight-csvs",
+            "title": "Collecting Beta Testers and Cleaning TestFlight CSVs",
+            "description": "Collect testers with Google Sheets and then clean them with my tool",
             "tags": [
                 "Development",
                 "TestFlight",
                 "Google Docs",
                 "JavaScript",
                 "TypeScript",
-                "CSV",
-                "Cleaning"
+                "CSV"
             ],
             "heroImage": "https://assets.hkamran.com/graphics/article/unpublished",
             "published": "",
-            "filename": "2023-04-22-logging-testers-cleaning-testflight-csvs",
+            "filename": "2023-04-24-collecting-beta-testers-cleaning-testflight-csvs",
             "branchName": "logging-testers-cleaning-testflight-csvs"
         }
     ],
