@@ -94,9 +94,8 @@
                 "TypeScript",
                 "CSV"
             ],
-            "published": "",
-            "filename": "2023-04-24-collecting-beta-testers-cleaning-testflight-csvs",
-            "branchName": "article/logging-testers-cleaning-testflight-csvs"
+            "published": "2023-04-25",
+            "filename": "2023-04-25-collecting-beta-testers-cleaning-testflight-csvs"
         },
         {
             "id": "installing-newer-python-amazon-ec2",
