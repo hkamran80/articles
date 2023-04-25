@@ -119,7 +119,7 @@
             "id": "converting-local-dates-to-utc-with-python",
             "title": "Converting Local Dates to UTC with Python",
             "description": "A quick and easy way to convert local dates to UTC",
-            "tags": ["Development","Python"],
+            "tags": ["Development", "Python"],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
         }
