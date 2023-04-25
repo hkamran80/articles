@@ -5,7 +5,6 @@
             "title": "Expanding PKGs on macOS",
             "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
             "tags": ["macOS"],
-            "heroImage": "https://i.imgur.com/SmQv46m.png",
             "published": "2020-01-30",
             "filename": "2020-01-30-expanding-pkgs-on-macos"
         },
@@ -14,7 +13,6 @@
             "title": "Getting balenaEtcher to Work on macOS Catalina",
             "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
             "tags": ["macOS"],
-            "heroImage": "https://i.imgur.com/HVXIBLr.png",
             "published": "2020-01-30",
             "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
         },
@@ -23,7 +21,6 @@
             "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
             "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
             "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
-            "heroImage": "https://i.imgur.com/3dHGVAS.png",
             "published": "2020-06-04",
             "filename": "2020-06-04-vuetify-dark-mode-toggle"
         },
@@ -32,7 +29,6 @@
             "title": "Changing Google Docs' Default Styles",
             "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
             "tags": ["Styling", "Google Docs"],
-            "heroImage": "https://i.imgur.com/inyNDFq.png",
             "published": "2022-04-19",
             "filename": "2022-04-19-changing-google-docs-default-styles"
         },
@@ -50,7 +46,6 @@
             "title": "Adding Wildcard Subdomain Support to macOS",
             "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
             "tags": ["macOS", "Networking"],
-            "heroImage": "https://i.imgur.com/jgfOuQS.png",
             "published": "2023-01-13",
             "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
         },
@@ -67,7 +62,6 @@
                 "Scripting",
                 "Automation"
             ],
-            "heroImage": "https://i.imgur.com/B3ojeoC.png",
             "published": "",
             "filename": "2023-01-29-automated-dynamic-selective-website-rebuilds"
         },
@@ -76,7 +70,6 @@
             "title": "Upgrading OpenSSH on macOS",
             "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
             "tags": ["macOS", "SSH"],
-            "heroImage": "https://i.imgur.com/f5kMZjx.png",
             "published": "2023-02-14",
             "filename": "2023-02-14-upgrade-openssh-macos"
         },
@@ -103,6 +96,21 @@
             ],
             "published": "2023-04-25",
             "filename": "2023-04-25-collecting-beta-testers-cleaning-testflight-csvs"
+        },
+        {
+            "id": "installing-newer-python-amazon-ec2",
+            "title": "Installing a Newer Version of Python on Amazon EC2",
+            "description": "EC2 ships with Python 3.7.11, but some might need a newer version",
+            "tags": [
+                "Development",
+                "Python",
+                "Amazon Web Services",
+                "Amazon EC2",
+                "Linux"
+            ],
+            "published": "",
+            "filename": "2023-04-24-installing-newer-python-amazon-ec2",
+            "branchName": "article/installing-newer-python-amazon-ec2"
         }
     ],
     "notes": [
@@ -110,7 +118,7 @@
             "id": "converting-local-dates-to-utc-with-python",
             "title": "Converting Local Dates to UTC with Python",
             "description": "A quick and easy way to convert local dates to UTC",
-            "tags": ["Development"],
+            "tags": ["Development", "Python"],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
         }
