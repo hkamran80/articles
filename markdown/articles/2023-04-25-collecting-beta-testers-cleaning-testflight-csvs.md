@@ -49,8 +49,6 @@ column is below.
 The email formula is very simple, just a reference to the cell in the responses
 sheet: `=Testers!$C2`. The three formulas are copied to all the rows in the sheet.
 
-(**note:** insert image of redacted spreadsheet)
-
 ## Cleaning the Responses
 
 The next step was to upload it to TestFlight, but TestFlight threw an error with
