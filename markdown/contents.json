@@ -85,7 +85,7 @@
         {
             "id": "collecting-beta-testers-cleaning-testflight-csvs",
             "title": "Collecting Beta Testers and Cleaning TestFlight CSVs",
-            "description": "Collect testers with Google Sheets and then clean them with my tool",
+            "description": "Collect testers with Google Sheets then clean them with my tool",
             "tags": [
                 "Development",
                 "TestFlight",
