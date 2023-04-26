@@ -8,9 +8,9 @@ to install it.
 
 I needed to build Python from source, so I started by updating packages
 in [`YUM`](https://en.wikipedia.org/wiki/Yum_(software)), the package manager for
-Red Hat Enterprise Linux, CentOS, Fedora, and Amazon Linux 2, repositories with
-`sudo yum update`. Then I installed some development dependencies, namely the aptly-named
-"Development Tools" group and a few others, with the following.
+Red Hat Enterprise Linux, CentOS, Fedora, and Amazon Linux 2, with `sudo yum update`.
+Then I installed some development dependencies, namely the aptly-named "Development
+Tools" group and a few others, with the following.
 
 ```bash
 sudo yum groupinstall "Development Tools"
