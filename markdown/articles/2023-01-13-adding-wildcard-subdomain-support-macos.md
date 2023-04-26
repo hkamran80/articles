@@ -13,7 +13,7 @@ DNS, usually when I need to circumvent the ad-blocking. I accomplish this throug
 macOS' native support for [network locations](https://support.apple.com/en-us/HT202480).
 
 After doing a bit of research, I found out I could use dnsmasq on my Mac to do accomplish
-wildcard subdomains, just like I did on the Pi-hole, but it worked wonderfully once
+wildcard subdomains, just like I did on the Pi-hole, and it worked wonderfully once
 I got it to work.
 
 I used [Homebrew](https://brew.sh/) to install and configure dnsmasq:
