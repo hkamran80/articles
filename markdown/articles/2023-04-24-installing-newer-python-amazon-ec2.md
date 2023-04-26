@@ -1,13 +1,14 @@
 I recently worked on a Python project that used Python 3.11 and Poetry. When I went
-to deploy it on Amazon's Elastic Compute Cloud (**note:** link?), better known by its moniker EC2,
-I ran to a major hurdle. EC2, running Amazon Linux 2, had Python 3.7.11. The project
-required 3.11, so I was forced to figure out a way to install it.
+to deploy it on [Amazon's Elastic Compute Cloud](https://aws.amazon.com/ec2/), better
+known by its moniker EC2, I ran to a major hurdle. EC2, running Amazon Linux 2,
+had Python 3.7.11. The project required 3.11, so I was forced to figure out a way
+to install it.
 
 ## Dependencies
 
-I needed to build Python from source, so I started by updating the
-[`YUM`](https://en.wikipedia.org/wiki/Yum_(software)), the package manager for Red
-Hat Enterprise Linux, CentOS, Fedora, and Amazon Linux 2, repositories with
+I needed to build Python from source, so I started by updating packages
+in [`YUM`](https://en.wikipedia.org/wiki/Yum_(software)), the package manager for
+Red Hat Enterprise Linux, CentOS, Fedora, and Amazon Linux 2, repositories with
 `sudo yum update`. Then I installed some development dependencies, namely the aptly-named
 "Development Tools" group and a few others, with the following.
 
@@ -29,9 +30,11 @@ sudo yum install openssl11-devel
 ## Compilation
 
 With the development dependencies installed, the next step was to download Python's
-source code. The Python Software Foundation^[learn more about the PSF on [their website](https://www.python.org/psf-landing/)] maintains tarballs of every Python version
-released, and they've made them available through [this user-friendly page](https://www.python.org/downloads/source/)
-or [their plain directory listing](https://www.python.org/ftp/python/). Either way,
+source code. The Python Software
+Foundation^[Learn more about the PSF on [their website](https://www.python.org/psf-landing/)]
+maintains tarballs of every Python version released, and they've made them available
+through [this user-friendly page](https://www.python.org/downloads/source/) or
+[their plain directory listing](https://www.python.org/ftp/python/). Either way,
 find the Python version your project needs, then download the file that ends in
 `.tgz`, which is the gzipped tarball. With the link to the Python source in hand,
 I downloaded it with `wget`, then extracted the archive.
@@ -48,8 +51,8 @@ flag optimizes the binary. After that finishes, there will be a `Makefile`. Befo
 proceeding, decide whether this new version should replace the system version, or
 if it should be installed alongside. I recommend the latter, and that's what I used.
 If you decided to replace the system version, use `sudo make install`. If you decided
-to install it alongside, use `sudo make altinstall`. On my t2.micro instance, it
-took about 35 minutes to build.
+to install it alongside, use `sudo make altinstall`. On my [t2.micro instance](https://aws.amazon.com/ec2/instance-types/t2/),
+it took about 35 minutes to build.
 
 ## Shell Configuration
 
