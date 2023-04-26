@@ -17,10 +17,10 @@ sudo yum groupinstall "Development Tools"
 sudo yum install libffi-devel bzip2-devel
 ```
 
-One more dependency is needed: OpenSSL. If one was to try and install the `openssl-devel`
-package, they would be installing 1.0.7, but Python 3 currently requires 1.1.1 or
-newer. To install this version, `openssl-devel` must be uninstalled first, then
-replaced with `openssl11-devel`.
+One more dependency is needed: OpenSSL. The `openssl-devel` packaged included in
+the repositories with Amazon Linux 2 is 1.0.7, but Python 3 currently requires
+1.1.1 or newer. This version is available through the `openssl11-devel` package.
+To install it, uninstall `openssl-devel`, then install `openssl11-devel`.
 
 ```bash
 sudo yum uninstall openssl-devel
@@ -30,8 +30,7 @@ sudo yum install openssl11-devel
 ## Compilation
 
 With the development dependencies installed, the next step was to download Python's
-source code. The Python Software
-Foundation^[Learn more about the PSF on [their website](https://www.python.org/psf-landing/)]
+source code. The [Python Software Foundation](https://www.python.org/psf-landing/)
 maintains tarballs of every Python version released, and they've made them available
 through [this user-friendly page](https://www.python.org/downloads/source/) or
 [their plain directory listing](https://www.python.org/ftp/python/). Either way,
