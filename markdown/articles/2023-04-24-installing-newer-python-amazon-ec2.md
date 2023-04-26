@@ -55,17 +55,16 @@ it took about 35 minutes to build.
 
 ## Shell Configuration
 
-You might find yourself disappointed if you tried to run `python3.11`, or whatever
-your version is. Python installs to `/usr/local/bin`, but Amazon Linux 2 doesn't
-have that path in the `PATH` by default. Add the following to the end of the `.bashrc`
-file to add the directory to the `PATH`.
+Python installs to `/usr/local/bin`, but the `PATH` doesn't contain it. To add to
+the `PATH`, open the `~/.bashrc` file in your favourite text editor and add the
+following to the end.
 
 ```bash
 export PATH=/usr/local/bin:$PATH
 ```
 
-Reload the `.bashrc` file by running `source ~/.bashrc`, then test Python. Because
-I used the alongside method, I used `python3.11` instead of `python3` as the executable.
+Reload the `.bashrc` file by running `source ~/.bashrc`, then try opening a Python
+shell with `python3.11`. Replace `3.11` with whatever Python version was installed.
 
 ## Conclusion
 
