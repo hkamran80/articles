@@ -108,9 +108,8 @@
                 "Amazon EC2",
                 "Linux"
             ],
-            "published": "",
-            "filename": "2023-04-24-installing-newer-python-amazon-ec2",
-            "branchName": "article/installing-newer-python-amazon-ec2"
+            "published": "2023-05-23",
+            "filename": "2023-05-23-installing-newer-python-amazon-ec2"
         }
     ],
     "notes": [
