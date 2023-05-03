@@ -17,7 +17,7 @@ sudo yum install libffi-devel bzip2-devel
 ```
 
 One more dependency is needed: [OpenSSL](https://en.wikipedia.org/wiki/OpenSSL).
-The `openssl-devel` packaged included in the repositories with Amazon Linux 2 is
+The `openssl-devel` package included in the repositories with Amazon Linux 2 is
 1.0.7, but Python 3 currently requires 1.1.1 or newer. This version is available
 through the `openssl11-devel` package. To install it, uninstall `openssl-devel`,
 then install `openssl11-devel`.
