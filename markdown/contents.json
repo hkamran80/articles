@@ -110,6 +110,15 @@
             ],
             "published": "2023-05-03",
             "filename": "2023-05-03-installing-newer-python-amazon-ec2"
+        },
+        {
+            "id": "securing-your-digital-life",
+            "title": "Securing Your Digital Life",
+            "description": "Keep your digital life safe by employing a few key principles",
+            "tags": ["Security"],
+            "published": "",
+            "filename": "securing-your-digital-life",
+            "branchName": "article/securing-your-digital-file"
         }
     ],
     "notes": [
