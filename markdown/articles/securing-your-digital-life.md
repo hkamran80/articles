@@ -99,6 +99,16 @@ a directory of sites that support, and don't support, MFA. If it's not there, ad
 it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 Full disclosure: I am a maintainer of the site.
 
+## Conclusion
+
+If you have any questions or need any help, feel free to contact me on
+[Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
+
+If you have any improvements to any of my articles or notes, please
+[submit a pull request](https://github.com/hkamran80/articles#contributions).
+
+Thank you for reading!
+
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
 [^3]: U.S. financial institutions, please follow [Vanguard](https://vanguard.com)'s example and support FIDO2!
