@@ -41,7 +41,7 @@ strengthen them.
 Multi-factor authentication, also known as two-factor authentication, 2FA, or MFA,
 is where a user is required to enter two verification methods before authentication
 can proceed. You should enable multi-factor authentication on all your accounts,
-especially for those accounts that secure PII, or personal Identifiable Information.
+especially for those accounts that secure personal identifiable information (PII).
 Some key accounts that should absolutely be secured, even if you don't use MFA on
 any other service, include your financial accounts (including revenue agencies like
 the U.S. Internal Revenue Service, the Canada Revenue Agency, AFIP, etc.), your
