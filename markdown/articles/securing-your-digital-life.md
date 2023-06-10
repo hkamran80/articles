@@ -94,10 +94,9 @@ to your texts. To prevent losing access to those services that use SMS, you coul
 use a service like [Google Voice](https://voice.google.com) as the phone number
 for MFA codes.
 
-If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory),
+If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^4],
 a directory of sites that support, and don't support, MFA. If it's not there, add
 it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
-Full disclosure: I am a maintainer of the site.
 
 ## Conclusion
 
@@ -112,3 +111,4 @@ Thank you for reading!
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
 [^3]: U.S. financial institutions, please follow [Vanguard](https://vanguard.com)'s example and support FIDO2!
+[^4]: Full disclosure: I am a maintainer of the site
