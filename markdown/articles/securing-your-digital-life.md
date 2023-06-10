@@ -36,5 +36,68 @@ the tool. I recommend at least 20 characters using a mix of numbers, uppercase a
 lowercase letters, and symbols (4+). Go through and change all your passwords to
 strengthen them.
 
+## Multi-factor Authentication
+
+Multi-factor authentication, also known as two-factor authentication, 2FA, or MFA,
+is where a user is required to enter two verification methods before authentication
+can proceed. You should enable multi-factor authentication on all your accounts,
+especially for those accounts that secure PII, or personal Identifiable Information.
+Some key accounts that should absolutely be secured, even if you don't use MFA on
+any other service, include your financial accounts (including revenue agencies like
+the U.S. Internal Revenus Service, the Canada Revenue Agency, AFIP, etc.), your
+government accounts (e.g. Login.gov, Singpass, etc.), and your healthcare accounts
+(e.g. insurance, patient portals (like MyChart), etc.).
+
+Don't just take my word for it. Many government agencies, including, but certainly
+limited to, the [U.S. Cybersecurity and Infrastructure Security Agency (CISA)](https://www.cisa.gov/MFA),
+the [UK National Cyber Security Centre](https://www.ncsc.gov.uk/guidance/setting-2-step-verification-2sv),
+and the [Australian Cyber Security Centre](https://www.cyber.gov.au/learn-basics/explore-basics/mfa),
+all recommend MFA.
+
+When you enable MFA, try to avoid text messages, phone calls, and email as authentication
+methods. Text messages and phone calls are susceptible to a SIM swap scam, which
+is when a malicious person contacts a mobile service provider to change the SIM
+which has phone calls and text messages routed to it. For more information on SIM
+swap scams, check out [the Wikipedia page](https://wikipedia.org/wiki/SIM_swap_scam)
+or [this Norton article](https://us.norton.com/blog/mobile/sim-swap-fraud).
+
+The best method to use is [FIDO2](https://fidoalliance.org/fido2/), also known as
+[WebAuthn](https://www.yubico.com/authentication-standards/webauthn/). FIDO2 uses
+physical security keys, such as [Yubico's YubiKey series](https://www.yubico.com/products/)
+or [Google's Titan keys](https://store.google.com/product/titan_security_key), or
+mobile devices that are secured. These devices make up phishing-resistant MFA. It
+gets this name because the token that is generated for MFA will not work with any
+site other than the site it was registered with. It's recommended to register at
+least two keys per site in case you lose one. Some, like Apple,
+[require at least two keys](https://support.apple.com/en-us/HT213154). The U.S.
+federal government requires phishing-resistant MFA, mostly through security keys,
+through [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
+NIST, the U.S. National Institute of Standards and Technology, is recommending phishing-resistant
+MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd).
+
+In the event that the site doesn't offer FIDO2 or you don't have a FIDO2-capable
+device, the other recommended method is TOTP, popularized by Google Authenticator.
+TOTP stands for time-based one-time password. Nowadays, there are countless apps
+that can generate TOTP, including [iOS/iPadOS' built-in authenticator](https://9to5mac.com/2022/03/07/use-ios-15-2fa-code-generator-plus-autofill-iphone/)
+(I personally only recommend if you only use iOS/iPadOS and Safari on macOS), [Authy](https://authy.com/)
+(a cross-platform synced authenticator), and [Google Authenticator](https://support.google.com/accounts/answer/1066447).
+I personally use [Authenticator Pro](https://play.google.com/store/apps/details?id=me.jmh.authenticatorpro)
+(an [open-source](https://github.com/jamie-mh/AuthenticatorPro) authenticator for
+Android) on my Android devices, and [OTP Auth](https://apps.apple.com/app/otp-auth/id659877384)
+on my iOS devices. Most password managers offer to store TOTP keys in their vaults
+for you, but that means that all your eggs are in one basket.
+
+I try to avoid proprietary MFA solutions like Symantec VIP, which a lot of U.S.
+financial institutions love[^3]. Instead, and only for those services, I use SMS
+MFA. One big problem with SMS MFA is if you travel, you don't necessarily have access
+to your texts. To prevent losing access to those services that use SMS, you could
+use a service like [Google Voice](https://voice.google.com) as the phone number
+for MFA codes.
+
+I help run [2FA Directory](https://2fa.directory), a directory of sites that support,
+and don't support, MFA. If you're ever curious about what MFA a service offers,
+check out our site. If it's not there, add it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
+
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
+[^3]: U.S. financial institutions, please follow [Vanguard](https://vanguard.com)'s example and support FIDO2!
