@@ -49,7 +49,7 @@ government accounts (e.g. Login.gov, Singpass, etc.), and your healthcare accoun
 (e.g. insurance, patient portals (like MyChart), etc.).
 
 Don't just take my word for it. Many government agencies, including, but certainly
-limited to, the [U.S. Cybersecurity and Infrastructure Security Agency (CISA)](https://www.cisa.gov/MFA),
+not limited to, the [U.S. Cybersecurity and Infrastructure Security Agency (CISA)](https://www.cisa.gov/MFA),
 the [UK National Cyber Security Centre](https://www.ncsc.gov.uk/guidance/setting-2-step-verification-2sv),
 and the [Australian Cyber Security Centre](https://www.cyber.gov.au/learn-basics/explore-basics/mfa),
 all recommend MFA.
@@ -94,9 +94,10 @@ to your texts. To prevent losing access to those services that use SMS, you coul
 use a service like [Google Voice](https://voice.google.com) as the phone number
 for MFA codes.
 
-I help run [2FA Directory](https://2fa.directory), a directory of sites that support,
-and don't support, MFA. If you're ever curious about what MFA a service offers,
-check out our site. If it's not there, add it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
+If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory),
+a directory of sites that support, and don't support, MFA. If it's not there, add
+it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
+Full disclosure: I am a maintainer of the site.
 
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
