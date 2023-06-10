@@ -23,7 +23,7 @@ is needed. Alternatively, if you use multiple platforms, or prefer not to use Ap
 offering, there's [Bitwarden](https://bitwarden.com/), [1Password](https://1password.com/),
 and [Dashlane](https://www.dashlane.com/) to name a few. Definitely don't use LastPass,
 their security has been well covered [in](https://www.theverge.com/2023/2/28/23618353/lastpass-security-breach-disclosure-password-vault-encryption-update)
-[the](https://www.forbes.com/sites/daveywinder/2023/03/03/why-you-should-stop-using-lastpass-after-new-hack-method-update/?sh=d8aa4d328fc9)
+[the](https://www.forbes.com/sites/daveywinder/2023/03/03/why-you-should-stop-using-lastpass-after-new-hack-method-update/)
 [media](https://arstechnica.com/information-technology/2023/02/lastpass-hackers-infected-employees-home-computer-and-stole-corporate-vault/).
 
 If you choose to use a third-party password manager, make sure to set a strong password
