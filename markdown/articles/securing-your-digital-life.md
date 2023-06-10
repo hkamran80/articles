@@ -44,7 +44,7 @@ can proceed. You should enable multi-factor authentication on all your accounts,
 especially for those accounts that secure PII, or personal Identifiable Information.
 Some key accounts that should absolutely be secured, even if you don't use MFA on
 any other service, include your financial accounts (including revenue agencies like
-the U.S. Internal Revenus Service, the Canada Revenue Agency, AFIP, etc.), your
+the U.S. Internal Revenue Service, the Canada Revenue Agency, AFIP, etc.), your
 government accounts (e.g. Login.gov, Singpass, etc.), and your healthcare accounts
 (e.g. insurance, patient portals (like MyChart), etc.).
 
