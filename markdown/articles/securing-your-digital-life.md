@@ -127,12 +127,12 @@ app or device linked to your account, remove it.
 In addition to checking what apps are linked to your account, make sure to review
 what devices are currently logged in to your account.
 
-| Platform | App Access                                                                                                     | Logged-in Devices                                                                                                                            |
-|----------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Apple    | [appleid.apple.com](https://appleid.apple.com/account/manage/section/security) (under Sign in with Apple)      | [appleid.apple.com/account/manage/section/devices](https://appleid.apple.com/account/manage/section/devices)                                 |
-| Facebook | [accountscenter.facebook.com/password_and_security](https://accountscenter.facebook.com/password_and_security) | [accountscenter.facebook.com/password_and_security/login_activity](https://accountscenter.facebook.com/password_and_security/login_activity) |
-| Google   | [myaccount.google.com/permissions](https://myaccount.google.com/permissions)                                   | [myaccount.google.com/device-activity](https://myaccount.google.com/device-activity)                                                         |
-| Twitter  | [twitter.com/settings/connected_apps](https://twitter.com/settings/connected_apps)                             | [twitter.com/settings/sessions](https://twitter.com/settings/sessions)                                                                       |
+| Platform | App Access                                                                                                   | Logged-in Devices                                                                                  |
+|----------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Apple    | [Sign-In and Security](https://appleid.apple.com/account/manage/section/security) (under Sign in with Apple) | [Devices](https://appleid.apple.com/account/manage/section/devices)                                |
+| Facebook | [Apps and Websites](https://www.facebook.com/settings?tab=applications)                                      | [Where you're logged in](https://accountscenter.facebook.com/password_and_security/login_activity) |
+| Google   | [Apps with access to your account](https://myaccount.google.com/permissions)                                 | [Your devices](https://myaccount.google.com/device-activity)                                       |
+| Twitter  | [Connected Apps](https://twitter.com/settings/connected_apps)                                                | [Sessions](https://twitter.com/settings/sessions)                                                  |
 
 ## Conclusion
 
