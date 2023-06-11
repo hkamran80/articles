@@ -147,5 +147,5 @@ Thank you for reading!
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
 [^3]: For more information, check out [Troy's post on how he verifies data breaches](https://www.troyhunt.com/heres-how-i-verify-data-breaches/) before putting them in HIBP
-[^4]: U.S. financial institutions, please follow [Vanguard](https://vanguard.com)'s example and support FIDO2!
+[^4]: U.S. financial institutions, please follow [Vanguard's example](https://investor.vanguard.com/security-center) and support FIDO2!
 [^5]: Full disclosure: I am a maintainer of the site
