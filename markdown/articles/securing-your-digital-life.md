@@ -139,7 +139,8 @@ what devices are currently logged in to your account.
 If you're in the [European Economic Area](https://wikipedia.org/wiki/European_Economic_Area),
 Canada, the U.S. states of California, Colorado, Utah, Virginia, or another area
 that has [comprehensive data privacy legislation](https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/magazine/beyond-gdpr-data-protection-around-world),
-you have a few rights. EEA residents are protected by [the General Data Protection Regulation (GDPR)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
+you have a few rights. EEA residents are protected by
+[the General Data Protection Regulation (GDPR)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
 Canadian residents are protected by
 [the Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/),
 California residents are covered by [the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA)](https://cppa.ca.gov/regulations/),
