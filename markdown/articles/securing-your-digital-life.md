@@ -134,6 +134,27 @@ what devices are currently logged in to your account.
 | Google   | [Apps with access to your account](https://myaccount.google.com/permissions)                                 | [Your devices](https://myaccount.google.com/device-activity)                                       |
 | Twitter  | [Connected Apps](https://twitter.com/settings/connected_apps)                                                | [Sessions](https://twitter.com/settings/sessions)                                                  |
 
+## Privacy Rights
+
+If you're in the [European Economic Area](https://wikipedia.org/wiki/European_Economic_Area),
+Canada, the U.S. states of California, Colorado, Utah, Virginia, or another area
+that has [comprehensive data privacy legislation](https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/magazine/beyond-gdpr-data-protection-around-world),
+you have a few rights. EEA residents are protected by [the General Data Protection Regulation (GDPR)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
+Canadian residents are protected by
+[the Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/),
+California residents are covered by [the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA)](https://cppa.ca.gov/regulations/),
+and so on, so forth. You have the right to know what personal information an entity[^7]
+collects on you, the right to delete personal information collected, the right to
+opt-out of the sale of your personal information, and the right to not be discriminated
+against for exercising your rights.
+
+A full list of rights can be found by clicking on the corresponding legislation
+from the following, non-exhaustive list of links: [GDPR (EEA)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
+[PIPEDA (Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/),
+[CCPA/CPRA (California)](https://oag.ca.gov/privacy/ccpa), [CPA (Colorado)](https://coag.gov/resources/colorado-privacy-act/),
+[UCPA (Utah)](https://usercentrics.com/knowledge-hub/utah-consumer-privacy-act-ucpa/#consumer-rights-under-the-utah-consumer-privacy-act),
+and [VCDPA (Virginia)](https://www.oag.state.va.us/consumer-protection/files/tips-and-info/Virginia-Consumer-Data-Protection-Act-Summary-2-2-23.pdf).
+
 ## Conclusion
 
 If you have any questions or need any help, feel free to contact me on
@@ -150,3 +171,4 @@ Thank you for reading!
 [^4]: PII is defined as "information that can be used to distinguish or trace an individual’s identity" (source: [U.S. General Services Administration](https://www.gsa.gov/reference/gsa-privacy-program/rules-and-policies-protecting-pii-privacy-act)). Some examples of PII include your full name, your national ID number/Social Security Number/your country's equivalent, financial account numbers (including credit and debit card numbers), address, phone number, and more. A more comprehensive list can be found on [Matomo Analytics's website](https://matomo.org/personally-identifiable-information-guide-list-of-pii-examples/).
 [^5]: U.S. financial institutions, please follow [Vanguard's example](https://investor.vanguard.com/security-center) and support FIDO2!
 [^6]: Full disclosure: I am a maintainer of the site
+[^7]: The definition of an entity depends on the legislation. Under the GDPR, entities refer to "a company or entity which processes personal data as part of the activities of one of its branches established in the EU, regardless of where the data is processed; or a company established outside the EU and is offering goods/services (paid or for free) or is monitoring the behaviour of individuals in the EU" (source: [Who does the data protection law apply to?](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/application-regulation/who-does-data-protection-law-apply)). Under the PIPEDA, entities are defined as "private-sector organizations across Canada that collect, use or disclose personal information in the course of a commercial activity" (source: [PIPEDA in brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/)). Under the CCPA/CPRA, an entity is defined as a for-profit business that meet any of the following: have a gross annual revenue of over $25 million; buy, sell, or share the personal information of 100,000 or more California residents, households, or devices; or derive 50% or more of their annual revenue from selling California residents’ personal information (source: [Cal Civ. Code § 1798.140(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.)).
