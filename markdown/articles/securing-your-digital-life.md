@@ -121,8 +121,8 @@ with Google, it might be allowing an app to access your Google Drive to store co
 Or with Twitter, an app may want the ability to view Tweets that you've posted and
 accounts you follow. It's a good practice to periodically go through your platform's
 security dashboards to review what apps have access to what. The table below contains
-links to the most common platform's dashboards. If you don't recognize an app or
-device linked to your account, remove it.
+links to the dashboards of the most common platforms. If you don't recognize an
+app or device linked to your account, remove it.
 
 In addition to checking what apps are linked to your account, make sure to review
 what devices are currently logged in to your account.
