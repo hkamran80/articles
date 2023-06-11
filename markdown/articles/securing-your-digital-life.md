@@ -98,6 +98,27 @@ If you're curious about what MFA options a service offers, check out [2FA Direct
 a directory of sites that support, and don't support, MFA. If it's not there, add
 it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 
+## Reviewing Account Access
+
+Have you ever been asked to sign in with Google, Twitter, Apple, Facebook, or whatever
+platform is available? When you do that, those platforms share some data. For example,
+with Google, it might be allowing an app to access your Google Drive to store configuration.
+Or with Twitter, an app may want the ability to view Tweets that you've posted and
+accounts you follow. It's a good practice to periodically go through your platform's
+security dashboards to review what apps have access to what. The table below contains
+links to the most common platform's dashboards. If you don't recognize an app or
+device linked to your account, remove it.
+
+In addition to checking what apps are linked to your account, make sure to review
+what devices are currently logged in to your account.
+
+| Platform | App Access                                                                                                     | Logged-in Devices                                                                                                                            |
+|----------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Apple    | [appleid.apple.com](https://appleid.apple.com/account/manage/section/security) (under Sign in with Apple)      | [appleid.apple.com](https://appleid.apple.com/account/manage/section/devices)                                                                |
+| Facebook | [accountscenter.facebook.com/password_and_security](https://accountscenter.facebook.com/password_and_security) | [accountscenter.facebook.com/password_and_security/login_activity](https://accountscenter.facebook.com/password_and_security/login_activity) |
+| Google   | [myaccount.google.com/permissions](https://myaccount.google.com/permissions)                                   | [myaccount.google.com/device-activity](https://myaccount.google.com/device-activity)                                                         |
+| Twitter  | [twitter.com/settings/connected_apps](https://twitter.com/settings/connected_apps)                             | [twitter.com/settings/sessions](https://twitter.com/settings/sessions)                                                                       |
+
 ## Conclusion
 
 If you have any questions or need any help, feel free to contact me on
