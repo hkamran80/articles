@@ -110,8 +110,8 @@ use a service like [Google Voice](https://voice.google.com) as the phone number
 for MFA codes.
 
 If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^5],
-a directory of sites that support, and don't support, MFA. If it's not there, add
-it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
+a directory of sites that support, and don't support, MFA. If a service is not there,
+add it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 
 ## Reviewing Account Access
 
