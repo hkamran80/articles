@@ -56,7 +56,7 @@ was leaked in a breach.
 Multi-factor authentication, also known as two-factor authentication, 2FA, or MFA,
 is where a user is required to enter two verification methods before authentication
 can proceed. You should enable multi-factor authentication on all your accounts,
-especially for those accounts that secure personal identifiable information (PII).
+especially for those accounts that secure personal identifiable information (PII)[^4].
 Some key accounts that should absolutely be secured, even if you don't use MFA on
 any other service, include your financial accounts (including revenue agencies like
 the U.S. Internal Revenue Service, the Canada Revenue Agency, AFIP, etc.), your
@@ -103,13 +103,13 @@ on my iOS devices. Most password managers offer to store TOTP keys in their vaul
 for you, but that means that all your eggs are in one basket.
 
 I try to avoid proprietary MFA solutions like Symantec VIP, which a lot of U.S.
-financial institutions love[^4]. Instead, and only for those services, I use SMS
+financial institutions love[^5]. Instead, and only for those services, I use SMS
 MFA. One big problem with SMS MFA is if you travel, you don't necessarily have access
 to your texts. To prevent losing access to those services that use SMS, you could
 use a service like [Google Voice](https://voice.google.com) as the phone number
 for MFA codes.
 
-If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^5],
+If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^6],
 a directory of sites that support, and don't support, MFA. If a service is not there,
 add it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 
@@ -147,5 +147,6 @@ Thank you for reading!
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
 [^3]: For more information, check out [Troy's post on how he verifies data breaches](https://www.troyhunt.com/heres-how-i-verify-data-breaches/) before putting them in HIBP
-[^4]: U.S. financial institutions, please follow [Vanguard's example](https://investor.vanguard.com/security-center) and support FIDO2!
-[^5]: Full disclosure: I am a maintainer of the site
+[^4]: PII is defined as "information that can be used to distinguish or trace an individual’s identity" (source: [U.S. General Services Administration](https://www.gsa.gov/reference/gsa-privacy-program/rules-and-policies-protecting-pii-privacy-act)). Some examples of PII include your full name, your national ID number/Social Security Number/your country's equivalent, financial account numbers (including credit and debit card numbers), address, phone number, and more. A more comprehensive list can be found on [Matomo Analytics's website](https://matomo.org/personally-identifiable-information-guide-list-of-pii-examples/).
+[^5]: U.S. financial institutions, please follow [Vanguard's example](https://investor.vanguard.com/security-center) and support FIDO2!
+[^6]: Full disclosure: I am a maintainer of the site
