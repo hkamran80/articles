@@ -36,6 +36,21 @@ the tool. I recommend at least 20 characters using a mix of numbers, uppercase a
 lowercase letters, and symbols (4+). Go through and change all your passwords to
 strengthen them.
 
+### Breach Alerts
+
+The number one rule when it comes to passwords is **do not reuse them**. Many services,
+including 500px, Adobe, Audi, Bitly, and [many others](https://haveibeenpwned.com/PwnedWebsites),
+have been breached, resulting in passwords, emails, and other sensitive information
+being stolen. A wonderful, free service called [Have I Been Pwned](https://haveibeenpwned.com/),
+created by [Troy Hunt](https://www.troyhunt.com/about/) and used by companies and
+[governments](https://www.troyhunt.com/tag/government/) around the world, shows
+users which of their accounts have been breached[^3], and can also inform them as
+soon as a breach is published. I highly recommend putting your emails into the service
+to check if any associated accounts have been breached, and if they have, change
+the passwords. The other thing I highly recommend is [signing up for HIBP notifications](https://haveibeenpwned.com/NotifyMe)
+on all your emails. This will allow you to know almost immediately if your account
+was leaked in a breach.
+
 ## Multi-factor Authentication
 
 Multi-factor authentication, also known as two-factor authentication, 2FA, or MFA,
@@ -88,13 +103,13 @@ on my iOS devices. Most password managers offer to store TOTP keys in their vaul
 for you, but that means that all your eggs are in one basket.
 
 I try to avoid proprietary MFA solutions like Symantec VIP, which a lot of U.S.
-financial institutions love[^3]. Instead, and only for those services, I use SMS
+financial institutions love[^4]. Instead, and only for those services, I use SMS
 MFA. One big problem with SMS MFA is if you travel, you don't necessarily have access
 to your texts. To prevent losing access to those services that use SMS, you could
 use a service like [Google Voice](https://voice.google.com) as the phone number
 for MFA codes.
 
-If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^4],
+If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^5],
 a directory of sites that support, and don't support, MFA. If it's not there, add
 it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 
@@ -114,7 +129,7 @@ what devices are currently logged in to your account.
 
 | Platform | App Access                                                                                                     | Logged-in Devices                                                                                                                            |
 |----------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Apple    | [appleid.apple.com](https://appleid.apple.com/account/manage/section/security) (under Sign in with Apple)      | [appleid.apple.com](https://appleid.apple.com/account/manage/section/devices)                                                                |
+| Apple    | [appleid.apple.com](https://appleid.apple.com/account/manage/section/security) (under Sign in with Apple)      | [appleid.apple.com/account/manage/section/devices](https://appleid.apple.com/account/manage/section/devices)                                 |
 | Facebook | [accountscenter.facebook.com/password_and_security](https://accountscenter.facebook.com/password_and_security) | [accountscenter.facebook.com/password_and_security/login_activity](https://accountscenter.facebook.com/password_and_security/login_activity) |
 | Google   | [myaccount.google.com/permissions](https://myaccount.google.com/permissions)                                   | [myaccount.google.com/device-activity](https://myaccount.google.com/device-activity)                                                         |
 | Twitter  | [twitter.com/settings/connected_apps](https://twitter.com/settings/connected_apps)                             | [twitter.com/settings/sessions](https://twitter.com/settings/sessions)                                                                       |
@@ -131,5 +146,6 @@ Thank you for reading!
 
 [^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
-[^3]: U.S. financial institutions, please follow [Vanguard](https://vanguard.com)'s example and support FIDO2!
-[^4]: Full disclosure: I am a maintainer of the site
+[^3]: For more information, check out [Troy's post on how he verifies data breaches](https://www.troyhunt.com/heres-how-i-verify-data-breaches/) before putting them in HIBP
+[^4]: U.S. financial institutions, please follow [Vanguard](https://vanguard.com)'s example and support FIDO2!
+[^5]: Full disclosure: I am a maintainer of the site
