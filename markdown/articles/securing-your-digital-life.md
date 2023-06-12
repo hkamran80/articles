@@ -167,7 +167,7 @@ If you have any improvements to any of my articles or notes, please
 
 Thank you for reading!
 
-[^1]: [Average number of characters for a password in the United States in 2021 (Statista)](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
+[^1]: [Average number of characters for a password in the United States in 2021 — Statista](https://www.statista.com/statistics/1305713/average-character-length-of-a-password-us/)
 [^2]: [Are Your Passwords in the Green? — Hive Systems](https://hivesystems.io/password)
 [^3]: For more information, check out [Troy's post on how he verifies data breaches](https://www.troyhunt.com/heres-how-i-verify-data-breaches/) before putting them in HIBP
 [^4]: PII is defined as "information that can be used to distinguish or trace an individual’s identity" (source: [U.S. General Services Administration](https://www.gsa.gov/reference/gsa-privacy-program/rules-and-policies-protecting-pii-privacy-act)). Some examples of PII include your full name, your national ID number/Social Security Number/your country's equivalent, financial account numbers (including credit and debit card numbers), address, phone number, and more. A more comprehensive list can be found on [Matomo Analytics's website](https://matomo.org/personally-identifiable-information-guide-list-of-pii-examples/).
