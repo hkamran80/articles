@@ -78,8 +78,8 @@ if (deletedMarkdown) {
             .split("/");
 
         paths.add(`/${type.slice(0, type.length - 1)}/${id}`);
+        paths.add(`/${type.slice(0, type.length - 1)}s`);
         paths.add("/");
-        paths.add("/articles");
 
         const oldWritings = JSON.parse(
             (await readFile("contents.old.json")).toString()
@@ -130,13 +130,13 @@ if (jsonChanges) {
 
             return revalidateList;
         })
-        .forEach((path) => {
-            if (Array.isArray(path)) {
-                for (let revalidatePath of path) {
+        .forEach((revalidation) => {
+            if (Array.isArray(revalidation)) {
+                for (let revalidatePath of revalidation) {
                     paths.add(revalidatePath);
                 }
             } else {
-                paths.add(path);
+                paths.add(revalidation);
             }
         });
 }
