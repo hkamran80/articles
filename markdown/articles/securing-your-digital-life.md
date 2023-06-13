@@ -33,8 +33,8 @@ that you can use to create a master password.
 No matter what password manager you use, the first step is to add all your existing
 passwords to it. Whenever you create a new account, generate a strong password using
 the tool. I recommend at least 20 characters using a mix of numbers, uppercase and
-lowercase letters, and symbols (4+). Go through and change all your passwords to
-strengthen them.
+lowercase letters, and four or more symbols. Go through and change all your passwords
+to strengthen them.
 
 ### Breach Alerts
 
@@ -116,8 +116,8 @@ add it by following [our contribution guide](https://github.com/2factorauth/twof
 
 ## Reviewing Account Access
 
-Have you ever been asked to sign in with Google, Twitter, Apple, Facebook, or whatever
-platform is available? When you do that, those platforms share some data. For example,
+Have you ever been asked to sign in with Google, Twitter, Apple, Facebook, or some
+other social platform? When you do that, those platforms share some data. For example,
 with Google, it might be allowing an app to access your Google Drive to store configuration[^7].
 Or with Twitter, an app may want the ability to view Tweets that you've posted and
 accounts you follow. It's a good practice to periodically go through your platform's
@@ -145,10 +145,10 @@ you have a few rights. EEA residents are protected by
 Canadian residents are protected by
 [the Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/),
 California residents are covered by [the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA)](https://cppa.ca.gov/regulations/),
-and so on, so forth. You have the right to know what personal information an entity[^8]
-collects on you, the right to delete personal information collected, the right to
-opt-out of the sale of your personal information, and the right to not be discriminated
-against for exercising your rights.
+and so on, so forth. These regulations give individuals the right to know what personal
+information an entity[^8] collects, the right to delete personal information collected,
+the right to opt-out of the sale of your personal information, and the right to not
+be discriminated against for exercising your rights.
 
 A full list of rights can be found by clicking on the corresponding legislation
 from the following, non-exhaustive list of links: [GDPR (EEA)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
