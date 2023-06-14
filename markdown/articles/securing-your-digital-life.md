@@ -91,9 +91,9 @@ NIST, the U.S. National Institute of Standards and Technology, is recommending p
 MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd).
 
 In the event that the site doesn't offer FIDO2 or you don't have a FIDO2-capable
-device, the other recommended method is time-based one-time password (TOTP), popularized
-by Google Authenticator. Nowadays, there are countless apps that can generate TOTP,
-including [iOS/iPadOS' built-in authenticator](https://9to5mac.com/2022/03/07/use-ios-15-2fa-code-generator-plus-autofill-iphone/)
+device, the other recommended method is [time-based one-time password (TOTP)](https://www.twilio.com/docs/glossary/totp),
+popularized by Google Authenticator. Nowadays, there are countless apps that can
+generate TOTP, including [iOS/iPadOS' built-in authenticator](https://9to5mac.com/2022/03/07/use-ios-15-2fa-code-generator-plus-autofill-iphone/)
 (I personally only recommend using it if you only use iOS/iPadOS and Safari on macOS),
 [Authy](https://authy.com/) (a cross-platform synced authenticator), and
 [Google Authenticator](https://support.google.com/accounts/answer/1066447). I personally
