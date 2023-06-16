@@ -155,7 +155,7 @@ the right to opt-out of the sale of your personal information, and the right to 
 be discriminated against for exercising your rights.
 
 A full list of rights can be found by clicking on the corresponding legislation
-from the following, non-exhaustive list of links: [GDPR (EEA)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
+from the following non-exhaustive list of links: [GDPR (EEA)](https://edps.europa.eu/data-protection/our-work/subjects/rights-individual),
 [PIPEDA (Canada)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/),
 [CCPA/CPRA (California)](https://oag.ca.gov/privacy/ccpa), [CPA (Colorado)](https://coag.gov/resources/colorado-privacy-act/),
 [UCPA (Utah)](https://usercentrics.com/knowledge-hub/utah-consumer-privacy-act-ucpa/#consumer-rights-under-the-utah-consumer-privacy-act),
