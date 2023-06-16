@@ -68,7 +68,7 @@ Don't just take my word for it. Many government agencies, including, but certain
 not limited to, the [U.S. Cybersecurity and Infrastructure Security Agency (CISA)](https://www.cisa.gov/MFA),
 the [UK National Cyber Security Centre](https://www.ncsc.gov.uk/guidance/setting-2-step-verification-2sv),
 and the [Australian Cyber Security Centre](https://www.cyber.gov.au/learn-basics/explore-basics/mfa),
-all recommend MFA.
+recommend MFA.
 
 When you enable MFA, try to avoid text messages, phone calls, and email as authentication
 methods. Text messages and phone calls are susceptible to a SIM swap scam, which
