@@ -7,6 +7,14 @@ on:
         paths:
             - "markdown/**"
 
+    pull_request:
+        branches:
+            - main
+        types:
+            - opened
+            - labeled
+            - closed
+
     workflow_dispatch:
 
 env:
@@ -15,7 +23,7 @@ env:
 jobs:
     revalidate:
         runs-on: ubuntu-latest
-        if: github.repository == 'hkamran80/articles'
+        if: github.repository == 'hkamran80/articles' && (contains(github.event.pull_request.labels.*.name, 'new article') || contains(github.event.pull_request.labels.*.name, 'update article') || contains(github.event.pull_request.labels.*.name, 'new note') || contains(github.event.pull_request.labels.*.name, 'update note'))
         steps:
             - name: Checkout Branch
               uses: actions/checkout@v3
@@ -36,3 +44,27 @@ jobs:
 
             - name: Revalidate
               run: node scripts/update.mjs
+
+    publish-to-dev:
+        runs-on: ubuntu-latest
+        if: github.repository == 'hkamran80/articles' && contains(github.event.pull_request.labels.*.name, 'new article') && github.event.pull_request.merged
+        steps:
+            - name: Checkout Branch
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 1
+
+            - name: Install jd
+              uses: supplypike/setup-bin@v3
+              with:
+                  uri: "https://github.com/josephburnett/jd/releases/download/v1.7.1/jd-amd64-linux"
+                  name: jd
+                  version: "1.7.1"
+
+            - name: Install Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 20
+
+            - name: Revalidate
+              run: node scripts/dev_to.mjs
