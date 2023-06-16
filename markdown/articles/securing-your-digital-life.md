@@ -89,6 +89,9 @@ federal government requires phishing-resistant MFA, mostly through security keys
 through [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
 The U.S. National Institute of Standards and Technology (NIST) is recommending phishing-resistant
 MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd)[^6].
+Many companies, including [Cloudflare](https://blog.cloudflare.com/how-cloudflare-implemented-fido2-and-zero-trust)
+and [Figma](https://twitter.com/frgx/status/1379504541666701313), have mandated
+FIDO2 security keys because they are phishing-resistant.
 
 In the event that the site doesn't offer FIDO2 or you don't have a FIDO2-capable
 device, the other recommended method is [time-based one-time password (TOTP)](https://www.twilio.com/docs/glossary/totp),
