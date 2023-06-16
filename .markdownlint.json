@@ -1,4 +1,7 @@
 {
+    "MD013": {
+        "tables": false
+    },
     "MD036": false,
     "MD041": false
 }
