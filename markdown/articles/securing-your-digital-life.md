@@ -84,8 +84,8 @@ or [Google's Titan keys](https://store.google.com/product/titan_security_key), o
 [mobile devices](https://support.google.com/accounts/answer/9289445). These
 devices make up phishing-resistant MFA. This name was given because the token that
 is generated for MFA will not work with any site other than the site it was registered
-with. It's recommended to register at least two keys per site in case you lose one.
-Some, like Apple, [require at least two keys](https://support.apple.com/en-us/HT213154).
+with. It's recommended to register at least two keys per account in case you lose
+one. Some, like Apple, [require at least two keys](https://support.apple.com/en-us/HT213154).
 The U.S. federal government requires phishing-resistant MFA through
 [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
 The U.S. National Institute of Standards and Technology (NIST) is recommending phishing-resistant
