@@ -39,19 +39,19 @@ export const slugify = (string) =>
 
 const markdownChanges = (
     await exec(
-        "git diff --name-only --diff-filter=ACMRT ${{ github.sha }}^1 ${{ github.sha }} | grep .md$ | grep '^markdown/' | xargs"
+        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`
     )
 ).stdout;
 
 const deletedMarkdown = (
     await exec(
-        "git diff --name-only --diff-filter=D ${{ github.sha }}^1 ${{ github.sha }} | grep .md$ | grep '^markdown/' | xargs"
+        `git diff --name-only --diff-filter=D ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`
     )
 ).stdout;
 
 const jsonChanges = (
     await exec(
-        "git diff --name-only --diff-filter=ACMRT ${{ github.sha }}^1 ${{ github.sha }} | grep .json$ | xargs"
+        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .json$ | xargs`
     )
 ).stdout;
 
@@ -69,7 +69,7 @@ if (markdownChanges) {
 
 if (deletedMarkdown) {
     await exec(
-        "git show ${{ github.sha }}^1:markdown/contents.json > contents.old.json"
+        `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json > contents.old.json`
     );
 
     for (let file of deletedMarkdown.trim().split("\n")) {
@@ -94,7 +94,7 @@ if (jsonChanges) {
     const changes = JSON.parse(
         (
             await execIgnoreErrors(
-                "git show ${{ github.sha }}^1:markdown/contents.json | jd -f patch markdown/contents.json"
+                `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json | jd -f patch markdown/contents.json`
             )
         ).stdout
     );
@@ -151,5 +151,5 @@ const request = await fetch(
     }
 );
 
-console.log(request.status)
-console.log(await request.json())
+console.log(request.status);
+console.log(await request.json());
