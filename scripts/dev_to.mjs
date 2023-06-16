@@ -1,5 +1,9 @@
+import { exec as cpExec } from "child_process";
+import { promisify } from "util";
 import { readFile } from "fs/promises";
 import writings from "../markdown/contents.json" assert { type: "json" };
+
+const exec = promisify(cpExec);
 
 /**
  * Merge the paragraphs of a Markdown file
@@ -72,3 +76,39 @@ canonical_url: https://hkamran.com/article/${postId}
 cover_image: https://assets.hkamran.com/graphics/article/${postId}
 ---`;
 };
+
+const newFiles = (
+    await exec(
+        "git diff --name-only --diff-filter=A ${{ github.sha }}^1 ${{ github.sha }} | grep .md$ | grep '^markdown/' | xargs"
+    )
+).stdout;
+
+if (newFiles) {
+    for (let file of newFiles.trim().split("\n")) {
+        const [type, id] = file
+            .replace(/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))/g, "")
+            .split("/");
+
+        const frontMatter = generateFrontMatter(postId, type);
+        const body = await mergeParagraphs(postId, type);
+
+        const content = `${frontMatter}\n\n${body}`;
+
+        console.log(`Uploading ${id}...`);
+
+        const request = await fetch("https://dev.to/api/articles", {
+            method: "POST",
+            headers: new Headers({ "api-key": process.env.DEV_API_KEY }),
+            body: JSON.stringify({ article: { body_markdown: content } }),
+        });
+
+        console.log(request.status);
+        if (request.ok) {
+            console.log(`Uploaded ${id}!`);
+        } else {
+            console.error(`Error uploading ${id}.`);
+        }
+    }
+} else {
+    console.log("No files to upload.")
+}
