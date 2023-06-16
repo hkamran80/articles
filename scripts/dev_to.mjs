@@ -83,7 +83,7 @@ const newFiles = (
     )
 ).stdout;
 
-if (newFiles) {
+if (newFiles.trim().replace("\n", "") !== "") {
     for (let file of newFiles.trim().split("\n")) {
         const [type, id] = file
             .replace(/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))/g, "")
