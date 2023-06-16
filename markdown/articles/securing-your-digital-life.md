@@ -55,7 +55,7 @@ leaked in a breach.
 ## Multi-factor Authentication
 
 Multi-factor authentication, also known as two-factor authentication, 2FA, or MFA,
-is where a user is required to enter two verification methods before authentication
+is where a user is required to enter two or more verification methods before authentication
 can proceed. You should enable multi-factor authentication on all your accounts,
 especially for those accounts that secure personal identifiable information (PII)[^4].
 Some key accounts that should absolutely be secured, even if you don't use MFA on
