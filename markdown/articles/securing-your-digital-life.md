@@ -81,13 +81,13 @@ The best method to use is [FIDO2](https://fidoalliance.org/fido2/), also known a
 [WebAuthn](https://www.yubico.com/authentication-standards/webauthn/). FIDO2 uses
 physical security keys, such as [Yubico's YubiKey series](https://www.yubico.com/products/)
 or [Google's Titan keys](https://store.google.com/product/titan_security_key), or
-mobile devices that are secured. These devices make up phishing-resistant MFA. It
-gets this name because the token that is generated for MFA will not work with any
-site other than the site it was registered with. It's recommended to register at
-least two keys per site in case you lose one. Some, like Apple,
-[require at least two keys](https://support.apple.com/en-us/HT213154). The U.S.
-federal government requires phishing-resistant MFA, mostly through security keys,
-through [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
+[select mobile devices](https://support.google.com/accounts/answer/9289445). These
+devices make up phishing-resistant MFA. It gets this name because the token that
+is generated for MFA will not work with any site other than the site it was registered
+with. It's recommended to register at least two keys per site in case you lose one.
+Some, like Apple, [require at least two keys](https://support.apple.com/en-us/HT213154).
+The U.S. federal government requires phishing-resistant MFA, mostly through security
+keys, through [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
 The U.S. National Institute of Standards and Technology (NIST) is recommending phishing-resistant
 MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd)[^6].
 Many companies, including [Cloudflare](https://blog.cloudflare.com/how-cloudflare-implemented-fido2-and-zero-trust)
