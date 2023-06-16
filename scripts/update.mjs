@@ -51,7 +51,7 @@ const deletedMarkdown = (
 
 const jsonChanges = (
     await exec(
-        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .json$ | xargs`
+        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .json$ | grep '^markdown/' | xargs`
     )
 ).stdout;
 
@@ -64,7 +64,7 @@ console.log(jsonChanges);
 
 const paths = new Set();
 
-if (markdownChanges) {
+if (markdownChanges.trim().replace("\n", "") !== "") {
     for (let file of markdownChanges.trim().split("\n")) {
         const [type, id] = file
             .replace(/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))/g, "")
@@ -74,7 +74,7 @@ if (markdownChanges) {
     }
 }
 
-if (deletedMarkdown) {
+if (deletedMarkdown.trim().replace("\n", "") !== "") {
     await exec(
         `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json > contents.old.json`
     );
@@ -102,7 +102,7 @@ if (deletedMarkdown) {
     }
 }
 
-if (jsonChanges) {
+if (jsonChanges.trim().replace("\n", "") !== "") {
     const changes = JSON.parse(
         (
             await execIgnoreErrors(
