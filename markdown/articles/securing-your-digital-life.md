@@ -41,15 +41,16 @@ them by changing your passwords.
 The number one rule when it comes to passwords is **do not reuse them**. Many services,
 including 500px, Adobe, Audi, Bitly, and [many others](https://haveibeenpwned.com/PwnedWebsites),
 have been breached, resulting in passwords, emails, and other sensitive information
-being stolen. A wonderful, free service called [Have I Been Pwned](https://haveibeenpwned.com/),
-created by [Troy Hunt](https://www.troyhunt.com/about/) and used by companies and
-[governments](https://www.troyhunt.com/tag/government/) around the world, shows
-users which of their accounts have been breached[^3], and can also inform them as
-soon as a breach is published. I highly recommend putting your emails into the service
-to check if any associated accounts have been breached, and if they have, change
-the passwords. The other thing I highly recommend is [signing up for HIBP notifications](https://haveibeenpwned.com/NotifyMe)
-on all your emails. This will allow you to know almost immediately if your account
-was leaked in a breach.
+being stolen. A wonderful, free service called [Have I Been Pwned](https://haveibeenpwned.com/)
+(HIBP), created by security researcher [Troy Hunt](https://www.troyhunt.com/about/)
+and used by companies and [governments](https://www.troyhunt.com/tag/government/)
+around the world, shows users which of their accounts have been breached[^3], and
+can also inform them as soon as a breach is published. I highly recommend putting
+your emails into the service to check if any associated accounts have been breached,
+and if they have, change the passwords. The other thing I highly recommend is
+[signing up for HIBP notifications](https://haveibeenpwned.com/NotifyMe) on all
+your emails. This will allow you to know almost immediately if your account was
+leaked in a breach.
 
 ## Multi-factor Authentication
 
