@@ -81,9 +81,14 @@ if (deletedMarkdown) {
         paths.add(`/${type.slice(0, type.length - 1)}s`);
         paths.add("/");
 
+        console.debug(type, id);
+
         const oldWritings = JSON.parse(
             (await readFile("contents.old.json")).toString()
         );
+
+        console.debug(oldWritings);
+
         oldWritings[type]
             .find(({ id: writingId }) => writingId === id)
             .tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
