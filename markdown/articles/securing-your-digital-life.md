@@ -87,7 +87,7 @@ least two keys per site in case you lose one. Some, like Apple,
 [require at least two keys](https://support.apple.com/en-us/HT213154). The U.S.
 federal government requires phishing-resistant MFA, mostly through security keys,
 through [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
-NIST, the U.S. National Institute of Standards and Technology, is recommending phishing-resistant
+The U.S. National Institute of Standards and Technology (NIST) is recommending phishing-resistant
 MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd)[^6].
 
 In the event that the site doesn't offer FIDO2 or you don't have a FIDO2-capable
