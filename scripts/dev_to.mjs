@@ -79,7 +79,7 @@ cover_image: https://assets.hkamran.com/graphics/article/${postId}
 
 const newFiles = (
     await exec(
-        "git diff --name-only --diff-filter=A ${{ github.sha }}^1 ${{ github.sha }} | grep .md$ | grep '^markdown/' | xargs"
+        `git diff --name-only --diff-filter=A ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`
     )
 ).stdout;
 
@@ -89,8 +89,8 @@ if (newFiles) {
             .replace(/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))/g, "")
             .split("/");
 
-        const frontMatter = generateFrontMatter(postId, type);
-        const body = await mergeParagraphs(postId, type);
+        const frontMatter = generateFrontMatter(id, type);
+        const body = await mergeParagraphs(id, type);
 
         const content = `${frontMatter}\n\n${body}`;
 
@@ -110,5 +110,5 @@ if (newFiles) {
         }
     }
 } else {
-    console.log("No files to upload.")
+    console.log("No files to upload.");
 }
