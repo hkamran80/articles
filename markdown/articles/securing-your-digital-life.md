@@ -33,8 +33,8 @@ that you can use to create a master password.
 No matter what password manager you use, the first step is to add all your existing
 passwords to it. Whenever you create a new account, generate a strong password using
 the tool. I recommend at least 20 characters using a mix of numbers, uppercase and
-lowercase letters, and four or more symbols. Go through and change all your passwords
-to strengthen them.
+lowercase letters, and four or more symbols. Go through all your passwords and strengthen
+them by changing your passwords.
 
 ### Breach Alerts
 
