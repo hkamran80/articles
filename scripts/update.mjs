@@ -55,6 +55,13 @@ const jsonChanges = (
     )
 ).stdout;
 
+console.log("MD");
+console.log(markdownChanges);
+console.log("DEL");
+console.log(deletedMarkdown);
+console.log("JSON");
+console.log(jsonChanges);
+
 const paths = new Set();
 
 if (markdownChanges) {
