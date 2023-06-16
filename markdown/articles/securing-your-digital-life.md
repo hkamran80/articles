@@ -88,7 +88,7 @@ least two keys per site in case you lose one. Some, like Apple,
 federal government requires phishing-resistant MFA, mostly through security keys,
 through [the Federal Zero Trust Strategy](https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf#page=4).
 NIST, the U.S. National Institute of Standards and Technology, is recommending phishing-resistant
-MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd).
+MFA through the [draft version of SP 800-63-4 (Digital Identity Guidelines)](https://doi.org/10.6028/NIST.SP.800-63-4.ipd)[^6].
 
 In the event that the site doesn't offer FIDO2 or you don't have a FIDO2-capable
 device, the other recommended method is [time-based one-time password (TOTP)](https://www.twilio.com/docs/glossary/totp),
@@ -110,7 +110,7 @@ to your texts. To prevent losing access to those services that use SMS, you coul
 use a service like [Google Voice](https://voice.google.com) as the phone number
 for MFA codes.
 
-If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^6],
+If you're curious about what MFA options a service offers, check out [2FA Directory](https://2fa.directory)[^7],
 a directory of sites that support, and don't support, MFA. If a service is not there,
 add it by following [our contribution guide](https://github.com/2factorauth/twofactorauth/blob/master/CONTRIBUTING.md).
 
@@ -118,7 +118,7 @@ add it by following [our contribution guide](https://github.com/2factorauth/twof
 
 Have you ever been asked to sign in with Google, Twitter, Apple, Facebook, or some
 other social platform? When you do that, those platforms share some data. For example,
-with Google, it might be allowing an app to access your Google Drive to store configuration[^7].
+with Google, it might be allowing an app to access your Google Drive to store configuration[^8].
 Or with Twitter, an app may want the ability to view Tweets that you've posted and
 accounts you follow. It's a good practice to periodically go through your platform's
 security dashboards to review what apps have access to what. The table below contains
@@ -146,7 +146,7 @@ Canadian residents are protected by
 [the Personal Information Protection and Electronic Documents Act (PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/),
 California residents are covered by [the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA)](https://cppa.ca.gov/regulations/),
 and so on, so forth. These regulations give individuals the right to know what personal
-information an entity[^8] collects, the right to delete personal information collected,
+information an entity[^9] collects, the right to delete personal information collected,
 the right to opt-out of the sale of your personal information, and the right to not
 be discriminated against for exercising your rights.
 
@@ -172,6 +172,7 @@ Thank you for reading!
 [^3]: For more information, check out [Troy's post on how he verifies data breaches](https://www.troyhunt.com/heres-how-i-verify-data-breaches/) before putting them in HIBP
 [^4]: PII is defined as "information that can be used to distinguish or trace an individual’s identity" (source: [U.S. General Services Administration](https://www.gsa.gov/reference/gsa-privacy-program/rules-and-policies-protecting-pii-privacy-act)). Some examples of PII include your full name, your national ID number/Social Security Number/your country's equivalent, financial account numbers (including credit and debit card numbers), address, phone number, and more. A more comprehensive list can be found on [Matomo Analytics's website](https://matomo.org/personally-identifiable-information-guide-list-of-pii-examples/).
 [^5]: U.S. financial institutions, please follow [Vanguard's example](https://investor.vanguard.com/security-center) and support FIDO2!
-[^6]: Full disclosure: I am a maintainer of the site
-[^7]: If an app is asking to access your entire Google Drive, check if it really needs that permission. For example, a game requesting that permission probably doesn't need that, and is using it for promotional or other purposes. Google offers developers a scoped permission that limits an app's access to a dedicated folder created just for them in your Google Drive. You might see this permission as "View and manage its own configuration in your Google Drive", or something similar.
-[^8]: The definition of an entity depends on the legislation. For example, under the GDPR, entities refer to "a company or entity which processes personal data as part of the activities of one of its branches established in the EU, regardless of where the data is processed; or a company established outside the EU and is offering goods/services (paid or for free) or is monitoring the behaviour of individuals in the EU" (source: [Who does the data protection law apply to?](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/application-regulation/who-does-data-protection-law-apply)). For another example, under the PIPEDA, entities are defined as "private-sector organizations across Canada that collect, use or disclose personal information in the course of a commercial activity" (source: [PIPEDA in brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/)). For one last example, under the CCPA/CPRA, an entity is defined as a for-profit business that meets any of the following: have a gross annual revenue of over $25 million; buy, sell, or share the personal information of 100,000 or more California residents, households, or devices; or derive 50% or more of their annual revenue from selling California residents’ personal information (source: [Cal Civ. Code § 1798.140(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.)).
+[^6]: NIST's Digital Identity Guidelines provides technical requirements for U.S. federal agencies implementing account services (source: [NIST](https://www.nist.gov/special-publication-800-63)). While intended for federal agencies, many companies follow the guidelines or use them as a guideline.
+[^7]: Full disclosure: I am a maintainer of the site
+[^8]: If an app is asking to access your entire Google Drive, check if it really needs that permission. For example, a game requesting that permission probably doesn't need that, and is using it for promotional or other purposes. Google offers developers a scoped permission that limits an app's access to a dedicated folder created just for them in your Google Drive. You might see this permission as "View and manage its own configuration in your Google Drive", or something similar.
+[^9]: The definition of an entity depends on the legislation. For example, under the GDPR, entities refer to "a company or entity which processes personal data as part of the activities of one of its branches established in the EU, regardless of where the data is processed; or a company established outside the EU and is offering goods/services (paid or for free) or is monitoring the behaviour of individuals in the EU" (source: [Who does the data protection law apply to?](https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/application-regulation/who-does-data-protection-law-apply)). For another example, under the PIPEDA, entities are defined as "private-sector organizations across Canada that collect, use or disclose personal information in the course of a commercial activity" (source: [PIPEDA in brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/)). For one last example, under the CCPA/CPRA, an entity is defined as a for-profit business that meets any of the following: have a gross annual revenue of over $25 million; buy, sell, or share the personal information of 100,000 or more California residents, households, or devices; or derive 50% or more of their annual revenue from selling California residents’ personal information (source: [Cal Civ. Code § 1798.140(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.)).
