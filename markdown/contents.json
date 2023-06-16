@@ -115,10 +115,9 @@
             "id": "securing-your-digital-life",
             "title": "Securing Your Digital Life",
             "description": "Keep your digital life safe by employing a few key principles",
-            "tags": ["Security"],
-            "published": "",
-            "filename": "securing-your-digital-life",
-            "branchName": "article/securing-your-digital-life"
+            "tags": ["Security", "Guide"],
+            "published": "2023-06-15",
+            "filename": "2023-06-15-securing-your-digital-life"
         }
     ],
     "notes": [
