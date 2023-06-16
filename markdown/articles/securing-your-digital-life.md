@@ -81,7 +81,7 @@ The best method to use is [FIDO2](https://fidoalliance.org/fido2/), also known a
 [WebAuthn](https://www.yubico.com/authentication-standards/webauthn/). FIDO2 uses
 physical security keys, such as [Yubico's YubiKey series](https://www.yubico.com/products/)
 or [Google's Titan keys](https://store.google.com/product/titan_security_key), or
-[select mobile devices](https://support.google.com/accounts/answer/9289445). These
+[mobile devices](https://support.google.com/accounts/answer/9289445). These
 devices make up phishing-resistant MFA. This name was given because the token that
 is generated for MFA will not work with any site other than the site it was registered
 with. It's recommended to register at least two keys per site in case you lose one.
