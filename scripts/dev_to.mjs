@@ -63,7 +63,7 @@ const excludedTags = ["Development", "Google Docs"];
  * @returns {string} The front matter for the given post
  */
 const generateFrontMatter = (postId, type) => {
-    const { title, description, tags } = writings[`${type}s`].find(
+    const { title, description, tags } = writings[type].find(
         ({ id }) => id === postId
     );
 
@@ -90,7 +90,7 @@ if (newFiles.trim().replace("\n", "") !== "") {
             .split("/");
 
         const frontMatter = generateFrontMatter(id, type);
-        const body = await mergeParagraphs(id, type);
+        const body = await mergeParagraphs(id, type.slice(0, type.length - 1));
 
         const content = `${frontMatter}\n\n${body}`;
 
@@ -98,7 +98,10 @@ if (newFiles.trim().replace("\n", "") !== "") {
 
         const request = await fetch("https://dev.to/api/articles", {
             method: "POST",
-            headers: new Headers({ "api-key": process.env.DEV_API_KEY }),
+            headers: new Headers({
+                "api-key": process.env.DEV_API_KEY,
+                "Content-Type": "application/json",
+            }),
             body: JSON.stringify({ article: { body_markdown: content } }),
         });
 
@@ -107,6 +110,7 @@ if (newFiles.trim().replace("\n", "") !== "") {
             console.log(`Uploaded ${id}!`);
         } else {
             console.error(`Error uploading ${id}.`);
+            console.error(await request.json());
         }
     }
 } else {
