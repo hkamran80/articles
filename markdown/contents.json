@@ -118,15 +118,6 @@
             "tags": ["Security", "Guide"],
             "published": "2023-06-15",
             "filename": "2023-06-15-securing-your-digital-life"
-        },
-        {
-            "id": "cloudflare-remote-access-home-assistant",
-            "title": "Remotely Access Your Home Assistant Instance Securely",
-            "description": "Connect to your Home Assistant instance from outside your local network",
-            "tags": ["Home Assistant","Security","Guide","Cloudflare"],
-            "published": "",
-            "filename": "cloudflare-remote-access-home-assistant",
-            "branchName": "article/cloudflare-remote-access-home-assistant"
         }
     ],
     "notes": [
