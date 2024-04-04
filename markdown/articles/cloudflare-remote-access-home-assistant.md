@@ -1,7 +1,7 @@
 If you want to access your Home Assistant instance outside your local network, you
 have a few options. You could try port-forwarding port 8123 or whatever port you
-use, expose Nginx or Traefik and use that as a proxy, or you could sign up for Nabu
-Casa's subscription service. But what about Cloudflare Tunnels?
+use, expose your reverse proxy, or you could sign up for Nabu Casa's subscription
+service. But what about Cloudflare Tunnels?
 
 ## Prerequisites
 
@@ -95,7 +95,8 @@ offering.
 
 > [!NOTE]  
 > The iOS companion app does not support mTLS. See the discussion in [#1788](https://github.com/home-assistant/iOS/discussions/1788)
-> and the comment from frenck (one of the Home Assistant maintainers) on [PR #2144](https://github.com/home-assistant/iOS/pull/2144#issuecomment-1992395096)
+> and the comment from Franck Nijhof (one of the Home Assistant maintainers) on
+> [PR #2144](https://github.com/home-assistant/iOS/pull/2144#issuecomment-1992395096)
 > for more information.
 
 To get started, one change needs to be made to the tunnel configuration. Go to Access
