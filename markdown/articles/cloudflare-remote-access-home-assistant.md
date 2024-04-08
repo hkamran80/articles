@@ -14,8 +14,10 @@ Before we begin, there are two things you'll need.
 
 ### Create the tunnel
 
-First, connect the tunnel from your server to Cloudflare. Tf you have not already done so, create a new tunnel in the [Zero Trust dashboard](https://one.dash.cloudflare.com)
-by going to Networks > Tunnels. Give your tunnel a name that means something to you (only you will be able to see it in this dashboard). Next, select how you're setting
+First, connect the tunnel from your server to Cloudflare. If you have not already
+done so, create a new tunnel in the [Zero Trust dashboard](https://one.dash.cloudflare.com)
+by going to Networks > Tunnels. Give your tunnel a name that means something to you
+(only you will be able to see it in this dashboard). Next, select how you're setting
 up the tunnel. This guide assumes you are using the Docker method with Compose.
 Copy the `docker run` command — we will need it in a second. This is the important
 part: routing traffic. Enter the domain and subdomain, then select the type of service.
@@ -110,8 +112,8 @@ Next, go to the main Cloudflare dashboard and open the [Client Certificates page
 to "RSA (2048)." I left the certificate validity at 10 years. Then create the certificate.
 
 Ensure the key format is `PEM`, then copy the certificate into a file called `cf-client.pem`,
-and the private key into `cf-client.key`. You can change these filenames, but I recommend keeping
-the extensions. **Make sure you make a backup!** as you will not be
+and the private key into `cf-client.key`. You can change these filenames, but I recommend
+keeping the extensions. **Make sure you make a backup** as you will not be
 able to see this certificate again. Under the "Hosts" header, click the "Edit" button
 next to "None," then type in the new URL you created for the tunnel, e.g.
 `ha-mobile.yourdomain.com`. Click "Save." This ensures that the subdomain can be
