@@ -28,8 +28,8 @@ your container's `network_mode` is `host`. Therefore, the service URL is `127.0.
 ### Connect the tunnel
 
 In your `docker-compose.yml` or `compose.yml` file that you are using for Home Assistant,
-add a new container for Cloudflare. Make sure to replace `[your token here]` with
-the token from the `docker run` command you copied earlier.
+add a new service for the tunnel connector. Make sure to replace `[your token here]`
+with the token from the `docker run` command you copied earlier.
 
 ```yaml
 tunnel:
