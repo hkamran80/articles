@@ -14,11 +14,11 @@ Before we begin, there are two things you'll need.
 
 ### Create the tunnel
 
-The first step is to connect the tunnel from your server to Cloudflare. Create a
-new tunnel, if you have not already done so, in the [Zero Trust dashboard](https://one.dash.cloudflare.com)
-by going to Networks > Tunnels. Give your tunnel a name that means something to you.
-You will be the only one to see it in this dashboard. Next, select how you're setting
-up the tunnel. This guide will assume you are using the Docker method with Compose.
+First, connect the tunnel from your server to Cloudflare. If you have not already
+done so, create a new tunnel in the [Zero Trust dashboard](https://one.dash.cloudflare.com)
+by going to Networks > Tunnels. Give your tunnel a name that means something to you
+(only you will be able to see it in this dashboard). Next, select how you're setting
+up the tunnel. This guide assumes you are using the Docker method with Compose.
 Copy the `docker run` command — we will need it in a second. This is the important
 part: routing traffic. Enter the domain and subdomain, then select the type of service.
 Since this is for Home Assistant, set the type to `HTTP`. Assuming that you followed
@@ -44,19 +44,19 @@ tunnel:
 ```
 
 Once the Compose file has been updated, run `docker compose up -d` or the equivalent
-in whatever container system is running on your system. This will pull the `cloudflared`
-image then establish a tunnel to Cloudflare. If all is well, you should be able
+in whatever container system is running on your system. This will pull the `cloudflared`[^1]
+image and then establish a tunnel to Cloudflare. If all is well, you should be able
 to reload the Zero Trust dashboard and see that the tunnel status is "healthy". Try
 visiting your site in a new tab and confirm it works.
 
 ## Secure the tunnel
 
 At this point, your tunnel is set up and you can use Home Assistant from outside
-your network, but this is very insecure.
+your network, but right now it is very insecure.
 
 There are two parts to this step. Part one allows connections from any browser or
 device, as long as it is not the mobile apps. Part two allows connections exclusively
-from the mobile apps.[^1] For the best experience, follow both parts.
+from the mobile apps.[^2] For the best experience, follow both parts.
 
 ### Part One: Cloudflare Access
 
@@ -83,7 +83,7 @@ now secured. Try visiting your site again from your normal browser window and fr
 a private window.
 
 The downside to using Access is that the Home Assistant mobile apps cannot handle
-it right now[^2], but there is another way.
+it right now[^3], but there is another way.
 
 ### Part Two: mTLS Certificates
 
@@ -107,13 +107,13 @@ the same domain and subdomain as the main hostname with `-mobile` added to the s
 For example, if the main subdomain is `ha`, then use `ha-mobile` as the subdomain
 for this hostname.
 
-Next, go to the main Cloudflare dashboard and open [the Client Certificates page](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/client-certificates)
+Next, go to the main Cloudflare dashboard and open the [Client Certificates page](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/client-certificates)
 (under SSL/TLS). Click "Create Certificate" and ensure the private key type is set
 to "RSA (2048)". I left the certificate validity at 10 years. Then create the certificate.
 
 Ensure the key format is `PEM`, then copy the certificate into a file called `cf-client.pem`,
 and the private key into `cf-client.key`. You can change these filenames, but I recommend
-against changing the extensions. **Make sure you make a backup!** You will not be
+keeping the extensions. **Make sure you make a backup** as you will not be
 able to see this certificate again. Under the "Hosts" header, click the "Edit" button
 next to "None", then type in the new URL you created for the tunnel, e.g.
 `ha-mobile.yourdomain.com`. Click "Save". This ensures that the subdomain can be
@@ -140,7 +140,7 @@ and ready for use!
 
 Open the Home Assistant app and set your external URL (the "Home Assistant URL")
 to the URL you set up for mTLS authentication. If you are connected to your local
-network, disconnect ant test it. You should now be able to use Home Assistant outside
+network, disconnect and test it. You should now be able to use Home Assistant outside
 your local network!
 
 ## Conclusion
@@ -152,6 +152,8 @@ or leave a comment.
 If you have any improvements to any of my articles or notes, please
 [submit a pull request](https://github.com/hkamran80/articles#contributions).
 
-[^1]: Part two has only been tested on Android, and this guide reflects that.
+[^1]: The name `cloudflared` comes from the Unix tradition of naming servers with a "-d" suffix standing for "daemon". (original text from [Cloudflare](https://blog.cloudflare.com/workerd-open-source-workers-runtime))
 
-[^2]: The Home Assistant maintainers have rejected all attempts to add additional authentication methods to the companion app, as evidenced by [PR #3510](https://github.com/home-assistant/android/pull/3510#issuecomment-1927928037), [PR #4160](https://github.com/home-assistant/android/pull/4160#issuecomment-1927929682), [PR #2144](https://github.com/home-assistant/iOS/pull/2144#issuecomment-1992395096) and [issue #167](https://github.com/home-assistant/android/issues/167#issuecomment-566918860). The official guidance from them is to use a browser instead.
+[^2]: Part two has only been tested on Android, and this guide reflects that.
+
+[^3]: The Home Assistant maintainers have rejected all attempts to add additional authentication methods to the companion app, as evidenced by [PR #3510](https://github.com/home-assistant/android/pull/3510#issuecomment-1927928037), [PR #4160](https://github.com/home-assistant/android/pull/4160#issuecomment-1927929682), [PR #2144](https://github.com/home-assistant/iOS/pull/2144#issuecomment-1992395096) and [issue #167](https://github.com/home-assistant/android/issues/167#issuecomment-566918860). The official guidance from them is to use a browser instead.
