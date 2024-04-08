@@ -63,7 +63,7 @@ from the mobile apps.[^2] For the best experience, follow both parts.
 Cloudflare Access is part of Cloudflare's Zero Trust offering. It is designed to
 secure apps by placing an identity portal in front. To configure it, go to the Zero
 Trust dashboard, then Access > Applications. Ensure you have configured an identity
-provider in Settings > Authentication first. Click "Add an application," then select
+provider in Settings > Authentication first. Click "Add an application", then select
 the "Self-hosted" option. Choose an application name, and be aware that this will
 be visible to those who visit the public URL. I set mine to "Home Assistant". After
 that, configure the domain and subdomain and make sure they match the ones you configured
@@ -109,14 +109,14 @@ for this hostname.
 
 Next, go to the main Cloudflare dashboard and open the [Client Certificates page](https://dash.cloudflare.com/?to=/:account/:zone/ssl-tls/client-certificates)
 (under SSL/TLS). Click "Create Certificate" and ensure the private key type is set
-to "RSA (2048)." I left the certificate validity at 10 years. Then create the certificate.
+to "RSA (2048)". I left the certificate validity at 10 years. Then create the certificate.
 
 Ensure the key format is `PEM`, then copy the certificate into a file called `cf-client.pem`,
 and the private key into `cf-client.key`. You can change these filenames, but I recommend
 keeping the extensions. **Make sure you make a backup** as you will not be
 able to see this certificate again. Under the "Hosts" header, click the "Edit" button
-next to "None," then type in the new URL you created for the tunnel, e.g.
-`ha-mobile.yourdomain.com`. Click "Save." This ensures that the subdomain can be
+next to "None", then type in the new URL you created for the tunnel, e.g.
+`ha-mobile.yourdomain.com`. Click "Save". This ensures that the subdomain can be
 used with mTLS.
 
 Now that the certificate has been created, it needs to be transferred to a device
