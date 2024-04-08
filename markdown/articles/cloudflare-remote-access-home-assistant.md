@@ -42,7 +42,7 @@ tunnel:
 ```
 
 Once the Compose file has been updated, run `docker compose up -d` or the equivalent
-in whatever container system is running on your system. This will pull the `cloudflared` (note the "d" at the end, for daemon)
+in whatever container system is running on your system. This will pull the `cloudflared`[^1]
 image and then establish a tunnel to Cloudflare. If all is well, you should be able
 to reload the Zero Trust dashboard and see that the tunnel status is "healthy". Try
 visiting your site in a new tab and confirm it works.
@@ -54,7 +54,7 @@ your network, but right now it is very insecure.
 
 There are two parts to this step. Part one allows connections from any browser or
 device, as long as it is not the mobile apps. Part two allows connections exclusively
-from the mobile apps.[^1] For the best experience, follow both parts.
+from the mobile apps.[^2] For the best experience, follow both parts.
 
 ### Part One: Cloudflare Access
 
@@ -81,7 +81,7 @@ now secured. Try visiting your site again from your normal browser window and fr
 a private window.
 
 The downside to using Access is that the Home Assistant mobile apps cannot handle
-it right now[^2], but there is another way.
+it right now[^3], but there is another way.
 
 ### Part Two: mTLS Certificates
 
@@ -150,6 +150,8 @@ or leave a comment.
 If you have any improvements to any of my articles or notes, please
 [submit a pull request](https://github.com/hkamran80/articles#contributions).
 
-[^1]: Part two has only been tested on Android, and this guide reflects that.
+[^1]: The name `cloudflared` comes from the Unix tradition of naming servers with a "-d" suffix standing for "daemon". (original text from [Cloudflare](https://blog.cloudflare.com/workerd-open-source-workers-runtime))
 
-[^2]: The Home Assistant maintainers have rejected all attempts to add additional authentication methods to the companion app, as evidenced by [PR #3510](https://github.com/home-assistant/android/pull/3510#issuecomment-1927928037), [PR #4160](https://github.com/home-assistant/android/pull/4160#issuecomment-1927929682), [PR #2144](https://github.com/home-assistant/iOS/pull/2144#issuecomment-1992395096) and [issue #167](https://github.com/home-assistant/android/issues/167#issuecomment-566918860). The official guidance from them is to use a browser instead.
+[^2]: Part two has only been tested on Android, and this guide reflects that.
+
+[^3]: The Home Assistant maintainers have rejected all attempts to add additional authentication methods to the companion app, as evidenced by [PR #3510](https://github.com/home-assistant/android/pull/3510#issuecomment-1927928037), [PR #4160](https://github.com/home-assistant/android/pull/4160#issuecomment-1927929682), [PR #2144](https://github.com/home-assistant/iOS/pull/2144#issuecomment-1992395096) and [issue #167](https://github.com/home-assistant/android/issues/167#issuecomment-566918860). The official guidance from them is to use a browser instead.
