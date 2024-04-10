@@ -135,10 +135,10 @@ openssl pkcs12 -export -out cf-client.pfx -inkey cf-client.key -in cf-client.pem
 
 A prompt for an export password will appear. Android failed to install the `PFX`
 I generated without a password, so make sure to add one. After that, you should have
-a `PFX` file that is ready to be installed! Transfer it securely to your device,
-then install it. Just tapping it is enough to install it. Enter the export password
-you created, then select "VPN & app user certificate" in the pop-up. Your certificate
-is now installed and ready for use!
+a `PFX` file that is ready to be installed! Transfer it securely to your device and
+install it by tapping the file. Enter the export password you created, then select
+"VPN & app user certificate" in the pop-up. Your certificate is now installed and
+ready for use!
 
 Open the Home Assistant app and set your external URL (the "Home Assistant URL")
 to the URL you set up for mTLS authentication. If you are connected to your local
