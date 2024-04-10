@@ -19,11 +19,12 @@ done so, create a new tunnel in the [Zero Trust dashboard](https://one.dash.clou
 by going to Networks > Tunnels. Give your tunnel a name that means something to you
 (only you will be able to see it in this dashboard). Next, select how you're setting
 up the tunnel. This guide assumes you are using the Docker method with Compose.
-Copy the `docker run` command — we will need it in a second. This is the important
-part: routing traffic. Enter the domain and subdomain, then select the type of service.
-Since this is for Home Assistant, set the type to `HTTP`. Assuming that you followed
+Copy the `docker run` command — we will need it in a second. This next step is the
+important part: routing traffic from the tunnel to the service. Enter the domain
+and subdomain, then select the type of service. Since this is for Home Assistant,
+set the type to `HTTP`. Assuming that you followed
 [the instructions on setting Home Assistant up with Compose](https://www.home-assistant.io/installation/alternative/#docker-compose),
-your container's `network_mode` is `host`. Therefore, the service URL is `127.0.0.1:8123`.
+your container's `network_mode` is `host`, therefore, the service URL should be `127.0.0.1:8123`.
 
 ### Connect the tunnel
 
@@ -34,20 +35,20 @@ with the token from the `docker run` command you copied earlier.
 ```yaml
 tunnel:
   image: cloudflare/cloudflared:latest
+  command: tunnel --no-autoupdate run --token [your token here]
   depends_on:
     - home-assistant # or whatever the Home Assistant service is named in the Compose file
   environment:
     TZ: "[your timezone]"
-  restart: unless-stopped
-  command: tunnel --no-autoupdate run --token [your token here]
+  restart: always
   network_mode: host # Required if your `network_mode` for Home Assistant is `host`
 ```
 
 Once the Compose file has been updated, run `docker compose up -d` or the equivalent
 in whatever container system is running on your system. This will pull the `cloudflared`[^1]
 image and then establish a tunnel to Cloudflare. If all is well, you should be able
-to reload the Zero Trust dashboard and see that the tunnel status is "healthy". Try
-visiting your site in a new tab and confirm it works.
+to reload the Zero Trust dashboard and see that the tunnel status is healthy. Try
+visiting your site in a new tab and see if it is accessible.
 
 ## Secure the tunnel
 
@@ -146,11 +147,12 @@ your local network!
 ## Conclusion
 
 If you have any questions, need any help, or have any suggestions, feel free to contact
-me on [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran),
-or leave a comment.
+me on [Twitter](https://twitter.com/hkamran80), [Mastodon](https://vmst.io/@hkamran),
+or [Bluesky](https://bsky.app/profile/hkamran.com), or leave a comment.
 
 If you have any improvements to any of my articles or notes, please
-[submit a pull request](https://github.com/hkamran80/articles#contributions).
+[submit a pull request](https://github.com/hkamran80/articles#contributions) or
+leave a comment.
 
 [^1]: The name `cloudflared` comes from the Unix tradition of naming servers with a "-d" suffix standing for "daemon". (original text from [Cloudflare](https://blog.cloudflare.com/workerd-open-source-workers-runtime))
 
