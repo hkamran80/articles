@@ -67,8 +67,8 @@ Trust dashboard, then Access > Applications. Ensure you have configured an ident
 provider in Settings > Authentication first. Click "Add an application", then select
 the "Self-hosted" option. Choose an application name, and be aware that this will
 be visible to those who visit the public URL. I set mine to "Home Assistant". After
-that, configure the domain and subdomain and make sure they match the ones you configured
-for the tunnel. Then, click "Next" to advance to the policy configuration page.
+that, enter the same domain and subdomain that you configured for the tunnel. Then
+click "Next" to advance to the policy configuration page.
 
 The policy configuration page is where you configure who can access the site. If
 you have previously created [Access Groups](https://developers.cloudflare.com/cloudflare-one/identity/users/groups/),
@@ -80,11 +80,12 @@ comma-separated emails in the value field. I then added a required rule that ens
 the visitor is in the U.S.
 
 Finally, click "Next" and then "Add application". Your Home Assistant instance is
-now secured. Try visiting your site again from your normal browser window and from
+now secured. Try visiting your site again from a normal browser window and also from
 a private window.
 
 The downside to using Access is that the Home Assistant mobile apps cannot handle
-it right now[^2], but there is another way.
+it right now[^2], but there is another way to secure the tunnel and allow the mobile
+apps to work.
 
 ### Part Two: mTLS Certificates
 
@@ -116,7 +117,7 @@ Ensure the key format is `PEM`, then copy the certificate into a file called `cf
 and the private key into `cf-client.key`. You can change these filenames, but I recommend
 keeping the extensions. **Make sure you make a backup** as you will not be
 able to see this certificate again. Under the "Hosts" header, click the "Edit" button
-next to "None", then type in the new URL you created for the tunnel, e.g.
+next to "None", then type in the second URL you created for the tunnel, e.g.
 `ha-mobile.yourdomain.com`. Click "Save". This ensures that the subdomain can be
 used with mTLS.
 
@@ -134,10 +135,10 @@ openssl pkcs12 -export -out cf-client.pfx -inkey cf-client.key -in cf-client.pem
 
 A prompt for an export password will appear. Android failed to install the `PFX`
 I generated without a password, so make sure to add one. After that, you should have
-a `PFX` file, ready to be installed! Transfer it securely to your device, then install
-it. Just tapping it is enough to install it. Enter the export password you created,
-then select "VPN & app user certificate" in the pop-up. Your certificate is now installed
-and ready for use!
+a `PFX` file that is ready to be installed! Transfer it securely to your device,
+then install it. Just tapping it is enough to install it. Enter the export password
+you created, then select "VPN & app user certificate" in the pop-up. Your certificate
+is now installed and ready for use!
 
 Open the Home Assistant app and set your external URL (the "Home Assistant URL")
 to the URL you set up for mTLS authentication. If you are connected to your local
