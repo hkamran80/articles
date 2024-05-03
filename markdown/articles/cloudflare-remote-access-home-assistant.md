@@ -17,9 +17,8 @@ Before we begin, there are two things you'll need:
 First, connect the tunnel from your server to Cloudflare. If you have not already
 done so, create a new tunnel in the [Zero Trust dashboard](https://one.dash.cloudflare.com)
 by going to Networks > Tunnels. Give your tunnel a name that means something to you
-(only you will be able to see it in this dashboard). Next, select how you're setting
-up the tunnel. Copy the `docker run` command because we will need it in a second.
-Next, let's configure
+(only you will be able to see it in this dashboard). Select the Docker tab and copy
+the `docker run` command because we will need it in a second. Next, let's configure
 traffic routing from the tunnel to the service. Enter the domain and subdomain, then
 select the type of service. Since this is for Home Assistant, set the type to `HTTP`.
 Assuming that you followed [the instructions on setting Home Assistant up with Compose](https://www.home-assistant.io/installation/alternative/#docker-compose),
@@ -127,8 +126,7 @@ next to "None", then type in the second URL you created for the tunnel, e.g.
 used with mTLS.
 
 Now that the certificate has been created, it needs to be transferred to a device
-running the mobile app. But before that, it needs to be converted into a format that
-the OS can read. This format is a [PKCS #12](https://en.wikipedia.org/wiki/PKCS_12)
+running the mobile app. But before that, it needs to be converted into a [PKCS #12](https://en.wikipedia.org/wiki/PKCS_12)
 (`PFX`) archive. Assuming your computer has OpenSSL installed, it's easy to generate
 a `PFX` file. In the same directory as the `.pem` and `.key` files you created earlier,
 run the following command, replacing `cf-client.key` and `cf-client.pem` with your
