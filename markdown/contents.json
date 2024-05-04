@@ -1,133 +1,141 @@
 {
-    "articles": [
-        {
-            "id": "expanding-pkgs-on-macos",
-            "title": "Expanding PKGs on macOS",
-            "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
-            "tags": ["macOS"],
-            "published": "2020-01-30",
-            "filename": "2020-01-30-expanding-pkgs-on-macos"
-        },
-        {
-            "id": "getting-balenaetcher-to-work-on-macos-catalina",
-            "title": "Getting balenaEtcher to Work on macOS Catalina",
-            "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
-            "tags": ["macOS"],
-            "published": "2020-01-30",
-            "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
-        },
-        {
-            "id": "vuetify-dark-mode-toggle",
-            "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
-            "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
-            "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
-            "published": "2020-06-04",
-            "filename": "2020-06-04-vuetify-dark-mode-toggle"
-        },
-        {
-            "id": "changing-google-docs-default-styles",
-            "title": "Changing Google Docs' Default Styles",
-            "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
-            "tags": ["Styling", "Google Docs"],
-            "published": "2022-04-19",
-            "filename": "2022-04-19-changing-google-docs-default-styles"
-        },
-        {
-            "id": "generate-typescript-declarations-js-files",
-            "title": "Generate TypeScript Declaration Files for JavaScript Files",
-            "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
-            "tags": ["Development", "TypeScript", "JavaScript"],
-            "heroImage": "https://i.imgur.com/nKR3Fb9.png",
-            "published": "2022-05-06",
-            "filename": "2022-05-06-generate-typescript-declarations-js-files"
-        },
-        {
-            "id": "adding-wildcard-subdomain-support-macos",
-            "title": "Adding Wildcard Subdomain Support to macOS",
-            "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
-            "tags": ["macOS", "Networking"],
-            "published": "2023-01-13",
-            "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
-        },
-        {
-            "id": "automated-dynamic-selective-website-rebuilds",
-            "title": "Automated Dynamic Selective Rebuilds of My Website",
-            "description": "I recently added dynamic rebuild support to my Next.js website to simplify updating articles and notes",
-            "tags": [
-                "Development",
-                "Next.js",
-                "TypeScript",
-                "GitHub Actions",
-                "CI/CD",
-                "Scripting",
-                "Automation"
-            ],
-            "published": "",
-            "filename": "2023-01-29-automated-dynamic-selective-website-rebuilds"
-        },
-        {
-            "id": "upgrade-openssh-macos",
-            "title": "Upgrading OpenSSH on macOS",
-            "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
-            "tags": ["macOS", "SSH"],
-            "published": "2023-02-14",
-            "filename": "2023-02-14-upgrade-openssh-macos"
-        },
-        {
-            "id": "fido2-ssh-keys",
-            "title": "Creating FIDO2 SSH Keys",
-            "description": "Secure your SSH keys with a FIDO2 security key",
-            "tags": ["SSH", "FIDO2", "Security"],
-            "heroImage": "https://i.imgur.com/T3m4kR3.png",
-            "published": "2023-02-14",
-            "filename": "2023-02-14-fido2-ssh-keys"
-        },
-        {
-            "id": "collecting-beta-testers-cleaning-testflight-csvs",
-            "title": "Collecting Beta Testers and Cleaning TestFlight CSVs",
-            "description": "Collect testers with Google Sheets then clean them with my tool",
-            "tags": [
-                "Development",
-                "TestFlight",
-                "Google Docs",
-                "JavaScript",
-                "TypeScript",
-                "CSV"
-            ],
-            "published": "2023-04-25",
-            "filename": "2023-04-25-collecting-beta-testers-cleaning-testflight-csvs"
-        },
-        {
-            "id": "installing-newer-python-amazon-ec2",
-            "title": "Installing a Newer Version of Python on Amazon EC2",
-            "description": "EC2 ships with Python 3.7.11, but some might need a newer version",
-            "tags": [
-                "Development",
-                "Python",
-                "Amazon Web Services",
-                "Amazon EC2",
-                "Linux"
-            ],
-            "published": "2023-05-03",
-            "filename": "2023-05-03-installing-newer-python-amazon-ec2"
-        },
-        {
-            "id": "securing-your-digital-life",
-            "title": "Securing Your Digital Life",
-            "description": "Keep your digital life safe by taking a few proactive measures",
-            "tags": ["Security", "Guide"],
-            "published": "2023-06-15",
-            "filename": "2023-06-15-securing-your-digital-life"
-        }
-    ],
-    "notes": [
-        {
-            "id": "converting-local-dates-to-utc-with-python",
-            "title": "Converting Local Dates to UTC with Python",
-            "description": "A quick and easy way to convert local dates to UTC",
-            "tags": ["Development", "Python"],
-            "published": "2022-01-26",
-            "filename": "2022-01-26-converting-local-dates-to-utc-python"
-        }
-    ]
+  "articles": [
+    {
+      "id": "expanding-pkgs-on-macos",
+      "title": "Expanding PKGs on macOS",
+      "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
+      "tags": ["macOS"],
+      "published": "2020-01-30",
+      "filename": "2020-01-30-expanding-pkgs-on-macos"
+    },
+    {
+      "id": "getting-balenaetcher-to-work-on-macos-catalina",
+      "title": "Getting balenaEtcher to Work on macOS Catalina",
+      "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
+      "tags": ["macOS"],
+      "published": "2020-01-30",
+      "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
+    },
+    {
+      "id": "vuetify-dark-mode-toggle",
+      "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
+      "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
+      "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
+      "published": "2020-06-04",
+      "filename": "2020-06-04-vuetify-dark-mode-toggle"
+    },
+    {
+      "id": "changing-google-docs-default-styles",
+      "title": "Changing Google Docs' Default Styles",
+      "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
+      "tags": ["Styling", "Google Docs"],
+      "published": "2022-04-19",
+      "filename": "2022-04-19-changing-google-docs-default-styles"
+    },
+    {
+      "id": "generate-typescript-declarations-js-files",
+      "title": "Generate TypeScript Declaration Files for JavaScript Files",
+      "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
+      "tags": ["Development", "TypeScript", "JavaScript"],
+      "heroImage": "https://i.imgur.com/nKR3Fb9.png",
+      "published": "2022-05-06",
+      "filename": "2022-05-06-generate-typescript-declarations-js-files"
+    },
+    {
+      "id": "adding-wildcard-subdomain-support-macos",
+      "title": "Adding Wildcard Subdomain Support to macOS",
+      "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
+      "tags": ["macOS", "Networking"],
+      "published": "2023-01-13",
+      "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
+    },
+    {
+      "id": "automated-dynamic-selective-website-rebuilds",
+      "title": "Automated Dynamic Selective Rebuilds of My Website",
+      "description": "I recently added dynamic rebuild support to my Next.js website to simplify updating articles and notes",
+      "tags": [
+        "Development",
+        "Next.js",
+        "TypeScript",
+        "GitHub Actions",
+        "CI/CD",
+        "Scripting",
+        "Automation"
+      ],
+      "published": "",
+      "filename": "2023-01-29-automated-dynamic-selective-website-rebuilds"
+    },
+    {
+      "id": "upgrade-openssh-macos",
+      "title": "Upgrading OpenSSH on macOS",
+      "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
+      "tags": ["macOS", "SSH"],
+      "published": "2023-02-14",
+      "filename": "2023-02-14-upgrade-openssh-macos"
+    },
+    {
+      "id": "fido2-ssh-keys",
+      "title": "Creating FIDO2 SSH Keys",
+      "description": "Secure your SSH keys with a FIDO2 security key",
+      "tags": ["SSH", "FIDO2", "Security"],
+      "heroImage": "https://i.imgur.com/T3m4kR3.png",
+      "published": "2023-02-14",
+      "filename": "2023-02-14-fido2-ssh-keys"
+    },
+    {
+      "id": "collecting-beta-testers-cleaning-testflight-csvs",
+      "title": "Collecting Beta Testers and Cleaning TestFlight CSVs",
+      "description": "Collect testers with Google Sheets then clean them with my tool",
+      "tags": [
+        "Development",
+        "TestFlight",
+        "Google Docs",
+        "JavaScript",
+        "TypeScript",
+        "CSV"
+      ],
+      "published": "2023-04-25",
+      "filename": "2023-04-25-collecting-beta-testers-cleaning-testflight-csvs"
+    },
+    {
+      "id": "installing-newer-python-amazon-ec2",
+      "title": "Installing a Newer Version of Python on Amazon EC2",
+      "description": "EC2 ships with Python 3.7.11, but some might need a newer version",
+      "tags": [
+        "Development",
+        "Python",
+        "Amazon Web Services",
+        "Amazon EC2",
+        "Linux"
+      ],
+      "published": "2023-05-03",
+      "filename": "2023-05-03-installing-newer-python-amazon-ec2"
+    },
+    {
+      "id": "securing-your-digital-life",
+      "title": "Securing Your Digital Life",
+      "description": "Keep your digital life safe by taking a few proactive measures",
+      "tags": ["Security", "Guide"],
+      "published": "2023-06-15",
+      "filename": "2023-06-15-securing-your-digital-life"
+    },
+    {
+      "id": "cloudflare-remote-access-home-assistant",
+      "title": "Remotely Access Your Home Assistant Instance Securely",
+      "description": "Connect to your Home Assistant instance from outside your local network",
+      "tags": ["Home Assistant", "Security", "Guide", "Cloudflare"],
+      "published": "2024-05-03",
+      "filename": "2024-05-03-cloudflare-remote-access-home-assistant"
+    }
+  ],
+  "notes": [
+    {
+      "id": "converting-local-dates-to-utc-with-python",
+      "title": "Converting Local Dates to UTC with Python",
+      "description": "A quick and easy way to convert local dates to UTC",
+      "tags": ["Development", "Python"],
+      "published": "2022-01-26",
+      "filename": "2022-01-26-converting-local-dates-to-utc-python"
+    }
+  ]
 }
