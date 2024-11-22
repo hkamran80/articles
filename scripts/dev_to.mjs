@@ -34,7 +34,7 @@ const mergeParagraphs = async (postId, type) => {
         .map((index) => {
             const paragraph = lines.slice(
                 indexes[indexes.indexOf(index) - 1] + 1,
-                index
+                index,
             );
 
             if (
@@ -64,7 +64,7 @@ const excludedTags = ["Development", "Google Docs"];
  */
 const generateFrontMatter = (postId, type) => {
     const { title, description, tags } = writings[type].find(
-        ({ id }) => id === postId
+        ({ id }) => id === postId,
     );
 
     return `---
@@ -79,7 +79,7 @@ cover_image: https://assets.hkamran.com/graphics/article/${postId}
 
 const newFiles = (
     await exec(
-        `git diff --name-only --diff-filter=A ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`
+        `git diff --name-only --diff-filter=A ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`,
     )
 ).stdout;
 

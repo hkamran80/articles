@@ -39,19 +39,19 @@ export const slugify = (string) =>
 
 const markdownChanges = (
     await exec(
-        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`
+        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`,
     )
 ).stdout;
 
 const deletedMarkdown = (
     await exec(
-        `git diff --name-only --diff-filter=D ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`
+        `git diff --name-only --diff-filter=D ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`,
     )
 ).stdout;
 
 const jsonChanges = (
     await exec(
-        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .json$ | grep '^markdown/' | xargs`
+        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .json$ | grep '^markdown/' | xargs`,
     )
 ).stdout;
 
@@ -69,7 +69,7 @@ if (markdownChanges.trim().replace("\n", "") !== "") {
 
 if (deletedMarkdown.trim().replace("\n", "") !== "") {
     await exec(
-        `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json > contents.old.json`
+        `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json > contents.old.json`,
     );
 
     for (let file of deletedMarkdown.trim().split("\n")) {
@@ -84,7 +84,7 @@ if (deletedMarkdown.trim().replace("\n", "") !== "") {
         console.debug(type, id);
 
         const oldWritings = JSON.parse(
-            (await readFile("contents.old.json")).toString()
+            (await readFile("contents.old.json")).toString(),
         );
 
         console.debug(oldWritings);
@@ -99,16 +99,16 @@ if (jsonChanges.trim().replace("\n", "") !== "") {
     const changes = JSON.parse(
         (
             await execIgnoreErrors(
-                `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json | jd -f patch markdown/contents.json`
+                `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json | jd -f patch markdown/contents.json`,
             )
-        ).stdout
+        ).stdout,
     );
 
     [
         ...new Set(
             changes.map((change) =>
-                change.path.split("/").slice(1, 4).join("/")
-            )
+                change.path.split("/").slice(1, 4).join("/"),
+            ),
         ),
     ]
         .map((change) => {
@@ -123,14 +123,14 @@ if (jsonChanges.trim().replace("\n", "") !== "") {
                         "/",
                         "/articles",
                         ...writings[type][index].tags.map(
-                            (tag) => `/tag/${slugify(tag)}`
-                        )
+                            (tag) => `/tag/${slugify(tag)}`,
+                        ),
                     );
                 }
             }
 
             revalidateList.push(
-                `/${type.slice(0, type.length - 1)}/${writings[type][index].id}`
+                `/${type.slice(0, type.length - 1)}/${writings[type][index].id}`,
             );
 
             return revalidateList;
@@ -153,7 +153,7 @@ const request = await fetch(
     {
         method: "POST",
         headers: new Headers({ "x-api-key": process.env.REVALIDATION_TOKEN }),
-    }
+    },
 );
 
 console.log(request.status);
