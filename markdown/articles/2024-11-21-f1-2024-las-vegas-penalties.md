@@ -1,6 +1,6 @@
 All documents are sourced from the [FIA documents page](https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2024-2043).
 
-The Technical Delegate for the Las Vegas Grand Prix is Jo Bauer.
+The Race Director is Rui Marques and the Technical Delegate is Jo Bauer.
 
 ## Free Practice 1
 
