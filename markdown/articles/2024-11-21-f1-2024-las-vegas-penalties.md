@@ -1,6 +1,7 @@
 The Race Director is Rui Marques and the Technical Delegate is Jo Bauer.
 
-All documents are sourced from the [FIA documents page](https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2024-2043).
+A list of drivers participating in the Las Vegas Grand Prix can be found in [Document 8 - Entry List](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Entry%20List.pdf).
+All documents are sourced from the [FIA website](https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2024-2043).
 
 ## Free Practice 1
 
