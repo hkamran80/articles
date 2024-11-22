@@ -15,5 +15,5 @@ The stewards for FP1 were Nish Shetty, Vitantonio Liuzzi, Matthew Selley, and De
   with additional infringements resulting in five grid place penalties. Since this is Bottas' second
   additional energy store, the stewards gave him a five grid place penalty.
 
-  **Documents:** [Document 11 - Technical Delegate's Report, New PU elements for this Competition](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20New%20PU%20elements%20for%20this%20Competition.pdf),
+  **Documents:** [Document 11 - New PU elements for this Competition](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20New%20PU%20elements%20for%20this%20Competition.pdf),
   [Document 12 - Infringement - Car 77 - PU elements](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Car%2077%20-%20PU%20elements.pdf)
