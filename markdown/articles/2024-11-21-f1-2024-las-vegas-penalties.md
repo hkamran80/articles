@@ -19,12 +19,12 @@ The stewards for FP1 were Nish Shetty, Vitantonio Liuzzi, Matthew Selley, and De
   **Documents:** [Document 11 - New PU elements for this Competition](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20New%20PU%20elements%20for%20this%20Competition.pdf),
   [Document 12 - Infringement - Car 77 - PU elements](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Car%2077%20-%20PU%20elements.pdf)
 
-The top three drivers in FP1 were Lewis Hamilton (#44, Mercedes) with a 1:35.001, followed by George
-Russell (#63, Mercedes) with a 0.396 second gap (1:35.397), and Lando Norris (#4, McLaren) with a
-0.953 second gap (1:35.954). See [Document 13 - P1 Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20P1%20Classification.pdf#page=2)
+The top three drivers in FP1 were Lewis Hamilton (#44) with a 1:35.001, followed by George Russell
+(#63) with a 0.396 second gap (1:35.397), and Lando Norris (#4) with a 0.953 second gap (1:35.954).
+See [Document 13 - P1 Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20P1%20Classification.pdf#page=2)
 for the full timing sheet.
 
 ## Free Practice 2
 
-- A red flag was issued when Alex Albon (#23)'s car stopped on track because of a fuel systems issue.
-  He pushed the car into an opening by a marshal post and the session resumed.
+- A red flag was issued when Alex Albon (#23)'s car stopped on track because of a fuel
+  systems issue. He pushed the car into an opening by a marshal post and the session resumed.
