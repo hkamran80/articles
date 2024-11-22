@@ -29,3 +29,9 @@ for the full timing sheet.
 - A red flag was issued when Alex Albon (#23)'s car stopped on track because of a fuel
   systems issue. He managed to stop near an opening in the barriers, allowing the session to be
   restarted quickly. Williams will have to wait until after the session to retrieve it.
+
+The top three drivers in FP2 were Lewis Hamilton (#44) with a 1:33.825, followed by George Russell
+(#63) with a 0.011 second gap (1:33.836), and Lando Norris (#4) with a 0.190 second gap (1:34.015).
+Max Verstappen (#1) finished 17th with a 1:35.834, 2.009 seconds off Hamilton and 1.819 seconds off
+World Champion challenger Norris. See [Document 15 - P2 Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20P2%20Classification.pdf)
+for the full timing sheet.
