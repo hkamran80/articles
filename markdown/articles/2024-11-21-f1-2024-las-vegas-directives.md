@@ -34,3 +34,15 @@ The top three drivers in FP2 were Lewis Hamilton (#44) with a 1:33.825, followed
 Max Verstappen (#1) finished 17th with a 1:35.834, 2.009 seconds off Hamilton and 1.819 seconds off
 World Champion challenger Norris. See [Document 15 - P2 Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20P2%20Classification.pdf#page=2)
 for the full timing sheet.
+
+## Free Practice 3
+
+FP3 is currently scheduled to begin at 18:30 PST on Friday, November 22.
+
+## Qualifying
+
+Qualifying is currently scheduled to begin at 22:00 PST on Friday, November 22.
+
+## Race
+
+The race is currently scheduled to begin at 22:00 PST on Saturday, November 23.
