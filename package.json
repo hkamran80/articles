@@ -1,0 +1,15 @@
+{
+    "name": "@hkamran80/articles",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "format": "prettier . --write"
+    },
+    "license": "AGPL-3.0",
+    "devDependencies": {
+        "@hkamran/prettier-config": "^1.1.1",
+        "prettier": "^3.3.3"
+    },
+    "prettier": "@hkamran/prettier-config"
+}
