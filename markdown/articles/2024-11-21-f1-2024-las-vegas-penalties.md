@@ -27,4 +27,5 @@ for the full timing sheet.
 ## Free Practice 2
 
 - A red flag was issued when Alex Albon (#23)'s car stopped on track because of a fuel
-  systems issue. He pushed the car into an opening by a marshal post and the session resumed.
+  systems issue. He managed to stop near an opening in the barriers, allowing the session to be
+  restarted quickly. Williams will have to wait until after the session to retrieve it.
