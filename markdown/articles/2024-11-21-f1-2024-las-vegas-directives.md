@@ -1,11 +1,10 @@
-The Race Director is Rui Marques and the Technical Delegate is Jo Bauer.
+The Race Director is Rui Marques and the Technical Delegate is Jo Bauer. The stewards are Nish Shetty,
+Vitantonio Liuzzi, Matthew Selley, and Dennis Dean.
 
 A list of drivers participating in the Las Vegas Grand Prix can be found in [Document 8 - Entry List](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Entry%20List.pdf#page=2).
 All documents are sourced from the [FIA website](https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2024-2043).
 
 ## Free Practice 1
-
-The stewards for FP1 were Nish Shetty, Vitantonio Liuzzi, Matthew Selley, and Dennis Dean.
 
 - Valtteri Bottas (#77) was given a five grid place penalty for using his fourth Energy Store, which
   will take effect during the race since there is no Sprint this weekend.
