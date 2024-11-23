@@ -52,6 +52,14 @@ for the full timing sheet.
   made the car unsafe to recover for the time bieng. The session restarted at 19:29 without enough
   time for a timed lap but enough for a practice start on the grid.
 
+The top three drivers in FP3 were George Russell (#63) with a 1:33.570, followed by Oscar Piastri
+(#81) with a 0.215 second gap (1:33.785), and Carlos Sainz (#55) with a 0.348 second gap (1:33.918).
+Lando Norris (#4) went fourth-fastest with a 1:34.008, 0.438 seconds off Russell. Max Verstappen (#1)
+improved to fifth-fastest with a 1:34.137, 0.129 seconds off Norris and 0.567 seconds off Russell.
+Lewis Hamilton (#44), the leader in FP1 and FP2, went sixth-fastest with a 1:34.341, 0.771 seconds
+off teammate Russell. See [Document 21 - P3 Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20P3%20Classification.pdf#page=2)
+for the full timing sheet.
+
 ## Qualifying
 
 Qualifying is currently scheduled to begin at 22:00 PST on Friday, November 22.
