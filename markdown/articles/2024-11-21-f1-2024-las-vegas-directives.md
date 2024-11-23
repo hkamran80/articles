@@ -78,12 +78,16 @@ for the full timing sheet.
 ## Qualifying
 
 > [!NOTE]
-> The FIA has not yet released the deleted lap times document or the final qualifying classification.
-> This post will be updated when that happens.
+> The FIA has not yet released the final qualifying classification. This post will be updated when
+> that happens.
 
 ### Session 1
 
 - Alex Albon (#23) had his 1:34.590 lap deleted for track limits at turn 4.
+- Charles Leclerc (#16) had his lap deleted for track limits at turn 8.
+- Fernando Alonso (#14) had his lap deleted for track limits at turn 12.
+- Kevin Magnussen (#20) had his lap deleted for track limits at turn 5.
+- Nico Hulkenberg (#27) had his lap deleted for track limits at turn 5.
 
 Sergio Perez (#11), Fernando Alonso (#14), Alex Albon (#23), Valterri Bottas (#77) (five grid place
 penalty and will start last), and Lance Stroll (#18) were eliminated from Q1.
@@ -93,8 +97,10 @@ with a 0.039 second gap (1:33.225), and Max Verstappen (#1) with a 0.113 second 
 
 ### Session 2
 
+- Lewis Hamilton (#44) has his lap deleted for track limits at turn 8.
 - A yellow flag was issued at the end of Q2 in sector 3 when Franco Colapinto (#43) shunted on a
-  qualifying lap.
+  qualifying lap, disconnecting three of his tyres. See the [Formula 1 post](https://www.formula1.com/en/latest/article/must-see-colapinto-suffers-massive-crash-in-las-vegas-qualifying.3PBCHS0eA8K6LD8d2JY0G7)
+  for more details.
 
 Esteban Ocon (#31), Kevin Magnussen (#20), Zhou Guanyu (#24), Franco Colapinto (#43), and Liam Lawson
 (#30) were eliminated from Q2.
@@ -104,9 +110,10 @@ a 0.144 second gap (1:32.711), and George Russell (#63) with a 0.212 second gap 
 
 ### Session 3
 
-The start of session 3 was delayed due to Colapinto's crash.
+The start of session 3 was delayed to 23:09 due to Colapinto's crash.
 
-- Lewis Hamilton (#44) has his final lap time deleted for track limits.
+- Lewis Hamilton (#44) has his lap deleted for track limits at turn 12.
+- Lewis Hamilton (#44) has his 1:35.181 lap deleted for track limits at turn 4.
 
 The race order for tomorrow's race is as follows: George Russell (#63), Carlos Sainz (#55), Pierre
 Gasly (#10), Charles Leclerc (#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar
@@ -114,6 +121,12 @@ Piastri (#81), Nico Hulkenberg (#27), and Lewis Hamilton (#44).
 
 See [Document 23 - Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2)
 for the full order and timing sheet.
+
+See [Document 24 - Infringment - Qualifying Deleted Lap Times](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Qualifying%20Deleted%20Lap%20Times.pdf#page=2) for more information on
+the deleted qualifying lap times. Lap times are deleted when a driver violates [Article 33.3](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=40) and
+[Appendix L, Chapter IV, Article 2(c) of the FIA International Sporting Code](https://www.fia.com/sites/default/files/4_-_appendix_l_2024_publie_le_17_october_2024.pdf#page=56),
+and are authorized by [Article 12.4.1.e of the I.S.C.](https://www.fia.com/sites/default/files/2024_international_sporting_code_fr-en_clean_version-_14.12.2023.pdf#page=53).
+
 
 ## Race
 
