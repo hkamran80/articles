@@ -47,7 +47,10 @@ for the full timing sheet.
 
 ## Free Practice 3
 
-FP3 is currently scheduled to begin at 18:30 PST on Friday, November 22.
+- A red flag was issued when Lance Stroll (#18)'s Aston Martin began smoking, which appeared to be
+  coming from the front brakes. While he did manage to park it by a gap in the barriers, the batteries
+  made the car unsafe to recover for the time bieng. The session restarted at 19:29 without enough
+  time for a timed lap but enough for a practice start on the grid.
 
 ## Qualifying
 
