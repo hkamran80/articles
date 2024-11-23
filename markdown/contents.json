@@ -134,6 +134,15 @@
             "tags": ["Formula 1", "FIA"],
             "published": "2024-11-21",
             "filename": "2024-11-21-f1-2024-las-vegas-directives"
+        },
+        {
+            "id": "using-feeds-updating-my-own",
+            "title": "Using Feeds and Updating My Own",
+            "description": "I've recently started using more RSS/Atom feeds and so I decided to update my site's",
+            "tags": ["Development", "Feeds", "JavaScript"],
+            "published": "",
+            "filename": "using-feeds-updating-my-own",
+            "branchName": "article/feeds"
         }
     ],
     "notes": [
