@@ -29,6 +29,16 @@ for the full timing sheet.
   systems issue. He managed to stop near an opening in the barriers, allowing the session to be
   restarted quickly. Williams will have to wait until after the session to retrieve it.
 
+- The Technical Delegate noted that Carlos Sainz (#55) ran a gearbox assembly outside the restricted
+  number components (RNC) allocation.
+
+  **Explanation:** A driver is allowed to exceed the gearbox assembly RNC allocation up to four times
+  in FP1 or FP2 throughout the season by [Article 29.3(g)](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=32).
+  This was Sainz's fourth time, so he can no longer run gearbox assemblies outside the RNC allocation
+  in FP1 or FP2.
+
+  **Documents:** [Document 16 - RNC used outside allocation](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20RNC%20used%20outside%20allocation.pdf)
+
 The top three drivers in FP2 were Lewis Hamilton (#44) with a 1:33.825, followed by George Russell
 (#63) with a 0.011 second gap (1:33.836), and Lando Norris (#4) with a 0.190 second gap (1:34.015).
 Max Verstappen (#1) finished 17th with a 1:35.834, 2.009 seconds off Hamilton and 1.819 seconds off
