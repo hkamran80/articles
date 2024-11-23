@@ -29,6 +29,16 @@ for the full timing sheet.
   systems issue. He managed to stop near an opening in the barriers, allowing the session to be
   restarted quickly. Williams will have to wait until after the session to retrieve it.
 
+- The Technical Delegate noted that Carlos Sainz (#55) ran a gearbox assembly outside the restricted
+  number components (RNC) allocation.
+
+  **Explanation:** A driver is allowed to exceed the gearbox assembly RNC allocation up to four times
+  in FP1 or FP2 throughout the season by [Article 29.3(g)](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=32).
+  This was Sainz's fourth time, so he can no longer run gearbox assemblies outside the RNC allocation
+  in FP1 or FP2.
+
+  **Documents:** [Document 16 - RNC used outside allocation](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20RNC%20used%20outside%20allocation.pdf)
+
 The top three drivers in FP2 were Lewis Hamilton (#44) with a 1:33.825, followed by George Russell
 (#63) with a 0.011 second gap (1:33.836), and Lando Norris (#4) with a 0.190 second gap (1:34.015).
 Max Verstappen (#1) finished 17th with a 1:35.834, 2.009 seconds off Hamilton and 1.819 seconds off
@@ -37,7 +47,18 @@ for the full timing sheet.
 
 ## Free Practice 3
 
-FP3 is currently scheduled to begin at 18:30 PST on Friday, November 22.
+- A red flag was issued when Lance Stroll (#18)'s Aston Martin began smoking, which appeared to be
+  coming from the front brakes. While he did manage to park it by a gap in the barriers, the batteries
+  made the car unsafe to recover for the time bieng. The session restarted at 19:29 without enough
+  time for a timed lap but enough for a practice start on the grid.
+
+The top three drivers in FP3 were George Russell (#63) with a 1:33.570, followed by Oscar Piastri
+(#81) with a 0.215 second gap (1:33.785), and Carlos Sainz (#55) with a 0.348 second gap (1:33.918).
+Lando Norris (#4) went fourth-fastest with a 1:34.008, 0.438 seconds off Russell. Max Verstappen (#1)
+improved to fifth-fastest with a 1:34.137, 0.129 seconds off Norris and 0.567 seconds off Russell.
+Lewis Hamilton (#44), the leader in FP1 and FP2, went sixth-fastest with a 1:34.341, 0.771 seconds
+off teammate Russell. See [Document 21 - P3 Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20P3%20Classification.pdf#page=2)
+for the full timing sheet.
 
 ## Qualifying
 
