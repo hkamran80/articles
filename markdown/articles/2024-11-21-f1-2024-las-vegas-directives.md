@@ -115,9 +115,9 @@ The start of session 3 was delayed to 23:09 due to Colapinto's crash.
 - Lewis Hamilton (#44) has his lap deleted for track limits at turn 12.
 - Lewis Hamilton (#44) has his 1:35.181 lap deleted for track limits at turn 4.
 
-The race order for tomorrow's race is as follows: George Russell (#63), Carlos Sainz (#55), Pierre
-Gasly (#10), Charles Leclerc (#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar
-Piastri (#81), Nico Hulkenberg (#27), and Lewis Hamilton (#44).
+The Q3 order is as follows: George Russell (#63), Carlos Sainz (#55), Pierre Gasly (#10), Charles
+Leclerc (#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar Piastri (#81), Nico
+Hulkenberg (#27), and Lewis Hamilton (#44).
 
 See [Document 23 - Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2)
 for the full order and timing sheet.
