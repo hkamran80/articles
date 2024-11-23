@@ -47,6 +47,18 @@ for the full timing sheet.
 
 ## Free Practice 3
 
+- Aston Martin was fined €200 because Fernando Alonso (#14) exceeded the speed limit in the pit lane
+  by driving at 81.3 km/h.
+
+  **Explanation:** [Article 34.7](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=41)
+  sets a speed limit of 80 km/h in the pit lane throughout the season, unless the Race Director amends
+  it following a recommendation from the Safety Delegate. Article 34.7(a) says that "Any Competitor
+  whose driver exceeds the limit during any free practice session, qualifying session, or sprint
+  qualifying session will be fined €100 for each km/h above the limit, up to a maximum of €1000."
+  The stewards, rounding up from 1.3 km/h, fined Aston Martin Aramco F1 Team €200 accordingly.
+
+  **Documents:** [Document 22 - Infringement - Car 14 - Pit lane speeding](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Car%2014%20-%20Pit%20lane%20speeding.pdf)[^1]
+
 - A red flag was issued when Lance Stroll (#18)'s AMR24 began smoking, which appeared to be coming
   from the front brakes. While he did manage to park it by a gap in the barriers, the batteries made
   the car unsafe to recover for the time being. The session restarted at 19:29 without enough time
@@ -106,3 +118,5 @@ for the full order and timing sheet.
 ## Race
 
 The race is currently scheduled to begin at 22:00 PST on Saturday, November 23.
+
+[^1]: This document was released at 21:21 PST, almost 90 minutes after the FP3 classification was released.
