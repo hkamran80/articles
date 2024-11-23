@@ -65,7 +65,43 @@ for the full timing sheet.
 
 ## Qualifying
 
-Qualifying is currently scheduled to begin at 22:00 PST on Friday, November 22.
+> [!NOTE]
+> The FIA has not yet released the deleted lap times document or the final qualifying classification.
+> This post will be updated when that happens.
+
+### Session 1
+
+- Alex Albon (#23) had his 1:34.590 lap deleted for track limits at turn 4.
+
+Sergio Perez (#11), Fernando Alonso (#14), Alex Albon (#23), Valterri Bottas (#77) (five grid place
+penalty and will start last), and Lance Stroll (#18) were eliminated from Q1.
+
+The top three drivers were George Russell (#63) with a 1:33.186, followed by Lewis Hamilton (#44)
+with a 0.039 second gap (1:33.225), and Max Verstappen (#1) with a 0.113 second gap (1:33.299).
+
+### Session 2
+
+- A yellow flag was issued at the end of Q2 in sector 3 when Franco Colapinto (#43) shunted on a
+  qualifying lap.
+
+Esteban Ocon (#31), Kevin Magnussen (#20), Zhou Guanyu (#24), Franco Colapinto (#43), and Liam Lawson
+(#30) were eliminated from Q2.
+
+The top three drivers were Lewis Hamilton (#44) with a 1:32.567, followed by Carlos Sainz (#55) with
+a 0.144 second gap (1:32.711), and George Russell (#63) with a 0.212 second gap (1:32.779).
+
+### Session 3
+
+The start of session 3 was delayed due to Colapinto's crash.
+
+- Lewis Hamilton (#44) has his final lap time deleted for track limits.
+
+The race order for tomorrow's race is as follows: George Russell (#63), Carlos Sainz (#55), Pierre
+Gasly (#10), Charles Leclerc (#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar
+Piastri (#81), Nico Hulkenberg (#27), and Lewis Hamilton (#44).
+
+See [Document 23 - Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2)
+for the full order and timing sheet.
 
 ## Race
 
