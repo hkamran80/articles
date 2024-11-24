@@ -128,15 +128,43 @@ and are authorized by [Article 12.4.1.e of the I.S.C.](https://www.fia.com/sites
 
 The starting grid is: George Russell (#63), Carlos Sainz (#55), Pierre Gasly (#10), Charles Leclerc
 (#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar Piastri (#81), Nico Hulkenberg
-(#27), Lewis Hamilton (#44), Esteban Ocon (#31), Kevin Magnussen (#20), Zhou Guanyu (#24), Franco
-Colapinto (#43), Liam Lawson (#30), Sergio Perez (#11), Fernando Alonso (#14), Alex Albon (#23),
-Lance Stroll (#18), and Valtteri Bottas (#77). Bottas starts last after qualifying 19th because of
-a five grid place penalty for using an additional component out of his allocation (see [FP1](#section-free-practice-1)).
+(#27), Lewis Hamilton (#44), Esteban Ocon (#31), Kevin Magnussen (#20), Zhou Guanyu (#24), Liam Lawson
+(#30), Sergio Perez (#11), Fernando Alonso (#14), Alex Albon (#23), Lance Stroll (#18), and Valtteri
+Bottas (#77). Bottas starts last after qualifying 19th because of a five grid place penalty for using
+an additional component out of his allocation (see [FP1](#section-free-practice-1)). Colapinto starts
+from the pit lane following out-of-allowance component upgrades and specification changes.
 
-See [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2)
-for the grid and qualifying times.
+See [Document 35 - Final Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Starting%20Grid.pdf#page=2)[^3]
+for the grid and qualifying times
 
-The race is currently scheduled to begin at 22:00 PST on Saturday, November 23.
+The race is currently scheduled to begin at 22:00 PST on Saturday, November 23. Drivers are required
+to go to the national anthem positions at 21:42 and the anthem will begin at 21:44.
+See [Document 31 - Pre-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Pre-Race%20Procedure.pdf).
+
+After the race, the top three drivers, and the World Driver's Championship winner (if decided), will
+stop on the grid around grid position 10. A car will transport the drivers to the Bellagio for post-race
+interviews, then back to the grid for the podium ceremony. There is no cool down room. If the World
+Driver's Championship is decided, a press conference will be held after the TV pen. For more information,
+see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Post-Race%20Procedure.pdf).
+
+### Penalties
+
+- Franco Colapinto (#43) is required to start from the pit lane for exceeding his allotment of
+  restricted number components (RNCs) and changing a specification under parc fermé conditions.
+
+  **Explanation:** Given Colapinto's crash in [Q2](#section-session-2) yesterday, Williams opted to
+  upgrade some of his components, specifically a new gearbox case and cassette and a new gearbox
+  driveline, gear change components and auxiliary components, which are his sixth components.
+  [Article 29.2](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=30)
+  allows drivers to use up to five gearbox components, with additional units incurring five grid
+  place penalties. However, the Technical Delegate noted that a new specification of the LHS and RHS
+  front brake cooling duct was added, which violates [Article 40.9](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=51): "A Competitor may not modify any part on the car or make changes to
+  the set-up of the suspension whilst the car is being held under parc fermé conditions." Article
+  40.9(a) requires a pit lane start for non-sprint weekends.
+
+  **Documents:** [Document 29 - Parc Fermé Issues](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Parc%20Ferm%C3%A9%20Issues.pdf),
+  [Document 30 - Infringement - Car 43 - Changes made during Parc Ferme](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Car%2043%20-%20Changes%20made%20during%20Parc%20Ferme.pdf)
 
 [^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
 [^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
+[^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty).
