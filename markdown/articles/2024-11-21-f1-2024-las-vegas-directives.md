@@ -150,7 +150,7 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 ### Penalties
 
 - Franco Colapinto (#43) is required to start from the pit lane for exceeding his allotment of
-  restricted number components (RNCs).
+  restricted number components (RNCs) and changing a specification under parc fermé conditions.
 
   **Explanation:** Given Colapinto's crash in [Q2](#section-session-2) yesterday, Williams opted to
   upgrade some of his components, specifically a new gearbox case and cassette and a new gearbox
