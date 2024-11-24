@@ -167,4 +167,4 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 
 [^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
 [^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
-[^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty).
+[^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty). [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2) was issued at 01:45 PST.
