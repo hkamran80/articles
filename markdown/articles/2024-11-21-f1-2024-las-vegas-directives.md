@@ -182,7 +182,8 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 - Alex Albon (#23) was forced to retire from the race with a power unit failure on lap 21.
 
 - Carlos Sainz (#55) crossed the pit lane entry line as he abandoned his pit entry following a message
-  from his engineer on lap 27. At this time, no penalty has been given. However,
+  from his engineer on lap 27. The FIA opted to not give Sainz a penalty.
+  
   [I.S.C. Appendix L, Chapter 4, Article 4(d)](https://www.fia.com/sites/default/files/4_-_appendix_l_2024_publie_le_17_october_2024.pdf#page=58)
   says: "Except in cases of force majeure (accepted as such by the Stewards), or unless otherwise
   defined by the Race Director ... any part of a tyre of a car entering the pit lane must not cross,
@@ -191,25 +192,23 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
   (timestamped) clearly shows Sainz crossing the pit entry road divider, which was set out in
   Instruction 12.2 of [Document 19 - Race Director Event Notes V2](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Race%20Director%20Event%20Notes%20V2.pdf#page=5).
 
-  In my admittedly non-professional opinion, Sainz deserves a penalty.
+  In my opinion, the FIA erred in not giving Sainz a penalty.
 
 ## Post-Race
-
-> [!NOTE]
-> The FIA have not released the final race classification, any infringements (aside from Piastri's
-> false start), decisions, or summons, or the championship points documents. This post will be updated
-> when those documents become available.
 
 George Russell (#63) finished first, followed by Lewis Hamilton (#44) and Carlos Sainz (#55). Charles
 Leclerc (#16) finished fourth, while Max Verstappen (#1) finished fifth. Because Verstappen finished
 ahead of Lando Norris (#4) who finished in sixth, he won his fourth World Driver's Championship.
 
 Lando Norris received the bonus point for fastest lap, which he set on the final lap after pitting
-for softs. See [Document 37 - Provisional Race Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Race%20Classification.pdf#page=2)
+for softs. See [Document 40 - Final Race Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Race%20Classification.pdf#page=2)[^4]
 for the full race order.
 
-This is Russell's first win this season. His win at Spa did not count because he was disqualified
-for his car being underweight after the race.
+This is Russell's second win this season. His win at Spa, which would have been his second, did not
+count because he was disqualified for his car being 1.5 kg underweight after the race (see Belgian
+GP [Document 42 - Weight of Car Number 63](https://www.fia.com/sites/default/files/decision-document/2024%20Belgian%20Grand%20Prix%20-%20Weight%20of%20Car%20Number%2063.pdf),
+[Document 43 - Summons - Car 63 - Technical Regulations](https://www.fia.com/sites/default/files/decision-document/2024%20Belgian%20Grand%20Prix%20-%20Summons%20-%20Car%2063%20-%20Technical%20Regulations.pdf),
+and [Document 44 - Infringement - Car 63 - Technical non-compliance (Weight)](https://www.fia.com/sites/default/files/decision-document/2024%20Belgian%20Grand%20Prix%20-%20Infringement%20-%20Car%2063%20-%20Technical%20non-compliance%20(Weight).pdf)).
 
 ### Driver's Championship
 
@@ -241,6 +240,11 @@ for his car being underweight after the race.
 | Williams Mercedes | 17 | 17 | 0 |
 | Kick Sauber Ferrari | 0 | 0 | 0 |
 
+See [Document 41 - Championship Points](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Championship%20Points.pdf#page=2)
+for the full championship points for both drivers and constructors.
+
 [^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
 [^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
 [^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty). The earlier document, [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2), was issued at 01:45 PST.
+[^4]: This document was released at 01:38, two hours after [Document 37 - Provisional Race Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Race%20Classification.pdf#page=2) was released.
+
