@@ -145,7 +145,7 @@ After the race, the top three drivers, and the World Driver's Championship winne
 stop on the grid around grid position 10. A car will transport the drivers to the Bellagio for post-race
 interviews, then back to the grid for the podium ceremony. There is no cool down room. If the World
 Driver's Championship is decided, a press conference will be held after the TV pen. For more information,
-see [Document 32 - Post_Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Post-Race%20Procedure.pdf).
+see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Post-Race%20Procedure.pdf).
 
 ### Penalties
 
