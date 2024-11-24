@@ -139,13 +139,13 @@ for the grid and qualifying times
 
 The race is currently scheduled to begin at 22:00 PST on Saturday, November 23. Drivers are required
 to go to the national anthem positions at 21:42 and the anthem will begin at 21:44.
-See [Document 31 - Pre-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Pre-Race%20Procedure.pdf).
+See [Document 31 - Pre-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Pre-Race%20Procedure.pdf#page=2).
 
 After the race, the top three drivers, and the World Driver's Championship winner (if decided), will
 stop on the grid around grid position 10. A car will transport the drivers to the Bellagio for post-race
 interviews, then back to the grid for the podium ceremony. There is no cool down room. If the World
 Driver's Championship is decided, a press conference will be held after the TV pen. For more information,
-see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Post-Race%20Procedure.pdf).
+see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Post-Race%20Procedure.pdf#page=2).
 
 ### Penalties
 
@@ -167,4 +167,4 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 
 [^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
 [^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
-[^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty). [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2) was issued at 01:45 PST.
+[^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty). The earlier document, [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2), was issued at 01:45 PST.
