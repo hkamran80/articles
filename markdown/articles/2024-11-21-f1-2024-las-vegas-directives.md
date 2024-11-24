@@ -147,7 +147,7 @@ interviews, then back to the grid for the podium ceremony. There is no cool down
 Driver's Championship is decided, a press conference will be held after the TV pen. For more information,
 see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Post-Race%20Procedure.pdf#page=2).
 
-### Penalties
+### Events
 
 - Franco Colapinto (#43) is required to start from the pit lane for exceeding his allotment of
   restricted number components (RNCs) and changing a specification under parc fermé conditions.
@@ -164,6 +164,82 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 
   **Documents:** [Document 29 - Parc Fermé Issues](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Parc%20Ferm%C3%A9%20Issues.pdf),
   [Document 30 - Infringement - Car 43 - Changes made during Parc Ferme](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Car%2043%20-%20Changes%20made%20during%20Parc%20Ferme.pdf)
+
+- Oscar Piastri (#81) was given a five-second penalty for being outside his grid position box when
+  the race started.
+
+  **Explanation:** [Article 48.1(c)](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=58)
+  says that a false start includes "Any part of the contact patch of [a car's] front tyres outside
+  of the lines (front and sides) at the time of the Start signal." The contact patch of Piastri's
+  tyres was out enough to be given a mandatory penalty under Article 54.3, which gives the stewards
+  options for penalties. The stewards decided that a five-second penalty was appropriate given the
+  "limited nature of the breach".
+
+  **Documents:** [Document 36 - Infringment - Car 81 - Incorrect starting position](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Car%2081%20-%20Incorrect%20starting%20position.pdf)
+
+- Pierre Gasly (#10) was forced to retire from the race with a power unit failure on lap 13.
+
+- Alex Albon (#23) was forced to retire from the race with a power unit failure on lap 21.
+
+- Carlos Sainz (#55) crossed the pit lane entry line as he abandoned his pit entry following a message
+  from his engineer on lap 27. At this time, no penalty has been given. However,
+  [I.S.C. Appendix L, Chapter 4, Article 4(d)](https://www.fia.com/sites/default/files/4_-_appendix_l_2024_publie_le_17_october_2024.pdf#page=58)
+  says: "Except in cases of force majeure (accepted as such by the Stewards), or unless otherwise
+  defined by the Race Director ... any part of a tyre of a car entering the pit lane must not cross,
+  in any direction, any line painted on the track for the purpose of separating cars entering the
+  pit lane from those on the track". Formula 1's [race highlights video](https://youtu.be/sNd1-1GjMDY?t=252)
+  (timestamped) clearly shows Sainz crossing the pit entry road divider, which was set out in
+  Instruction 12.2 of [Document 19 - Race Director Event Notes V2](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Race%20Director%20Event%20Notes%20V2.pdf#page=5).
+
+  In my admittedly non-professional opinion, Sainz deserves a penalty.
+
+## Post-Race
+
+> [!NOTE]
+> The FIA have not released the final race classification, any infringements (aside from Piastri's
+> false start), decisions, or summons, or the championship points documents. This post will be updated
+> when those documents become available.
+
+George Russell (#63) finished first, followed by Lewis Hamilton (#44) and Carlos Sainz (#55). Charles
+Leclerc (#16) finished fourth, while Max Verstappen (#1) finished fifth. Because Verstappen finished
+ahead of Lando Norris (#4) who finished in sixth, he won his fourth World Driver's Championship.
+
+Lando Norris received the bonus point for fastest lap, which he set on the final lap after pitting
+for softs. See [Document 37 - Provisional Race Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Race%20Classification.pdf#page=2)
+for the full race order.
+
+This is Russell's first win this season. His win at Spa did not count because he was disqualified
+for his car being underweight after the race.
+
+### Driver's Championship
+
+| Driver | Previous Points | New Points | Change |
+| -- | -- | -- | -- |
+| Max Verstappen (#1) [winner] | 393 | 403 | +10 |
+| Lando Norris (#4) | 331 | 340 | +9 |
+| Charles Leclerc (#16) | 307 | 319 | +12 |
+| Oscar Piastri (#81) | 262 | 268 | +6 |
+| Carlos Sainz (#55) | 244 | 259 | +15 |
+| George Russell (#63) | 192 | 217 | +25 |
+| Lewis Hamilton (#44) | 190 | 208 | +18 |
+| Sergio Perez (#11) | 151 | 152 | +1 |
+| Fernando Alonso (#14) | 62 | 62 | 0 |
+| Nico Hulkenberg (#27) | 31 | 35 | +4 |
+
+### Constructors' Championship
+
+| Constructor | Previous Points | New Points | Change |
+| -- | -- | -- | -- |
+| McLaren Mercedes | 593 | 608 | +15 |
+| Ferrari | 557 | 584 | +27 |
+| Red Bull Racing Honda RBPT | 544 | 555 | +11 |
+| Mercedes | 382 | 425 | +43 |
+| Aston Martin Aramco Mercedes | 86 | 86 | 0 |
+| Haas Ferrari | 46 | 50 | +4 (moved up to sixth) |
+| Alpine Renault | 49 | 49 | 0 (dropped to seventh) |
+| RB Honda RBPT | 44 | 46 | +2 |
+| Williams Mercedes | 17 | 17 | 0 |
+| Kick Sauber Ferrari | 0 | 0 | 0 |
 
 [^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
 [^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
