@@ -77,10 +77,6 @@ for the full timing sheet.
 
 ## Qualifying
 
-> [!NOTE]
-> The FIA has not yet released the final qualifying classification. This post will be updated when
-> that happens.
-
 ### Session 1
 
 - Alex Albon (#23) had his 1:34.590 lap deleted for track limits at turn 4.
@@ -119,7 +115,7 @@ The Q3 order is as follows: George Russell (#63), Carlos Sainz (#55), Pierre Gas
 Leclerc (#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar Piastri (#81), Nico
 Hulkenberg (#27), and Lewis Hamilton (#44).
 
-See [Document 23 - Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2)
+See [Document 27 - Final Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Qualifying%20Classification.pdf#page=2)[^2]
 for the full order and timing sheet.
 
 See [Document 24 - Infringment - Qualifying Deleted Lap Times](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Qualifying%20Deleted%20Lap%20Times.pdf#page=2)
@@ -128,9 +124,19 @@ for more information on the deleted qualifying lap times. Lap times are deleted 
 and [Appendix L, Chapter IV, Article 2(c) of the FIA International Sporting Code](https://www.fia.com/sites/default/files/4_-_appendix_l_2024_publie_le_17_october_2024.pdf#page=56),
 and are authorized by [Article 12.4.1.e of the I.S.C.](https://www.fia.com/sites/default/files/2024_international_sporting_code_fr-en_clean_version-_14.12.2023.pdf#page=53)
 
-
 ## Race
+
+The starting grid is: George Russell (#63), Carlos Sainz (#55), Pierre Gasly (#10), Charles Leclerc
+(#16), Max Verstappen (#1), Lando Norris (#4), Yuki Tsunoda (#22), Oscar Piastri (#81), Nico Hulkenberg
+(#27), Lewis Hamilton (#44), Esteban Ocon (#31), Kevin Magnussen (#20), Zhou Guanyu (#24), Franco
+Colapinto (#43), Liam Lawson (#30), Sergio Perez (#11), Fernando Alonso (#14), Alex Albon (#23),
+Lance Stroll (#18), and Valtteri Bottas (#77). Bottas starts last after qualifying 19th because of
+a five grid place penalty for using an additional component out of his allocation (see [FP1](#section-free-practice-1)).
+
+See [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2)
+for the grid and qualifying times.
 
 The race is currently scheduled to begin at 22:00 PST on Saturday, November 23.
 
-[^1]: This document was released at 21:21 PST, almost 90 minutes after the FP3 classification was released.
+[^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
+[^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
