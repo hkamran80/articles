@@ -196,6 +196,13 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 
 ## Post-Race
 
+> [!IMPORTANT]
+> Congratulations to George Russell (#63) for winning the race, and Lewis Hamilton (#44) and Carlos
+> Sainz (#55) for their podium finishes!
+
+> [!IMPORTANT]
+> Congratulations to Max Verstappen (#1) for winning his fourth World Driver's Championship!
+
 George Russell (#63) finished first, followed by Lewis Hamilton (#44) and Carlos Sainz (#55). Charles
 Leclerc (#16) finished fourth, while Max Verstappen (#1) finished fifth. Because Verstappen finished
 ahead of Lando Norris (#4) who finished in sixth, he won his fourth World Driver's Championship.
