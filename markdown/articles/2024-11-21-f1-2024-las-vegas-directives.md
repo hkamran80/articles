@@ -135,7 +135,7 @@ an additional component out of his allocation (see [FP1](#section-free-practice-
 from the pit lane following out-of-allowance component upgrades and specification changes.
 
 See [Document 35 - Final Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Starting%20Grid.pdf#page=2)[^3]
-for the grid and qualifying times
+for the grid and qualifying times.
 
 The race is currently scheduled to begin at 22:00 PST on Saturday, November 23. Drivers are required
 to go to the national anthem positions at 21:42 and the anthem will begin at 21:44.
