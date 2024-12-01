@@ -222,7 +222,7 @@ and [Document 44 - Infringement - Car 63 - Technical non-compliance (Weight)](ht
 | Driver | Previous Points | New Points | Points | Race Position | Standings |
 | -- | -- | -- | -- | -- | -- |
 | Max Verstappen (#1) [winner] | 393 | 403 | +10 | P5 | - |
-| Lando Norris (#4) | 331 | 340 | +9 | P6 | - |
+| Lando Norris (#4) | 331 | 340 | +9 | P6, FL | - |
 | Charles Leclerc (#16) | 307 | 319 | +12 | P4 | - |
 | Oscar Piastri (#81) | 262 | 268 | +6 | P7 | - |
 | Carlos Sainz (#55) | 244 | 259 | +15 | P3 | - |
