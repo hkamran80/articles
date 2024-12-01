@@ -196,6 +196,13 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 
 ## Post-Race
 
+> [!IMPORTANT]
+> Congratulations to George Russell (#63) for winning the race, and Lewis Hamilton (#44) and Carlos
+> Sainz (#55) for their podium finishes!
+
+> [!IMPORTANT]
+> Congratulations to Max Verstappen (#1) for winning his fourth World Driver's Championship!
+
 George Russell (#63) finished first, followed by Lewis Hamilton (#44) and Carlos Sainz (#55). Charles
 Leclerc (#16) finished fourth, while Max Verstappen (#1) finished fifth. Because Verstappen finished
 ahead of Lando Norris (#4) who finished in sixth, he won his fourth World Driver's Championship.
@@ -212,39 +219,40 @@ and [Document 44 - Infringement - Car 63 - Technical non-compliance (Weight)](ht
 
 ### Driver's Championship
 
-| Driver | Previous Points | New Points | Change |
-| -- | -- | -- | -- |
-| Max Verstappen (#1) [winner] | 393 | 403 | +10 |
-| Lando Norris (#4) | 331 | 340 | +9 |
-| Charles Leclerc (#16) | 307 | 319 | +12 |
-| Oscar Piastri (#81) | 262 | 268 | +6 |
-| Carlos Sainz (#55) | 244 | 259 | +15 |
-| George Russell (#63) | 192 | 217 | +25 |
-| Lewis Hamilton (#44) | 190 | 208 | +18 |
-| Sergio Perez (#11) | 151 | 152 | +1 |
-| Fernando Alonso (#14) | 62 | 62 | 0 |
-| Nico Hulkenberg (#27) | 31 | 35 | +4 |
+| Driver | Previous Points | New Points | Points | Race Position | Standings |
+| -- | -- | -- | -- | -- | -- |
+| Max Verstappen (#1) [winner] | 393 | 403 | +10 | P5 | 0 |
+| Lando Norris (#4) | 331 | 340 | +9 | P6 | 0 |
+| Charles Leclerc (#16) | 307 | 319 | +12 | P4 | 0 |
+| Oscar Piastri (#81) | 262 | 268 | +6 | P7 | 0 |
+| Carlos Sainz (#55) | 244 | 259 | +15 | P3 | 0 |
+| George Russell (#63) | 192 | 217 | +25 | P1 | 0 |
+| Lewis Hamilton (#44) | 190 | 208 | +18 | P2 | 0 |
+| Sergio Perez (#11) | 151 | 152 | +1 | P10 | 0 |
+| Fernando Alonso (#14) | 62 | 62 | 0 | P11 | 0 |
+| Nico Hulkenberg (#27) | 31 | 35 | +4 | P8 | 0 |
 
 ### Constructors' Championship
 
-| Constructor | Previous Points | New Points | Change |
-| -- | -- | -- | -- |
-| McLaren Mercedes | 593 | 608 | +15 |
-| Ferrari | 557 | 584 | +27 |
-| Red Bull Racing Honda RBPT | 544 | 555 | +11 |
-| Mercedes | 382 | 425 | +43 |
-| Aston Martin Aramco Mercedes | 86 | 86 | 0 |
-| Haas Ferrari | 46 | 50 | +4 (moved up to sixth) |
-| Alpine Renault | 49 | 49 | 0 (dropped to seventh) |
-| RB Honda RBPT | 44 | 46 | +2 |
-| Williams Mercedes | 17 | 17 | 0 |
-| Kick Sauber Ferrari | 0 | 0 | 0 |
+| Constructor | Previous Points | New Points | Points | Standings |
+| -- | -- | -- | -- | -- |
+| McLaren Mercedes | 593 | 608 | +15 | 0 |
+| Ferrari | 557 | 584 | +27 | 0 |
+| Red Bull Racing Honda RBPT | 544 | 555 | +11 | 0 |
+| Mercedes | 382 | 425 | +43 | 0 |
+| Aston Martin Aramco Mercedes | 86 | 86 | 0 | 0 |
+| Haas Ferrari | 46 | 50 | +4 | +1 |
+| Alpine Renault | 49 | 49 | 0 | -1 |
+| RB Honda RBPT | 44 | 46 | +2 | 0 |
+| Williams Mercedes | 17 | 17 | 0 | 0 |
+| Kick Sauber Ferrari | 0 | 0 | 0 | 0 |
 
 See [Document 41 - Championship Points](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Championship%20Points.pdf#page=2)
-for the full championship points for both drivers and constructors.
+for the full championship points for both drivers and constructors. See São Paulo GP
+[Document 91 - Championship Points](https://www.fia.com/sites/default/files/decision-document/2024%20S%C3%A3o%20Paulo%20Grand%20Prix%20-%20Championship%20Points.pdf#page=2)
+for the previous standings.
 
 [^1]: This document was released at 21:21 PST, about 90 minutes after the FP3 classification was released.
 [^2]: This document was released at 01:40 PST, two hours after [Document 23 = Provisional Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Qualifying%20Classification.pdf#page=2) was released.
 [^3]: This document was released at 20:00 PST and highlights the pit lane start of Colapinto (see first race penalty). The earlier document, [Document 28 - Provisional Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Starting%20Grid.pdf#page=2), was issued at 01:45 PST.
 [^4]: This document was released at 01:38, two hours after [Document 37 - Provisional Race Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Provisional%20Race%20Classification.pdf#page=2) was released.
-
