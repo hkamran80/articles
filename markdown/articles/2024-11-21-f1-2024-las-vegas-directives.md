@@ -118,7 +118,7 @@ Hulkenberg (#27), and Lewis Hamilton (#44).
 See [Document 27 - Final Qualifying Classification](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Qualifying%20Classification.pdf#page=2)[^2]
 for the full order and timing sheet.
 
-See [Document 24 - Infringment - Qualifying Deleted Lap Times](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Qualifying%20Deleted%20Lap%20Times.pdf#page=2)
+See [Document 24 - Infringement - Qualifying Deleted Lap Times](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Infringement%20-%20Qualifying%20Deleted%20Lap%20Times.pdf#page=2)
 for more information on the deleted qualifying lap times. Lap times are deleted when a driver violates
 [Article 33.3 of the Sporting Regulations](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=40)
 and [Appendix L, Chapter IV, Article 2(c) of the FIA International Sporting Code](https://www.fia.com/sites/default/files/4_-_appendix_l_2024_publie_le_17_october_2024.pdf#page=56),
@@ -135,7 +135,7 @@ an additional component out of his allocation (see [FP1](#section-free-practice-
 from the pit lane following out-of-allowance component upgrades and specification changes.
 
 See [Document 35 - Final Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Starting%20Grid.pdf#page=2)[^3]
-for the grid and qualifying times
+for the grid and qualifying times.
 
 The race is currently scheduled to begin at 22:00 PST on Saturday, November 23. Drivers are required
 to go to the national anthem positions at 21:42 and the anthem will begin at 21:44.
