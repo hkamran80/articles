@@ -153,6 +153,15 @@
             "published": "2024-11-30T16:44:00-08:00",
             "updated": "2024-12-01T14:36:00-08:00",
             "filename": "2024-11-30-f1-2024-qatar"
+        },
+        {
+            "id": "f1-2024-abu-dhabi",
+            "title": "Formula 1 Abu Dhabi Grand Prix 2024",
+            "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Abu Dhabi Grand Prix weekend.",
+            "tags": ["Formula 1", "FIA"],
+            "published": "2024-12-06T18:38:00-08:00",
+            "filename": "2024-12-06-f1-2024-abu-dhabi",
+            "branchName": "article/f1-2024-abu-dhabi-fp"
         }
     ],
     "notes": [
