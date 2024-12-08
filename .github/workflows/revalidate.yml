@@ -11,8 +11,6 @@ on:
         branches:
             - main
         types:
-            - opened
-            - labeled
             - closed
 
     workflow_dispatch:
