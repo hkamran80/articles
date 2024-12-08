@@ -162,6 +162,15 @@
             "published": "2024-12-06T18:38:00-08:00",
             "updated": "2024-12-07T13:44:00-08:00",
             "filename": "2024-12-06-f1-2024-abu-dhabi"
+        },
+        {
+            "id": "why-live-blog-f1",
+            "title": "Why I Decided to Live Blog Formula 1",
+            "description": "I started (semi-)live blogging about Formula 1 during the Las Vegas Grand Prix and it all started because of the regulations",
+            "tags": ["Formula 1", "FIA"],
+            "published": "",
+            "filename": "why-live-blog-f1",
+            "branchName": "article/why-live-blog-f1"
         }
     ],
     "notes": [
