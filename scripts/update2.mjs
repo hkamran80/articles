@@ -290,7 +290,21 @@ async function main() {
         if (changes.lastPublishedArticleChanged) paths.add("/");
     }
 
-    console.log([...paths].sort());
+    const sortedPaths = [...paths].sort();
+    const request = await fetch(
+        `https://hkamran.com/api/revalidate?path=${sortedPaths.join(",")}`,
+        {
+            method: "POST",
+            headers: new Headers({
+                "x-api-key": process.env.REVALIDATION_TOKEN,
+            }),
+        },
+    );
+
+    console.log(request.status);
+    console.log(await request.json());
+
+    if (request.ok) process.exit(3);
 }
 
 await main();
