@@ -21,7 +21,14 @@ env:
 jobs:
     revalidate:
         runs-on: ubuntu-latest
-        if: github.repository == 'hkamran80/articles' && (contains(github.event.pull_request.labels.*.name, 'new article') || contains(github.event.pull_request.labels.*.name, 'update article') || contains(github.event.pull_request.labels.*.name, 'new note') || contains(github.event.pull_request.labels.*.name, 'update note'))
+        if: > 
+            github.repository == 'hkamran80/articles' &&
+            (
+                contains(github.event.pull_request.labels.*.name, 'new article') ||
+                contains(github.event.pull_request.labels.*.name, 'update article') ||
+                contains(github.event.pull_request.labels.*.name, 'new note') ||
+                contains(github.event.pull_request.labels.*.name, 'update note')
+            )
         steps:
             - name: Checkout Branch
               uses: actions/checkout@v3
