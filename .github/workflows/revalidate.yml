@@ -7,13 +7,11 @@ on:
         paths:
             - "markdown/**"
 
-    pull_request:
-        branches:
-            - main
-        types:
-            - closed
-
     workflow_dispatch:
+
+concurrency:
+    group: 'publish'
+    cancel-in-progress: true
 
 env:
     REVALIDATION_TOKEN: ${{ secrets.REVALIDATION_TOKEN }}
@@ -21,14 +19,7 @@ env:
 jobs:
     revalidate:
         runs-on: ubuntu-latest
-        if: > 
-            github.repository == 'hkamran80/articles' &&
-            (
-                contains(github.event.pull_request.labels.*.name, 'new article') ||
-                contains(github.event.pull_request.labels.*.name, 'update article') ||
-                contains(github.event.pull_request.labels.*.name, 'new note') ||
-                contains(github.event.pull_request.labels.*.name, 'update note')
-            )
+        if: github.repository == 'hkamran80/articles'
         steps:
             - name: Checkout Branch
               uses: actions/checkout@v3
@@ -55,7 +46,10 @@ jobs:
 
     publish-to-dev:
         runs-on: ubuntu-latest
-        if: github.repository == 'hkamran80/articles' && contains(github.event.pull_request.labels.*.name, 'new article') && github.event.pull_request.merged
+        if: >
+          github.repository == 'hkamran80/articles' &&
+          contains(github.event.pull_request.labels.*.name, 'new article') &&
+          github.event.pull_request.merged
         steps:
             - name: Checkout Branch
               uses: actions/checkout@v3
@@ -74,5 +68,5 @@ jobs:
               with:
                   node-version: 20
 
-            - name: Revalidate
+            - name: Publish
               run: node scripts/dev_to.mjs
