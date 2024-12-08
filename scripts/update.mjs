@@ -33,9 +33,10 @@ import { promisify } from "util";
  */
 
 /**
- * @typedef {Object} PostIdAndTags A post from the repository with an ID and tags only
+ * @typedef {Object} PostDifferenceSummary A post from the repository with an ID and tags only
  * @property {string} id The post ID
  * @property {string[]} tags The post tags
+ * @property {string} published The post published time
  */
 
 /**
@@ -176,8 +177,8 @@ const checkLastPublishedArticle = (oldArticles, newArticles) => {
 
 /**
  * @typedef {Object} JsonChanges
- * @property {PostIdAndTags[]} articles The articles that have been modified in some way
- * @property {PostIdAndTags[]} notes The notes that have been modified in some way
+ * @property {PostDifferenceSummary[]} articles The articles that have been modified in some way
+ * @property {PostDifferenceSummary[]} notes The notes that have been modified in some way
  * @property {boolean} lastPublishedArticleChanged Whether the last published article has changed
  */
 
@@ -210,12 +211,14 @@ const getContentsChanges = async () => {
                 changes.map((article) => ({
                     id: article.id,
                     tags: article.tags,
+                    published: note.published,
                 })),
             );
         const articleModifications = articlesDiff["changed"].flatMap(
             (change) => ({
                 id: change.id,
                 tags: [...new Set([...change.old.tags, ...change.new.tags])],
+                published: note.published,
             }),
         );
 
@@ -225,11 +228,13 @@ const getContentsChanges = async () => {
                 changes.map((note) => ({
                     id: note.id,
                     tags: note.tags,
+                    published: note.published,
                 })),
             );
         const noteModifications = notesDiff["changed"].flatMap((change) => ({
             id: change.id,
             tags: [...new Set([...change.old.tags, ...change.new.tags])],
+            published: note.published,
         }));
 
         const lastPublishedArticleChanged = checkLastPublishedArticle(
@@ -273,18 +278,34 @@ async function main() {
 
     if (files.includes(CONTENTS_FILE)) {
         const changes = await getContentsChanges();
+        const articleCount = Object.keys(changes.articles).length;
+        const noteCount = Object.keys(changes.notes).length;
 
-        if (Object.keys(changes.articles).length !== 0) paths.add("/articles");
+        if (
+            articleCount > 1 ||
+            (articleCount === 1 && changes.articles[0].published !== "")
+        )
+            paths.add("/articles");
 
         changes.articles.forEach((article) => {
             paths.add(`/article/${article.id}`);
-            article.tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
+
+            if (article.published !== "")
+                article.tags.forEach((tag) =>
+                    paths.add(`/tag/${slugify(tag)}`),
+                );
         });
 
-        if (Object.keys(changes.notes).length !== 0) paths.add("/notes");
+        if (
+            noteCount > 1 ||
+            (noteCount === 1 && changes.notes[0].published !== "")
+        )
+            paths.add("/notes");
         changes.notes.forEach((note) => {
             paths.add(`/note/${note.id}`);
-            note.tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
+
+            if (note.published !== "")
+                note.tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
         });
 
         if (changes.lastPublishedArticleChanged) paths.add("/");
