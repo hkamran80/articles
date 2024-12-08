@@ -1,72 +1,47 @@
 name: Update Website
 
 on:
-    push:
-        branches:
-            - main
-        paths:
-            - "markdown/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "markdown/**"
 
-    workflow_dispatch:
+  workflow_dispatch:
 
 concurrency:
-    group: 'publish'
-    cancel-in-progress: true
+  group: 'publish'
+  cancel-in-progress: true
 
 env:
-    REVALIDATION_TOKEN: ${{ secrets.REVALIDATION_TOKEN }}
+  REVALIDATION_TOKEN: ${{ secrets.REVALIDATION_TOKEN }}
 
 jobs:
-    revalidate:
-        runs-on: ubuntu-latest
-        if: github.repository == 'hkamran80/articles'
-        steps:
-            - name: Checkout Branch
-              uses: actions/checkout@v3
-              with:
-                  fetch-depth: 2
+  revalidate:
+    runs-on: ubuntu-latest
+    if: github.repository == 'hkamran80/articles'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-            - name: Install jd
-              uses: supplypike/setup-bin@v3
-              with:
-                  uri: "https://github.com/josephburnett/jd/releases/download/v1.7.1/jd-amd64-linux"
-                  name: jd
-                  version: "1.7.1"
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
-            - name: Install Node
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 20
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "pnpm"
 
-            - name: Revalidate
-              run: node scripts/update.mjs
+      - name: Install dependencies
+        run: pnpm install
 
-            - name: Update feeds
-              run: curl -X POST -d {} "${{ secrets.ASSETS_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
+      - name: Revalidate
+        run: node scripts/update.mjs
 
-    publish-to-dev:
-        runs-on: ubuntu-latest
-        if: >
-          github.repository == 'hkamran80/articles' &&
-          contains(github.event.pull_request.labels.*.name, 'new article') &&
-          github.event.pull_request.merged
-        steps:
-            - name: Checkout Branch
-              uses: actions/checkout@v3
-              with:
-                  fetch-depth: 1
-
-            - name: Install jd
-              uses: supplypike/setup-bin@v3
-              with:
-                  uri: "https://github.com/josephburnett/jd/releases/download/v1.7.1/jd-amd64-linux"
-                  name: jd
-                  version: "1.7.1"
-
-            - name: Install Node
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 20
-
-            - name: Publish
-              run: node scripts/dev_to.mjs
+      - name: Update feeds
+        run: curl -X POST -d {} "${{ secrets.ASSETS_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
