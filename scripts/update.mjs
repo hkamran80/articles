@@ -1,160 +1,310 @@
-import { exec as cpExec } from "child_process";
+import { slugify } from "@hkamran/utility-strings";
+import { exec } from "child_process";
 import { promisify } from "util";
-import writings from "../markdown/contents.json" assert { type: "json" };
-import { readFile } from "fs/promises";
-
-const exec = promisify(cpExec);
 
 /**
- * Execute simple shell command (async wrapper).
- * @param {String} cmd
- * @return {Object} { stdout: String, stderr: String }
+ * Executes a shell command and returns the result as a Promise.
+ * @typedef {Object} ExecResult
+ * @property {string} stdout - The standard output from the command.
+ * @property {string} stderr - The standard error from the command.
  */
-async function execIgnoreErrors(cmd) {
-    return new Promise(function (resolve, reject) {
-        exec(cmd, (err, stdout, stderr) => {
-            if (err) {
-                resolve({ stdout, stderr });
-            } else {
-                resolve({ stdout, stderr });
-            }
-        });
-    });
-}
 
 /**
- * Generate a "slugified" version of a string
- *
- * Strips a string of non-alphanumeric characters, and replaces spaces with dashes
- *
- * Source: [@hkamran80/utilities-js](https://github.com/hkamran80/utilities-js/blob/main/packages/strings/index.js#L30-L41)
- * @param {string} string - The string to "slugify"
- * @returns {string} The "slugified" string
+ * @typedef {Object} Post A post from the repository
+ * @property {string} id The post ID
+ * @property {string} title The post title
+ * @property {string} description The post description
+ * @property {string[]} tags The post tags
+ * @property {string} published The post published time
+ * @property {string} [updated] The post updated time
+ * @property {string} filename The Markdown filename of the post
+ * @property {string} [branchName] The branch the post is on, should only be set for unpublished posts
  */
-export const slugify = (string) =>
-    string
-        .replace(/[^A-Za-z0-9\s]/gm, "")
-        .replace(/ /gm, "-")
-        .toLowerCase();
 
-const markdownChanges = (
-    await exec(
-        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`,
-    )
-).stdout;
+/**
+ * @typedef {Object} PostWithoutID A post from the repository without an ID
+ * @property {string} title The post title
+ * @property {string} description The post description
+ * @property {string[]} tags The post tags
+ * @property {string} published The post published time
+ * @property {string} [updated] The post updated time
+ * @property {string} filename The Markdown filename of the post
+ * @property {string} [branchName] The branch the post is on, should only be set for unpublished posts
+ */
 
-const deletedMarkdown = (
-    await exec(
-        `git diff --name-only --diff-filter=D ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .md$ | grep '^markdown/' | xargs`,
-    )
-).stdout;
+/**
+ * @typedef {Object} PostIdAndTags A post from the repository with an ID and tags only
+ * @property {string} id The post ID
+ * @property {string[]} tags The post tags
+ */
 
-const jsonChanges = (
-    await exec(
-        `git diff --name-only --diff-filter=ACMRT ${process.env.GITHUB_SHA}^1 ${process.env.GITHUB_SHA} | grep .json$ | grep '^markdown/' | xargs`,
-    )
-).stdout;
+/**
+ * The path to the `contents.json` file
+ * @constant {string}
+ */
+const CONTENTS_FILE = "markdown/contents.json";
 
-const paths = new Set();
+/**
+ * A promise version of `exec`
+ *
+ * @param {string} command The command to run
+ * @return {Promise<ExecResult>} A promise of the result
+ */
+const execAsync = promisify(exec);
 
-if (markdownChanges.trim().replace("\n", "") !== "") {
-    for (let file of markdownChanges.trim().split("\n")) {
-        const [type, id] = file
-            .replace(/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))/g, "")
-            .split("/");
+/**
+ * Get a list of changed files
+ *
+ * @return {Promise<string[]>} Changed Markdown and JSON files
+ */
+const getChangedFiles = async () => {
+    try {
+        const { stdout } = await execAsync("git diff --name-only HEAD^ HEAD");
+        if (!stdout) process.exit(1);
 
-        paths.add(`/${type.slice(0, type.length - 1)}/${id}`);
-    }
-}
+        const files = stdout.split("\n").filter(Boolean);
 
-if (deletedMarkdown.trim().replace("\n", "") !== "") {
-    await exec(
-        `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json > contents.old.json`,
-    );
-
-    for (let file of deletedMarkdown.trim().split("\n")) {
-        const [type, id] = file
-            .replace(/(^markdown\/)|(.md$)|(([0-9]{4}-([0-9]{2}-){2}))/g, "")
-            .split("/");
-
-        paths.add(`/${type.slice(0, type.length - 1)}/${id}`);
-        paths.add(`/${type.slice(0, type.length - 1)}s`);
-        paths.add("/");
-
-        console.debug(type, id);
-
-        const oldWritings = JSON.parse(
-            (await readFile("contents.old.json")).toString(),
+        const relevantFiles = files.filter(
+            (file) =>
+                file.startsWith("markdown/articles/") ||
+                file.startsWith("markdown/notes/") ||
+                file.endsWith(".json"),
         );
 
-        console.debug(oldWritings);
-
-        oldWritings[type]
-            .find(({ id: writingId }) => writingId === id)
-            .tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
+        return relevantFiles;
+    } catch (error) {
+        console.error("Error getting changed files:", error);
+        process.exit(1);
     }
-}
+};
 
-if (jsonChanges.trim().replace("\n", "") !== "") {
-    const changes = JSON.parse(
-        (
-            await execIgnoreErrors(
-                `git show ${process.env.GITHUB_SHA}^1:markdown/contents.json | jd -f patch markdown/contents.json`,
-            )
-        ).stdout,
+/**
+ * Safely parse a JSON string
+ *
+ * @param {string} jsonString The JSON string
+ * @return {Object|Array|null} The JSON or `null`
+ */
+const safeParse = (jsonString) => {
+    try {
+        return JSON.parse(jsonString);
+    } catch {
+        return null;
+    }
+};
+
+/**
+ * @typedef {Object} ArrayDifferenceChanges Changes between two arrays
+ * @property {string} id The post ID
+ * @property {PostWithoutID} old The old post
+ * @property {PostWithoutID} new The new post
+ */
+
+/**
+ * @typedef {Object} ArrayDifferences Differences between two arrays
+ * @property {Post[]} added The additions
+ * @property {Post[]} removed The removals
+ * @property {ArrayDifferenceChanges} changed The changes
+ */
+
+/**
+ * Check for differences in two post arrays
+ *
+ * @param {Post[]} oldPosts The old posts array
+ * @param {Post[]} newPosts The new posts array
+ * @return {ArrayDifferences} The differences in the arrays
+ */
+const diffPostArrays = (oldPosts, newPosts) => {
+    const oldPostMap = new Map(oldPosts.map((item) => [item.id, item]));
+    const newPostMap = new Map(newPosts.map((item) => [item.id, item]));
+
+    const added = [];
+    const removed = [];
+    const changed = [];
+
+    // Added and modified items
+    for (const [id, newItem] of newPostMap) {
+        if (!oldPostMap.has(id)) {
+            added.push({ id: newItem.id, ...newItem });
+        } else {
+            const oldItem = oldPostMap.get(id);
+            if (JSON.stringify(oldItem) !== JSON.stringify(newItem)) {
+                changed.push({
+                    id,
+                    old: { id: oldItem.id, ...oldItem },
+                    new: { id: newItem.id, ...newItem },
+                });
+            }
+        }
+    }
+
+    // Removed items
+    for (const [id, oldItem] of oldPostMap) {
+        if (!newPostMap.has(id)) {
+            removed.push({ id: oldItem.id, ...oldItem });
+        }
+    }
+
+    return { added, removed, changed };
+};
+
+/**
+ * Check if the last published article has changed
+ *
+ * @param {Post[]} oldArticles The old articles array
+ * @param {Post[]} newArticles The new articles array
+ * @return {boolean} Whether the last published article has changed
+ */
+const checkLastPublishedArticle = (oldArticles, newArticles) => {
+    const oldPublishedArticles = oldArticles.filter(
+        (article) => article.published !== "",
+    );
+    const newPublishedArticles = newArticles.filter(
+        (article) => article.published !== "",
     );
 
-    [
-        ...new Set(
-            changes.map((change) =>
-                change.path.split("/").slice(1, 4).join("/"),
-            ),
-        ),
-    ]
-        .map((change) => {
-            const split = change.split("/");
-            const [type, index] = split;
+    const oldLastPublishedArticle =
+        oldPublishedArticles[oldPublishedArticles.length - 1];
+    const newLastPublishedArticle =
+        newPublishedArticles[newPublishedArticles.length - 1];
 
-            const revalidateList = [];
-            if (split.length > 2) {
-                const extra = split[2];
-                if (!["filename", "branchName"].includes(extra)) {
-                    revalidateList.push(
-                        "/",
-                        "/articles",
-                        ...writings[type][index].tags.map(
-                            (tag) => `/tag/${slugify(tag)}`,
-                        ),
-                    );
-                }
-            }
+    if (!oldLastPublishedArticle || !newLastPublishedArticle) return false;
 
-            revalidateList.push(
-                `/${type.slice(0, type.length - 1)}/${writings[type][index].id}`,
+    if (oldLastPublishedArticle.id !== newLastPublishedArticle.id) return true;
+
+    return false;
+};
+
+/**
+ * @typedef {Object} JsonChanges
+ * @property {PostIdAndTags[]} articles The articles that have been modified in some way
+ * @property {PostIdAndTags[]} notes The notes that have been modified in some way
+ * @property {boolean} lastPublishedArticleChanged Whether the last published article has changed
+ */
+
+/**
+ * Get the changed posts from the contents file
+ *
+ * @returns {Promise<JsonChanges>} The changes from the contents file
+ */
+const getContentsChanges = async () => {
+    try {
+        const { stdout: oldContent } = await execAsync(
+            `git show HEAD^:${CONTENTS_FILE}`,
+        );
+        const { stdout: newContent } = await execAsync(
+            `git show HEAD:${CONTENTS_FILE}`,
+        );
+
+        const oldJson = safeParse(oldContent);
+        const newJson = safeParse(newContent);
+
+        if (!oldJson || !newJson)
+            throw new Error("Failed to parse JSON content.");
+
+        const articlesDiff = diffPostArrays(oldJson.articles, newJson.articles);
+        const notesDiff = diffPostArrays(oldJson.notes, newJson.notes);
+
+        const articleARChanges = ["added", "removed"]
+            .map((change) => articlesDiff[change])
+            .flatMap((changes) =>
+                changes.map((article) => ({
+                    id: article.id,
+                    tags: article.tags,
+                })),
             );
+        const articleModifications = articlesDiff["changed"].flatMap(
+            (change) => ({
+                id: change.id,
+                tags: [...new Set([...change.old.tags, ...change.new.tags])],
+            }),
+        );
 
-            return revalidateList;
-        })
-        .forEach((revalidation) => {
-            if (Array.isArray(revalidation)) {
-                for (let revalidatePath of revalidation) {
-                    paths.add(revalidatePath);
-                }
-            } else {
-                paths.add(revalidation);
-            }
+        const noteARChanges = ["added", "removed"]
+            .map((change) => notesDiff[change])
+            .flatMap((changes) =>
+                changes.map((note) => ({
+                    id: note.id,
+                    tags: note.tags,
+                })),
+            );
+        const noteModifications = notesDiff["changed"].flatMap((change) => ({
+            id: change.id,
+            tags: [...new Set([...change.old.tags, ...change.new.tags])],
+        }));
+
+        const lastPublishedArticleChanged = checkLastPublishedArticle(
+            oldJson.articles,
+            newJson.articles,
+        );
+
+        return {
+            articles: [...articleARChanges, ...articleModifications],
+            notes: [...noteARChanges, ...noteModifications],
+            lastPublishedArticleChanged,
+        };
+    } catch (error) {
+        console.error(
+            `Error analyzing JSON changes for ${CONTENTS_FILE}:`,
+            error,
+        );
+        process.exit(2);
+    }
+};
+
+/**
+ * Get the website path for a Markdown file
+ *
+ * @param {string} filename A Markdown file path, starting with `markdown/`
+ * @returns {string} A site path
+ */
+const getSitePath = (filename) => {
+    const [_, folder, file] = filename.split("/");
+    return `/${folder.slice(0, -1)}/${file.slice(11).slice(0, -3)}`;
+};
+
+async function main() {
+    const files = await getChangedFiles();
+
+    let paths = new Set(
+        files
+            .filter((file) => file.endsWith(".md"))
+            .map((file) => getSitePath(file)),
+    );
+
+    if (files.includes(CONTENTS_FILE)) {
+        const changes = await getContentsChanges();
+
+        if (Object.keys(changes.articles).length !== 0) paths.add("/articles");
+
+        changes.articles.forEach((article) => {
+            paths.add(`/article/${article.id}`);
+            article.tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
         });
+
+        if (Object.keys(changes.notes).length !== 0) paths.add("/notes");
+        changes.notes.forEach((note) => {
+            paths.add(`/note/${note.id}`);
+            note.tags.forEach((tag) => paths.add(`/tag/${slugify(tag)}`));
+        });
+
+        if (changes.lastPublishedArticleChanged) paths.add("/");
+    }
+
+    const sortedPaths = [...paths].sort();
+    const request = await fetch(
+        `https://hkamran.com/api/revalidate?path=${sortedPaths.join(",")}`,
+        {
+            method: "POST",
+            headers: new Headers({
+                "x-api-key": process.env.REVALIDATION_TOKEN,
+            }),
+        },
+    );
+
+    console.log(request.status);
+    console.log(await request.json());
+
+    if (request.ok) process.exit(3);
 }
 
-console.log(paths);
-
-const request = await fetch(
-    `https://hkamran.com/api/revalidate?path=${[...paths].sort().join(",")}`,
-    {
-        method: "POST",
-        headers: new Headers({ "x-api-key": process.env.REVALIDATION_TOKEN }),
-    },
-);
-
-console.log(request.status);
-console.log(await request.json());
+await main();
