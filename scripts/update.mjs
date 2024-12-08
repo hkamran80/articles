@@ -304,7 +304,7 @@ async function main() {
     console.log(request.status);
     console.log(await request.json());
 
-    if (request.ok) process.exit(3);
+    if (!request.ok) process.exit(3);
 }
 
 await main();
