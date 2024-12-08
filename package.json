@@ -11,5 +11,8 @@
         "@hkamran/prettier-config": "^1.1.1",
         "prettier": "^3.3.3"
     },
-    "prettier": "@hkamran/prettier-config"
+    "prettier": "@hkamran/prettier-config",
+    "dependencies": {
+        "@hkamran/utility-strings": "^1.0.5"
+    }
 }

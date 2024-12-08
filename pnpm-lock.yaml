@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@hkamran/utility-strings':
+        specifier: ^1.0.5
+        version: 1.0.5
     devDependencies:
       '@hkamran/prettier-config':
         specifier: ^1.1.1
@@ -20,6 +24,9 @@ packages:
   '@hkamran/prettier-config@1.1.1':
     resolution: {integrity: sha512-VLAWG2W19Wonwl+uEz1qNgQINxCd5igOH1gUb+OsW46WEZlDOcFapTQyI/Mi/mB4NvTz2hd2hxUiAPAztH/xuA==}
 
+  '@hkamran/utility-strings@1.0.5':
+    resolution: {integrity: sha512-MP2Lj/2S6YjfHj4a9UdSIowcs/OR2V8usVdNb/n3/AInEmZCsbLlF/0tgRQ/0D5fnB6kxnE//adkBFL/CVFOmw==}
+
   prettier@3.3.3:
     resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
@@ -28,5 +35,7 @@ packages:
 snapshots:
 
   '@hkamran/prettier-config@1.1.1': {}
+
+  '@hkamran/utility-strings@1.0.5': {}
 
   prettier@3.3.3: {}
