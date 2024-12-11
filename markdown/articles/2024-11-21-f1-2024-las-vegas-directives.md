@@ -236,16 +236,16 @@ and [Document 44 - Infringement - Car 63 - Technical non-compliance (Weight)](ht
 
 | Constructor | Previous Points | New Points | Points | Standings |
 | -- | -- | -- | -- | -- |
-| McLaren Mercedes | 593 | 608 | +15 | - |
-| Ferrari | 557 | 584 | +27 | - |
-| Red Bull Racing Honda RBPT | 544 | 555 | +11 | - |
-| Mercedes | 382 | 425 | +43 | - |
-| Aston Martin Aramco Mercedes | 86 | 86 | 0 | - |
-| Haas Ferrari | 46 | 50 | +4 | +1 |
-| Alpine Renault | 49 | 49 | 0 | -1 |
-| RB Honda RBPT | 44 | 46 | +2 | - |
-| Williams Mercedes | 17 | 17 | 0 | - |
-| Kick Sauber Ferrari | 0 | 0 | 0 | - |
+| McLaren Formula 1 Team (Mercedes) | 593 | 608 | +15 | - |
+| Scuderia Ferrari | 557 | 584 | +27 | - |
+| Oracle Red Bull Racing (Honda RBPT) | 544 | 555 | +11 | - |
+| Mercedes-AMG PETRONAS F1 Team | 382 | 425 | +43 | - |
+| Aston Martin Aramco F1 Team (Mercedes) | 86 | 86 | 0 | - |
+| MoneyGram Haas F1 Team (Ferrari) | 46 | 50 | +4 | +1 |
+| BWT Alpine F1 Team (Renault) | 49 | 49 | 0 | -1 |
+| Visa Cash App RB F1 Team (Honda RBPT) | 44 | 46 | +2 | - |
+| Williams Racing (Mercedes) | 17 | 17 | 0 | - |
+| Kick Sauber F1 Team (Ferrari) | 0 | 0 | 0 | - |
 
 See [Document 41 - Championship Points](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Championship%20Points.pdf#page=2)
 for the full championship points for both drivers and constructors. See São Paulo GP
