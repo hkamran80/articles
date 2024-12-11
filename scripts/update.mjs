@@ -211,14 +211,14 @@ const getContentsChanges = async () => {
                 changes.map((article) => ({
                     id: article.id,
                     tags: article.tags,
-                    published: note.published,
+                    published: article.published,
                 })),
             );
         const articleModifications = articlesDiff["changed"].flatMap(
             (change) => ({
                 id: change.id,
                 tags: [...new Set([...change.old.tags, ...change.new.tags])],
-                published: note.published,
+                published: change.published,
             }),
         );
 
@@ -234,7 +234,7 @@ const getContentsChanges = async () => {
         const noteModifications = notesDiff["changed"].flatMap((change) => ({
             id: change.id,
             tags: [...new Set([...change.old.tags, ...change.new.tags])],
-            published: note.published,
+            published: change.published,
         }));
 
         const lastPublishedArticleChanged = checkLastPublishedArticle(
