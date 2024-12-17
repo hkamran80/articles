@@ -4,7 +4,8 @@ that our SVGs and PNGs are as small as possible to ensure a quick loading time w
 our sites. For both file types, my process starts by finding the logo. If I am reviewing a PR, I will
 download the logo attached if it is suitable enough. If it is not or if I am submitting a PR, I find
 the highest quality logo I can. I first try to find an SVG from the website or service, or failing
-that, a source like Wikipedia/Wikimedia or some other brand logo repository.
+that, a source like Wikipedia/Wikimedia or some other brand logo repository. If I cannot find an SVG,
+I will find a PNG.
 
 ## SVGs
 
@@ -26,3 +27,11 @@ Finally, I manually check the generated markup for further minification after do
 our [SVG test](https://github.com/2factorauth/twofactorauth/blob/868bc7dd3e8bca7d8d844eba13664ffb870cac6d/tests/svg.js#L57-L74)
 as my guidelines. A `xml:space` declaration is the first to go, followed by `fill-opacity`, `style`
 elements, and unnecessary `fill: #000` and `fill: #000000`.
+
+## PNGs
+
+PNGs are a lot simpler. After finding a logo that is high-resolution enough, I use Preview, macOS'
+built-in document viewer, to crop it if need be and then resize it to an acceptable size. Our
+[contribution guidelines](https://github.com/2factorauth/twofactorauth/blob/868bc7dd3e8bca7d8d844eba13664ffb870cac6d/CONTRIBUTING.md?plain=1#L17-L20)
+have three sizes for PNGs: 32x32, 64x64, and 128x128. Once a logo is resized, I upload it to
+[TinyPNG](https://tinypng.com) to compress it.
