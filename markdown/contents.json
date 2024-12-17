@@ -171,6 +171,15 @@
             "published": "",
             "filename": "why-live-blog-f1",
             "branchName": "article/why-live-blog-f1"
+        },
+        {
+            "id": "optimizing-images",
+            "title": "Optimizing SVGs and PNGs",
+            "description": "I regularly optimize SVGs and PNGs as a maintainer of the 2FA Directory and the Passkeys Directory, so here's my workflow.",
+            "tags": ["Images", "Guide"],
+            "published": "",
+            "filename": "optimizing-images",
+            "branchName": "article/optimizing-images"
         }
     ],
     "notes": [
