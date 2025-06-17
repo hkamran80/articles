@@ -55,6 +55,11 @@ processing.[^11] The automated decision-making knowledge was covered in Article 
 GDPR also gives subjects the right to lodge a complaint with a supervisory authority, known as a data
 protection authority (DPA).[^13] Each EU member state has their own DPA.
 
+### Right to Object
+
+Articles 14 and 15 of the Directive cover the right to object. Specifically, data subjects have the
+right to
+
 [^1]: *Opinion of the European Economic and Social Committee on the 'Proposal for a Regulation of the European Parliament and of the Council on the protection of individuals with regard to the processing of personal data and on the free movement of such data (General Data Protection Regulation)'*, sec. 3.1, 2012 O.J. (C 229) 90.
 [^2]: Charter of Fundamental Rights of the European Union, art. 8, 2010 O.J. (C 83) 389 [hereinafter CFR]; Consolidated Version of the Treaty on the Functioning of the European Union art. 16, May 9, 2008, 2008 O.J. (C 115) 47 [hereinafter TFEU].
 [^3]: Directorate-General for Communication (European Union), "Types of Legislation."
