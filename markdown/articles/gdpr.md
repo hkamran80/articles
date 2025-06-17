@@ -1,3 +1,8 @@
+---
+title: "GDPR"
+author: [H. Kamran]
+keywords: [Privacy, Law]
+---
 <!-- vale Google.DateFormat = NO -->
 
 Since May 2018, the European Union's General Data Protection Regulation has set the standard for data
@@ -8,68 +13,113 @@ adopted similar regulations.
 
 ## Origins
 
-The GDPR was first proposed in 2012 through [Procedure 2012/0011/COD](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52012AE1303)
-to ensure that "individuals have the right to enjoy effective control over their personal information",
-a view shared by the European Commission and the European Economic and Social Committee (EESC).[^1]
-The EU guarantees data protection as a fundamental right, protected by Article 8 of the Charter of
-Fundamental Rights and Article 16(1) of the Treaty on the Functioning of the European Union (TFEU).[^2]
-Prior to the enactment of the GDPR, Directive 95/46 (EC) was the primary data protection law in the
-EU. An EU directive is a "legislative act that sets out a goal that EU countries must achieve", but
-is up to each country to implement.[^3] The EESC agreed that the "the establishment of a single set
-of data protection rules" would strengthen the data protection already offered by the EU.[^4]
+Under Article 8 of the Charter of Fundamental Rights and Article 16(1) of the Treaty on the Functioning
+of the European Union (TFEU), the EU guarantees data protection as a fundamental right. In 1995, they
+enacted Directive 95/46/EC, titled "on the protection of individuals with regard to the processing
+of personal data and on the free movement of such data", known as the Data Protection Directive,
+which provided the foundation for the European data protection legislation. However, as a directive
+which is a "legislative act that sets out a goal that EU countries must achieve" which member states
+devise their own laws to achieve, there were inconsistencies between member state implementations
+which "create complexity, legal uncertainty and administrative costs", as well as "affect[ing] the
+trust and confidence of individuals". The Directive was designed to provide safeguards on data
+processing, not to prevent or limit the processing or use of information, or in the words of Peter
+Hustinx, the European Data Protection Supervisor from 2004 to 2014, "data protection was about the
+rights and interests of individuals ... not mainly about the data relating to those individuals".
 
-After four years of working on the regulation, the Council of the European Union adopted it 27-1.[^5]
-Austria was the lone holdout, saying that GDPR "in some respects falls short of that provided by the
-[1995 Directive]" and that it was "not possible to 'offset' these deficits" because the intended form
-was an EU regulation.[^6] Later that month, the European Parliament adopted the regulation, followed
-by its publication in the *Official Journal of the European Union* a few weeks later.[^7] Per Article
-99, it entered force 20 days after its publication and began applying on May 25, 2018.[^8]
+<!-- Cite: CFR, art. 8; TFEU, art. 16(1); DPD; Types of legislation; Q&A - DPR; Hustinx -->
+
+<!-- NOTE: Should British/European-style English (e.g. "modernise") be used? -->
+
+To modernize the rules to bring them up to date with the digital age, the European Commission proposed
+a regulation - a binding legislative act that applies throughout the EU - that would set a single set
+of data protection rules in place across the bloc. The European Economic and Social Committee (EESC),
+a consultative body of the EU, agreed with the proposal's objective, especially that the "the establishment
+of a single set of data protection rules" would strengthen the data protection already offered by
+the EU.
+
+<!-- Cite: Opinion, sec. 1.1; Op., sec. 3.7 -->
+
+> Individuals have the right to enjoy effective control over their personal information.
+>
+> *-- European Commission*
+
+<!-- Cite: COM (2012) 9 final -->
+
+It took four years of work for the Council of the European Union, one of the EU's legislative bodies,
+to adopt the proposed regulation, which they did 27-1. Austria was the lone holdout, saying that the
+GDPR "in some respects falls short of that provided by the ... Data Protection Directive ... and its
+implementation in national data protection law" and that it was "not possible to 'offset' these
+deficits" because the intended form was an EU regulation. Later that month, the European Parliament,
+one of the other legislative bodies, adopted the regulation. The Publications Office published it in
+the *Official Journal of the European Union* a few weeks later. Under Article 99 of the regulation,
+it entered force 20 days after publication and began applying on May 25, 2018.
+
+<!-- Cite: Voting Result, p. 5; V.R., p. 6; Europarl leg. res.; GDPR; GDPR, art. 99 -->
 
 ## Definitions
 
-A data subject is someone who has their data processed.
+There are a few definitions that are important to understand: data subject, controller, processor,
+and personal data.
 
-Both the Directive and the GDPR defined a "controller" as a "natural or legal person, public authority,
-agency or other body" that determines the "purposes and means of the processing of personal data"
-when that is determined by EU or national laws, by the controller, or whether the "specific criteria
-for its nomination" was provided by EU or national laws.[^9] In other words, a controller is an entity
-that uses personal data.
+- A data subject is an individual who has personal data, or as defined in the regulation, "an identified
+  or identifiable natural person".
+
+<!-- Cite: GDPR, art. 4(1) -->
+
+- A controller is the person or organisation who decides the purposes for which, and by which, personal
+  data is processed. GDPR defines it as:
+
+  > the natural or legal person, public authority, agency or other body which, alone or jointly with
+  > others, determines the purposes and means of the processing of personal data; where the purposes
+  > and means of such processing are determined by Union or Member State law, the controller or the
+  > specific criteria for its nomination may be provided for by Union or Member State law
+
+<!-- Cite: EDPB graphic, GDPR, art. 4(7) -->
+
+- A processor is the person or organisation who processes personal data on behalf of a controller.
+
+<!-- Cite: GDPR, art. 4(8) -->
+
+- Personal data is any identifier, such as "a name, an identification number, location data, an online
+  identifier or to one or more factors specific to the physical, physiological, genetic, mental,
+  economic, cultural or social identity of that natural person". An EDPB infographic defines it as
+  "information relating to a living individual who is, or can be, identified, including data that
+  can be combined with other information to identify an individual".
+
+<!-- Cite: GDPR, art. 4(1), EDPB graphic -->
 
 ## Rights
 
-The General Data Protection Regulation both strengthened previous rights under the 1995 Directive
-and gave EEA residents new ones.
+The General Data Protection Regulation both strengthened previous rights under the previous Data
+Protection Directive and gave EEA residents new ones.
 
-### Right of Access
+### Right of access
 
-Article 12 of the Directive guaranteed data subjects' access to knowing if a controller is processing
-their data, the purposes of the processing, the categories of the data, and the "recipients or
-categories of recipients" to whom their data was disclosed.[^10]
+Both the Directive and the GDPR guaranteed the right for data subject to know whether a controller
+is processing their information, the purposes of the processing, the categories of the data, the
+"recipients or categories of recipients" to whom their data was disclosed, and knowledge of the logic
+involved in any automated decision-making.
 
-Article 15 of the GDPR included the Directive's guarantees, but also enshrined the right for data
-subjects to have access to their personal data, the estimated duration that their information would
-be stored or the criteria used to determine it, any "available information" about the source of data
-if the controller does not collect it themselves, and the existence of "automated decision-making,
-including profiling", the logic involved, the significance, and the estimated consequences of
-processing.[^11] The automated decision-making knowledge was covered in Article 15 of the Directive.[^12]
-GDPR also gives subjects the right to lodge a complaint with a supervisory authority, known as a data
-protection authority (DPA).[^13] Each EU member state has their own DPA.
+<!-- Cite: DPD, art. 12(a); GDPR, art. 15(1)(a-c, h) -->
 
-### Right to Object
+In addition, GDPR enshrined the right for data subjects to have access to their personal data, the
+estimated duration that their information would be stored or the criteria used to determine it, any
+"available information" about the source of data if the controller does not collect it themselves,
+and the existence of "automated decision-making, including profiling", the significance, and the
+estimated consequences of processing.
+
+<!-- Cite: GDPR, art. 15(1)(d, g, h) -->
+
+In the event that a controller did not provide the information, GDPR also grants data subjects the
+right to lodge a complaint with a data protection authority.
+
+<!-- Cite: GDPR, art. 15(1)(f) -->
+<!-- TODO: Link to DPA section -->
+
+### Right to object
 
 Articles 14 and 15 of the Directive cover the right to object. Specifically, data subjects have the
 right to
 
-[^1]: *Opinion of the European Economic and Social Committee on the 'Proposal for a Regulation of the European Parliament and of the Council on the protection of individuals with regard to the processing of personal data and on the free movement of such data (General Data Protection Regulation)'*, sec. 3.1, 2012 O.J. (C 229) 90.
-[^2]: Charter of Fundamental Rights of the European Union, art. 8, 2010 O.J. (C 83) 389 [hereinafter CFR]; Consolidated Version of the Treaty on the Functioning of the European Union art. 16, May 9, 2008, 2008 O.J. (C 115) 47 [hereinafter TFEU].
-[^3]: Directorate-General for Communication (European Union), "Types of Legislation."
-[^4]: *Opinion of the European Economic and Social Committee*, sec. 3.7.
-[^5]: "Voting Result," 2.
-[^6]: "Voting Result," 5.
-[^7]: *European Parliament legislative resolution of 14 April 2016 on the Council position at first reading with a view to the adoption of a regulation of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (05419/1/2016 — C8-0140/2016 — 2012/0011(COD))*, 2016 O.J. (C 58) 253; Council Regulation 2016/679, of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), 2016 O.J. (L 119) 1.
-[^8]: Council Regulation 2016/679, art. 99.
-[^9]: Council Directive 1995/46, of the European Parliament and of the Council of 24 October 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data, art. 2(d), 1995 O.J. (L 281) 31; Council Regulation 2016/679, art. 4(7).
-[^10]: Council Directive 1995/46, art. 12(a).
-[^11]: Council Regulation 2016/679, art. 15(1)(a-d, g-h).
-[^12]: Council Directive 1995/46, art. 15.
-[^13]: Council Regulation 2016/679, art. 15(1)(f).
+<!-- TODO: Discuss DPAs, EDPB/EDPS, UK GDPR, SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc. -->
+
