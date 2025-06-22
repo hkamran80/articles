@@ -1,8 +1,3 @@
----
-title: "GDPR"
-author: [H. Kamran]
-keywords: [Privacy, Law]
----
 <!-- vale Google.DateFormat = NO -->
 
 Since May 2018, the European Union's General Data Protection Regulation has set the standard for data
