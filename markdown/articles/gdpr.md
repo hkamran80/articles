@@ -129,9 +129,9 @@ without undue delay as long as one of six conditions applies:
 - The subject withdraws consent pursuant to Article 6(1)(a) (lawful processing with consent for one
   or more specific purposes), Article 9(2)(a) (explicit consent for one or more specific purposes),
   or where there is no legal ground
-- The subject objects pursuant to Article 21(1) (right to object based on points (e) or (f) of Article
+- The subject objects pursuant to [Article 21(1)](#) (right to object based on points (e) or (f) of Article
   6(1)) and there are no "overriding legitimate grounds for the processing", or the subject objects
-  pursuant to Article 21(2) (right to object to processing for direct marketing purposes)
+  pursuant to [Article 21(2)](#) (right to object to processing for direct marketing purposes)
 - The personal data was unlawfully processed
 - The personal data must be erased for compliance with EU or Member State law
 - The personal data was collected on a child, either with parental permission if they are younger
@@ -168,7 +168,7 @@ One of four conditions must be met for a subject to restrict processing:
   request restricting the processing instead
 - The controller no longer needs the data, but the data subject requires them to keep it for legal
   claims
-- The subject has objected to the processing under Article 21(1) and it has yet to be determined
+- The subject has objected to the processing under [Article 21(1)](#) and it has yet to be determined
   whether the controller's legitimate grounds override those of the subject
 
 <!-- Cite: GDPR, art. 18(1) -->
@@ -180,9 +180,23 @@ restriction is lifted.
 
 ### Right to data portability
 
-TBA
+Data subjects have the right to get the personal data which they have provided from a controller in
+a "structured, commonly used and machine-readable format". They also have the right to transmit that
+to another controller without any hindrance if the processing is consented to based on Article 6(1)(a),
+Article 9(2)(a), on contract pursuant to Article 6(1)(b), or if the processing is automated.
+
+<!-- Cite: GDPR, art. 20(1) -->
+
+Subjects also have the right to transmit their personal data directly from one controller to another
+where technically feasible.
+
+<!-- Cite: GDPR, art. 20(2) -->
 
 ### Right to object
+
+TBA
+
+### Right to human decision-making
 
 TBA
 
