@@ -194,7 +194,27 @@ where technically feasible.
 
 ### Right to object
 
-TBA
+Data subjects at any time may object to processing of their personal data that is based on points
+(e) or (f) of Article 6(1), including profiling. Unless the controller can demonstrate that they have
+"compelling legitimate interests" for the processing of the subject's data, they must stop processing
+the subject's data.
+
+<!-- Cite: GDPR, art. 21(1) -->
+
+Article 6 covers the lawfulness of processing. Point (e) covers the necessity of processing for a
+task carried out in the public interest or when the controller is exercising official authority.
+Member States are allowed to "maintain or introduce" more specific provisions for processing under
+point (e). Point (f) covers the necessity of processing for legitimate interest purposes, except
+where those interests are overridden by a data subject's interests or fundamental rights and freedoms
+which require protection of their personal data, especially if the subject in question is a child.
+
+<!-- Cite: GDPR, art. 6(1)(e), (2), (1)(f) -->
+
+If a controller uses a subject's data for direct marketing purposes, the data subject may object at
+any time to the use of their data for direct marketing. Controllers are obligated to cease processing
+their data for those purposes as soon as they receive a request.
+
+<!-- Cite: GDPR, art. 21(2-3) -->
 
 ### Right to human decision-making
 
