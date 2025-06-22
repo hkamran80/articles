@@ -219,7 +219,7 @@ their data for those purposes as soon as they receive a request.
 ### Right to human decision-making
 
 In addition to [point (e) of the right of access](#section-right-of-access), data subjects have the right *not* to be subject to
-a decision purely on automated processing, including profiling, which produce legal effects or
+a decision purely based on automated processing, including profiling, which produce legal effects or
 significantly affects the subject.
 
 <!-- Cite: GDPR, art. 22(1) -->
@@ -254,5 +254,40 @@ of "substantial public interest". In either case, there must be suitable measure
 subject's rights, freedoms, and legitimate interests.
 
 <!-- Cite: GDPR, art. 22(4); art. 9(1), 2(a), 2(g); art. 22(4) -->
+
+## Restrictions
+
+The regulation allows the EU and Member States to restrict the scope of the rights and obligations
+when a restriction "respects the essence of the fundamental rights and freedoms" and is a necessary
+and proportionate measure in a democratic society to safeguard national security, defense, public
+security, enforcement and execution of criminal offenses, "other important objectives of general
+public interest", protection of judicial independence and proceedings, enforcement of ethical breaches
+in regulated professions; official monitoring, inspection, or regulatory function; protection of data
+subjects or the "rights and freedoms of others", or the enforcement of civil law claims.
+
+<!-- Cite: GDPR, art. 23(1) -->
+
+If the EU or a Member State attempts to restrict the scope, they must include, "where relevant", the
+following:
+
+> the purposes of the processing or categories of processing;
+>
+> the categories of personal data;
+>
+> the scope of the restrictions introduced;
+>
+> the safeguards to prevent abuse or unlawful access or transfer;
+>
+> the specification of the controller or categories of controllers;
+>
+> the storage periods and the applicable safeguards taking into account the nature, scope and purposes
+> of the processing or categories of processing;
+>
+> the risks to the rights and freedoms of data subjects; and
+>
+> the right of data subjects to be informed about the restriction, unless that may be prejudicial to
+> the purpose of the restriction.
+
+<!-- Cite: GDPR, art. 23(2) -- note: points removed -->
 
 <!-- TODO: Discuss DPAs, EDPB/EDPS, UK GDPR, SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc. -->
