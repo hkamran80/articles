@@ -8,7 +8,7 @@ adopted similar regulations.
 
 ## Origins
 
-Under Article 8 of the Charter of Fundamental Rights and Article 16(1) of the Treaty on the Functioning
+Under Article 8 of the EU Charter of Fundamental Rights and Article 16(1) of the Treaty on the Functioning
 of the European Union (TFEU), the EU guarantees data protection as a fundamental right. In 1995, they
 enacted Directive 95/46/EC, titled "on the protection of individuals with regard to the processing
 of personal data and on the free movement of such data", known as the Data Protection Directive,
@@ -22,6 +22,7 @@ Hustinx, the European Data Protection Supervisor from 2004 to 2014, "data protec
 rights and interests of individuals ... not mainly about the data relating to those individuals".
 
 <!-- Cite: CFR, art. 8; TFEU, art. 16(1); DPD; Types of legislation; Q&A - DPR; Hustinx -->
+<!-- NOTE: Link CFR / TFEU? -->
 
 <!-- NOTE: Should British/European-style English (e.g. "modernise") be used? -->
 
@@ -148,13 +149,34 @@ However, if the processing is necessary — for exercising the right of freedom 
 information, complying with EU or Member State law, carried out in the public interest, in the exercise
 of official authority, archival purposes "in the public interest, scientific or historical research
 purposes or statistical purposes", or for "the establishment, exercise or defence of legal claims"
-\- controllers do not have erase the personal data.
+— controllers do not have erase the personal data.
 
 <!-- Cite: GDPR, art. 17(3) -->
 
 ### Right to restrict processing
 
-TBA
+Data subjects have the right to restrict processing of their processing data so that their data may
+only be processed with their consent, for legal claims, for the protection of rights of a person, or
+for "important public interest" reasons in EU or Member State law. Storage is always allowed however.
+
+<!-- Cite: GDPR, art. 18(2) -->
+
+One of four conditions must be met for a subject to restrict processing:
+
+- The accuracy of personal data is contested
+- Processing is unlawful, and instead of the subject requesting the erasure of their data, they
+  request restricting the processing instead
+- The controller no longer needs the data, but the data subject requires them to keep it for legal
+  claims
+- The subject has objected to the processing under Article 21(1) and it has yet to be determined
+  whether the controller's legitimate grounds override those of the subject
+
+<!-- Cite: GDPR, art. 18(1) -->
+
+If a data subject has obtained a restriction, the controller must inform the data subject before the
+restriction is lifted.
+
+<!-- Cite: GDPR, art. 18(3) -->
 
 ### Right to data portability
 
