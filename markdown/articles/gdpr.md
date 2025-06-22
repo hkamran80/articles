@@ -102,7 +102,7 @@ In addition, GDPR enshrined the right for data subjects to have access to their 
 estimated duration that their information would be stored or the criteria used to determine it, any
 "available information" about the source of data if the controller does not collect it themselves,
 and the existence of "automated decision-making, including profiling", the significance, and the
-estimated consequences of processing.
+estimated consequences of processing. See [Article 22](#section-right-to-human-decision-making) as well.
 
 <!-- Cite: GDPR, art. 15(1)(d, g, h) -->
 
@@ -129,9 +129,9 @@ without undue delay as long as one of six conditions applies:
 - The subject withdraws consent pursuant to Article 6(1)(a) (lawful processing with consent for one
   or more specific purposes), Article 9(2)(a) (explicit consent for one or more specific purposes),
   or where there is no legal ground
-- The subject objects pursuant to [Article 21(1)](#) (right to object based on points (e) or (f) of Article
+- The subject objects pursuant to [Article 21(1)](#section-right-to-object) (right to object based on points (e) or (f) of Article
   6(1)) and there are no "overriding legitimate grounds for the processing", or the subject objects
-  pursuant to [Article 21(2)](#) (right to object to processing for direct marketing purposes)
+  pursuant to [Article 21(2)](#section-right-to-object) (right to object to processing for direct marketing purposes)
 - The personal data was unlawfully processed
 - The personal data must be erased for compliance with EU or Member State law
 - The personal data was collected on a child, either with parental permission if they are younger
@@ -168,7 +168,7 @@ One of four conditions must be met for a subject to restrict processing:
   request restricting the processing instead
 - The controller no longer needs the data, but the data subject requires them to keep it for legal
   claims
-- The subject has objected to the processing under [Article 21(1)](#) and it has yet to be determined
+- The subject has objected to the processing under [Article 21(1)](#section-right-to-object) and it has yet to be determined
   whether the controller's legitimate grounds override those of the subject
 
 <!-- Cite: GDPR, art. 18(1) -->
@@ -218,6 +218,41 @@ their data for those purposes as soon as they receive a request.
 
 ### Right to human decision-making
 
-TBA
+In addition to [point (e) of the right of access](#section-right-of-access), data subjects have the right *not* to be subject to
+a decision purely on automated processing, including profiling, which produce legal effects or
+significantly affects the subject.
+
+<!-- Cite: GDPR, art. 22(1) -->
+
+There are three exceptions to the above right:
+
+- If it is necessary "for entering into, or performance of" a contract between a subject and controller
+- If it is authorized by EU or Member State law to which the controller is subject, and there are
+  suitable safeguards to protect the subject's rights, freedoms, and legitimate interests
+- If it is based upon the subject's explicit consent
+
+<!-- Cite: GDPR, art. 22(2) -->
+
+With regard to the first and third exceptions, the controller must implement "suitable measures [that]
+safeguard the data subject's rights and freedoms and legitimate interests". At minimum, this means
+the right for human intervention on the controller's behalf, to express the subject's point of view,
+and to contest the decision.
+
+<!-- Cite: GDPR, art. 22(3) -->
+
+The exceptions cannot be used to process "special categories of personal data", defined in Article
+9(1) as:
+
+> racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union
+> membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying
+> a natural person, data concerning health or data concerning a natural person's sex life or sexual
+> orientation
+
+However, there are two exceptions to this rule: the data subject has explicitly consented and there
+is no EU or Member State law prohibiting the consent by subjects, or if it is necessary for reasons
+of "substantial public interest". In either case, there must be suitable measures to safeguard the
+subject's rights, freedoms, and legitimate interests.
+
+<!-- Cite: GDPR, art. 22(4); art. 9(1), 2(a), 2(g); art. 22(4) -->
 
 <!-- TODO: Discuss DPAs, EDPB/EDPS, UK GDPR, SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc. -->
