@@ -290,4 +290,10 @@ following:
 
 <!-- Cite: GDPR, art. 23(2) -- note: points removed -->
 
-<!-- TODO: Discuss DPAs, EDPB/EDPS, UK GDPR, SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc. -->
+<!-- TODO: Discuss obligations on controllers -->
+
+<!-- TODO: Discuss DPAs, EDPB/EDPS -->
+
+<!-- TODO: Discuss international transfers (SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc.) -->
+
+<!-- TODO: Discuss UK GDPR -->
