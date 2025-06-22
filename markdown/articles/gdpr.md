@@ -26,7 +26,7 @@ rights and interests of individuals ... not mainly about the data relating to th
 <!-- NOTE: Should British/European-style English (e.g. "modernise") be used? -->
 
 To modernize the rules to bring them up to date with the digital age, the European Commission proposed
-a regulation - a binding legislative act that applies throughout the EU - that would set a single set
+a regulation — a binding legislative act that applies throughout the EU — that would set a single set
 of data protection rules in place across the bloc. The European Economic and Social Committee (EESC),
 a consultative body of the EU, agreed with the proposal's objective, especially that the "the establishment
 of a single set of data protection rules" would strengthen the data protection already offered by
@@ -36,7 +36,7 @@ the EU.
 
 > Individuals have the right to enjoy effective control over their personal information.
 >
-> *-- European Commission*
+> *— European Commission*
 
 <!-- Cite: COM (2012) 9 final -->
 
@@ -113,7 +113,7 @@ right to lodge a complaint with a [data protection authority](#).
 
 ### Right to correct
 
-The right to rectification was first enshrined in GDPR and it guarentees data subjects can correct
+The right to rectification was first enshrined in GDPR and it guarantees data subjects can correct
 inaccurate personal data concerning themselves without undue delay. They also have the right to
 complete their personal data.
 
@@ -144,7 +144,7 @@ of" their personal data.
 
 <!-- Cite: GDPR, art. 17(2) -->
 
-However, if the processing is necessary - for exercising the right of freedom of expression and
+However, if the processing is necessary — for exercising the right of freedom of expression and
 information, complying with EU or Member State law, carried out in the public interest, in the exercise
 of official authority, archival purposes "in the public interest, scientific or historical research
 purposes or statistical purposes", or for "the establishment, exercise or defence of legal claims"
@@ -163,7 +163,5 @@ TBA
 ### Right to object
 
 TBA
-
-### Right
 
 <!-- TODO: Discuss DPAs, EDPB/EDPS, UK GDPR, SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc. -->
