@@ -111,15 +111,64 @@ estimated consequences of processing.
 <!-- Cite: GDPR, art. 15(1)(d, g, h) -->
 
 In the event that a controller did not provide the information, GDPR also grants data subjects the
-right to lodge a complaint with a data protection authority.
+right to lodge a complaint with a [data protection authority](#).
 
 <!-- Cite: GDPR, art. 15(1)(f) -->
 <!-- TODO: Link to DPA section -->
 
+### Right to correct
+
+The right to rectification was first enshrined in GDPR and it guarentees data subjects can correct
+inaccurate personal data concerning themselves without undue delay. They also have the right to
+complete their personal data.
+
+<!-- Cite: GDPR, art. 16 -->
+
+### Right to be forgotten
+
+Also known as the right to erasure, GDPR guarantees data subjects the erasure of their personal data
+without undue delay as long as one of six conditions applies:
+
+- The personal data is no longer necessary for the purposes of processing
+- The subject withdraws consent pursuant to Article 6(1)(a) (lawful processing with consent for one
+  or more specific purposes), Article 9(2)(a) (explicit consent for one or more specific purposes),
+  or where there is no legal ground
+- The subject objects pursuant to Article 21(1) (right to object based on points (e) or (f) of Article
+  6(1)) and there are no "overriding legitimate grounds for the processing", or the subject objects
+  pursuant to Article 21(2) (right to object to processing for direct marketing purposes)
+- The personal data was unlawfully processed
+- The personal data must be erased for compliance with EU or Member State law
+- The personal data was collected on a child, either with parental permission if they are younger
+  than 16, or by the child themselves if they are older.
+
+<!-- Cite: GDPR, art. 17(1) -->
+
+If the personal data was made public, the controller must take reasonable steps to inform other
+controllers that the data subject has requested their erasure of "any links to, or copy or replication
+of" their personal data.
+
+<!-- Cite: GDPR, art. 17(2) -->
+
+However, if the processing is necessary - for exercising the right of freedom of expression and
+information, complying with EU or Member State law, carried out in the public interest, in the exercise
+of official authority, archival purposes "in the public interest, scientific or historical research
+purposes or statistical purposes", or for "the establishment, exercise or defence of legal claims"
+\- controllers do not have erase the personal data.
+
+<!-- Cite: GDPR, art. 17(3) -->
+
+### Right to restrict processing
+
+TBA
+
+### Right to data portability
+
+TBA
+
 ### Right to object
 
-Articles 14 and 15 of the Directive cover the right to object. Specifically, data subjects have the
-right to
+TBA
+
+### Right
 
 <!-- TODO: Discuss DPAs, EDPB/EDPS, UK GDPR, SCCs, Schrems I and Schrems II, EU-U.S. DPF, Privacy Shield, etc. -->
-
