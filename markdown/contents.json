@@ -189,6 +189,15 @@
             "published": "",
             "filename": "gdpr",
             "branchName": "article/gdpr"
+        },
+        {
+            "id": "ai",
+            "title": "\"Artificial Intelligence\"",
+            "description": "So-called \"AI\" is becoming embedded in everything we know.",
+            "tags": ["Privacy", "Artificial Intelligence"],
+            "published": "",
+            "filename": "ai",
+            "branchName": "article/ai"
         }
     ],
     "notes": [
