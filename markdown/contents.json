@@ -4,7 +4,10 @@
             "id": "expanding-pkgs-on-macos",
             "title": "Expanding PKGs on macOS",
             "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
-            "tags": ["macOS"],
+            "tags": [
+                "macOS"
+            ],
+            "toc": false,
             "published": "2020-01-30",
             "filename": "2020-01-30-expanding-pkgs-on-macos"
         },
@@ -12,7 +15,10 @@
             "id": "getting-balenaetcher-to-work-on-macos-catalina",
             "title": "Getting balenaEtcher to Work on macOS Catalina",
             "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
-            "tags": ["macOS"],
+            "tags": [
+                "macOS"
+            ],
+            "toc": false,
             "published": "2020-01-30",
             "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
         },
@@ -20,7 +26,12 @@
             "id": "vuetify-dark-mode-toggle",
             "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
             "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
-            "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
+            "tags": [
+                "Vuetify",
+                "Development",
+                "Theming",
+                "Vue.js"
+            ],
             "published": "2020-06-04",
             "filename": "2020-06-04-vuetify-dark-mode-toggle"
         },
@@ -28,7 +39,11 @@
             "id": "changing-google-docs-default-styles",
             "title": "Changing Google Docs' Default Styles",
             "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
-            "tags": ["Styling", "Google Docs"],
+            "tags": [
+                "Styling",
+                "Google Docs"
+            ],
+            "toc": false,
             "published": "2022-04-19",
             "filename": "2022-04-19-changing-google-docs-default-styles"
         },
@@ -36,8 +51,13 @@
             "id": "generate-typescript-declarations-js-files",
             "title": "Generate TypeScript Declaration Files for JavaScript Files",
             "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
-            "tags": ["Development", "TypeScript", "JavaScript"],
             "heroImage": "https://i.imgur.com/nKR3Fb9.png",
+            "tags": [
+                "Development",
+                "TypeScript",
+                "JavaScript"
+            ],
+            "toc": false,
             "published": "2022-05-06",
             "filename": "2022-05-06-generate-typescript-declarations-js-files"
         },
@@ -45,7 +65,11 @@
             "id": "adding-wildcard-subdomain-support-macos",
             "title": "Adding Wildcard Subdomain Support to macOS",
             "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
-            "tags": ["macOS", "Networking"],
+            "tags": [
+                "macOS",
+                "Networking"
+            ],
+            "toc": false,
             "published": "2023-01-13",
             "filename": "2023-01-13-adding-wildcard-subdomain-support-macos"
         },
@@ -69,7 +93,11 @@
             "id": "upgrade-openssh-macos",
             "title": "Upgrading OpenSSH on macOS",
             "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
-            "tags": ["macOS", "SSH"],
+            "tags": [
+                "macOS",
+                "SSH"
+            ],
+            "toc": false,
             "published": "2023-02-14",
             "filename": "2023-02-14-upgrade-openssh-macos"
         },
@@ -77,8 +105,13 @@
             "id": "fido2-ssh-keys",
             "title": "Creating FIDO2 SSH Keys",
             "description": "Secure your SSH keys with a FIDO2 security key",
-            "tags": ["SSH", "FIDO2", "Security"],
             "heroImage": "https://i.imgur.com/T3m4kR3.png",
+            "tags": [
+                "SSH",
+                "FIDO2",
+                "Security"
+            ],
+            "toc": false,
             "published": "2023-02-14",
             "filename": "2023-02-14-fido2-ssh-keys"
         },
@@ -115,7 +148,10 @@
             "id": "securing-your-digital-life",
             "title": "Securing Your Digital Life",
             "description": "Keep your digital life safe by taking a few proactive measures",
-            "tags": ["Security", "Guide"],
+            "tags": [
+                "Security",
+                "Guide"
+            ],
             "published": "2023-06-15",
             "filename": "2023-06-15-securing-your-digital-life"
         },
@@ -123,7 +159,12 @@
             "id": "cloudflare-remote-access-home-assistant",
             "title": "Remotely Access Your Home Assistant Instance Securely",
             "description": "Connect to your Home Assistant instance from outside your local network",
-            "tags": ["Home Assistant", "Security", "Guide", "Cloudflare"],
+            "tags": [
+                "Home Assistant",
+                "Security",
+                "Guide",
+                "Cloudflare"
+            ],
             "published": "2024-05-03",
             "filename": "2024-05-03-cloudflare-remote-access-home-assistant"
         },
@@ -131,7 +172,10 @@
             "id": "f1-2024-las-vegas-directives",
             "title": "Formula 1 Las Vegas GP 2024",
             "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Las Vegas Grand Prix weekend.",
-            "tags": ["Formula 1", "FIA"],
+            "tags": [
+                "Formula 1",
+                "FIA"
+            ],
             "published": "2024-11-21T22:25:00-08:00",
             "updated": "2024-12-10T22:20:00-08:00",
             "filename": "2024-11-21-f1-2024-las-vegas-directives"
@@ -140,7 +184,11 @@
             "id": "using-feeds-updating-my-own",
             "title": "Using Feeds and Updating My Own",
             "description": "I've recently started using more RSS/Atom feeds and so I decided to update my site's",
-            "tags": ["Development", "Feeds", "JavaScript"],
+            "tags": [
+                "Development",
+                "Feeds",
+                "JavaScript"
+            ],
             "published": "",
             "filename": "using-feeds-updating-my-own",
             "branchName": "article/feeds"
@@ -149,7 +197,10 @@
             "id": "f1-2024-qatar",
             "title": "Formula 1 Qatar GP 2024",
             "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Qatar Grand Prix weekend.",
-            "tags": ["Formula 1", "FIA"],
+            "tags": [
+                "Formula 1",
+                "FIA"
+            ],
             "published": "2024-11-30T16:44:00-08:00",
             "updated": "2024-12-10T22:20:00-08:00",
             "filename": "2024-11-30-f1-2024-qatar"
@@ -158,7 +209,10 @@
             "id": "f1-2024-abu-dhabi",
             "title": "Formula 1 Abu Dhabi Grand Prix 2024",
             "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Abu Dhabi Grand Prix weekend.",
-            "tags": ["Formula 1", "FIA"],
+            "tags": [
+                "Formula 1",
+                "FIA"
+            ],
             "published": "2024-12-06T18:38:00-08:00",
             "updated": "2024-12-10T22:20:00-08:00",
             "filename": "2024-12-06-f1-2024-abu-dhabi"
@@ -167,7 +221,10 @@
             "id": "why-live-blog-f1",
             "title": "Why I Decided to Live Blog Formula 1",
             "description": "I started (semi-)live blogging about Formula 1 during the Las Vegas Grand Prix and it all started because of the regulations",
-            "tags": ["Formula 1", "FIA"],
+            "tags": [
+                "Formula 1",
+                "FIA"
+            ],
             "published": "",
             "filename": "why-live-blog-f1",
             "branchName": "article/why-live-blog-f1"
@@ -176,7 +233,10 @@
             "id": "optimizing-images",
             "title": "Optimizing SVGs and PNGs",
             "description": "I regularly optimize SVGs and PNGs as a maintainer of the 2FA Directory and the Passkeys Directory, so here's my workflow.",
-            "tags": ["Images", "Guide"],
+            "tags": [
+                "Images",
+                "Guide"
+            ],
             "published": "",
             "filename": "optimizing-images",
             "branchName": "article/optimizing-images"
@@ -185,7 +245,11 @@
             "id": "gdpr",
             "title": "The European Union's General Data Protection Regulation",
             "description": "An overview and analysis of GDPR",
-            "tags": ["Privacy", "Law", "Europe"],
+            "tags": [
+                "Privacy",
+                "Law",
+                "Europe"
+            ],
             "published": "",
             "filename": "gdpr",
             "branchName": "article/gdpr"
@@ -194,7 +258,10 @@
             "id": "ai",
             "title": "\"Artificial Intelligence\"",
             "description": "So-called \"AI\" is becoming embedded in everything we know.",
-            "tags": ["Privacy", "Artificial Intelligence"],
+            "tags": [
+                "Privacy",
+                "Artificial Intelligence"
+            ],
             "published": "",
             "filename": "ai",
             "branchName": "article/ai"
@@ -205,7 +272,10 @@
             "id": "converting-local-dates-to-utc-with-python",
             "title": "Converting Local Dates to UTC with Python",
             "description": "A quick and easy way to convert local dates to UTC",
-            "tags": ["Development", "Python"],
+            "tags": [
+                "Development",
+                "Python"
+            ],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
         }
