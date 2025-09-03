@@ -51,7 +51,6 @@
             "id": "generate-typescript-declarations-js-files",
             "title": "Generate TypeScript Declaration Files for JavaScript Files",
             "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
-            "heroImage": "https://i.imgur.com/nKR3Fb9.png",
             "tags": [
                 "Development",
                 "TypeScript",
@@ -105,7 +104,6 @@
             "id": "fido2-ssh-keys",
             "title": "Creating FIDO2 SSH Keys",
             "description": "Secure your SSH keys with a FIDO2 security key",
-            "heroImage": "https://i.imgur.com/T3m4kR3.png",
             "tags": [
                 "SSH",
                 "FIDO2",
