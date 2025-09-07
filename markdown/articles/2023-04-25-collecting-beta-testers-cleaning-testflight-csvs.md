@@ -62,7 +62,7 @@ some entries.
 
 ## TestFlight Cleaner
 
-![TestFlight Cleaner Header](https://assets.hkamran.com/images/article/testflight-testers-header)
+![The header and settings for TestFlight Cleaner](https://assets.hkamran.com/images/article/testflight-testers-header)
 
 The first thing I had to do was figure out how to import a CSV and parse it using
 JavaScript^[I use TypeScript, but the only difference is that TypeScript is, well, typed, and JavaScript isn't.]. After reading through Stack Overflow, I stumbled
