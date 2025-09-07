@@ -131,7 +131,7 @@ The starting grid is: George Russell (#63), Carlos Sainz (#55), Pierre Gasly (#1
 (#27), Lewis Hamilton (#44), Esteban Ocon (#31), Kevin Magnussen (#20), Zhou Guanyu (#24), Liam Lawson
 (#30), Sergio Perez (#11), Fernando Alonso (#14), Alex Albon (#23), Lance Stroll (#18), and Valtteri
 Bottas (#77). Bottas starts last after qualifying 19th because of a five grid place penalty for using
-an additional component out of his allocation (see [FP1](#section-free-practice-1)). Colapinto starts
+an additional component out of his allocation (see [FP1](#free-practice-1)). Colapinto starts
 from the pit lane following out-of-allowance component upgrades and specification changes.
 
 See [Document 35 - Final Starting Grid](https://www.fia.com/sites/default/files/decision-document/2024%20Las%20Vegas%20Grand%20Prix%20-%20Final%20Starting%20Grid.pdf#page=2)[^3]
@@ -152,7 +152,7 @@ see [Document 32 - Post-Race Procedure](https://www.fia.com/sites/default/files/
 - Franco Colapinto (#43) is required to start from the pit lane for exceeding his allotment of
   restricted number components (RNCs) and changing a specification under parc fermé conditions.
 
-  **Explanation:** Given Colapinto's crash in [Q2](#section-session-2) yesterday, Williams opted to
+  **Explanation:** Given Colapinto's crash in [Q2](#session-2) yesterday, Williams opted to
   upgrade some of his components, specifically a new gearbox case and cassette and a new gearbox
   driveline, gear change components and auxiliary components, which are his sixth components.
   [Article 29.2](https://www.fia.com/sites/default/files/fia_2024_formula_1_sporting_regulations_-_issue_7_-_2024-07-31.pdf#page=30)

@@ -1,5 +1,3 @@
-*Photo: Screenshot of Google Docs*
-
 1. Open a Google Docs file
 
    It can be any file, but I recommend a blank file.
@@ -10,8 +8,8 @@
 
    Side note: I hate Arial. It's very ugly. I also dislike serif fonts.
 
-   ![Text](https://i.ibb.co/VJ6F41c/Text.png)
-   ![Styled Text](https://i.ibb.co/DDM9rrP/Styled-Text.png)
+![The text with the default styling (11pt Arial with 1.15 spacing)](https://i.ibb.co/VJ6F41c/Text.png)
+![The text with user-supplied styling (10pt Nunito Sans with 1.15 spacing)](https://i.ibb.co/DDM9rrP/Styled-Text.png)
 
 3. Select your newly-formatted text, and apply it
 
@@ -21,7 +19,7 @@
    4. Repeat for each text element you want styled differently
         - For example, I styled my normal text, title, and headings with Nunito Sans
 
-    ![Update 'Normal text' to match](https://i.ibb.co/ZWWynbK/Update-Normal-Text-To-Match.png)
+![Update 'Normal text' to match](https://i.ibb.co/ZWWynbK/Update-Normal-Text-To-Match.png)
 
 4. After making all the styling changes you want, open the dropdown, and hover over
    "Options", then click "Save as my default styles"
