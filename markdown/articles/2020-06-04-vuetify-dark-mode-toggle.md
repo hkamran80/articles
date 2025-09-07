@@ -1,5 +1,3 @@
-*Photo: [Material.io](https://material.io/design/color/dark-theme.html)*
-
 I use [Vue.js](https://vuejs.org) and [Vuetify](https://vuetifyjs.com) for almost
 all of my websites, and I’m a huge supporter of dark mode. One of the many reasons
 I chose Vuetify is because it has dark mode support out-of-the-box. So, without
