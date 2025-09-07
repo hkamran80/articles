@@ -1,3 +1,6 @@
+> [!NOTE]
+> This article was originally written for [Vue 2](https://v2.vuejs.org/lts/) and [Vuetify 2](https://v2.vuetifyjs.com/en/about/eol/), both of which are now end-of-life.
+
 I use [Vue.js](https://vuejs.org) and [Vuetify](https://vuetifyjs.com) for almost
 all of my websites, and I’m a huge supporter of dark mode. One of the many reasons
 I chose Vuetify is because it has dark mode support out-of-the-box. So, without
