@@ -65,18 +65,18 @@ some entries.
 ![The header and settings for TestFlight Cleaner](https://assets.hkamran.com/images/article/testflight-testers-header)
 
 The first thing I had to do was figure out how to import a CSV and parse it using
-JavaScript^[I use TypeScript, but the only difference is that TypeScript is, well, typed, and JavaScript isn't.]. After reading through Stack Overflow, I stumbled
+JavaScript. After reading through Stack Overflow, I stumbled
 upon the [FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
 API, which has a convenient `readAsText` function. Since my website uses Next.js
 (which uses React), I used a [`useState` hook](https://react.dev/reference/react/useState)
 to store the `File` object that the file input would provide, then I accessed that
 in a function. The function converts the file to text using the aforementioned function,
-then begins to process the CSV.^[[`upload`, lines 186-205](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L186-L205)]
+then begins to process the CSV.[^1]
 
 The first step is to turn the raw data into a two-dimensional array. The CSV text
 was split using the newline character `\n`, then each row was split using a comma
 as a delimiter. This output was stored in another `useState`
-hook.^[[`processCsv`, lines 50-51](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L50-L51)]
+hook.[^2]
 
 The next step is triggered via a [`useEffect` hook](https://react.dev/reference/react/useEffect)
 monitoring the `csvData` `useState` hook, which is set by the `processCsv` function
@@ -88,7 +88,7 @@ which checks if an email contains an `@` sign and matches
 [a comprehensive regular expression](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L57).
 If this check fails, it lets the user know and continues, because it can bypass
 these rows. Finally, another `useState` hook is used to inform another `useEffect`
-hook that this step is complete.^[[`checkForErrors`, lines 62-97](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L62-L97)]
+hook that this step is complete.[^3]
 
 The third step is to clean the CSV using a reducer. There are two settings the user
 can apply that affect this function: specifying the first row as the header row,
@@ -100,14 +100,14 @@ The first part of this step
 is to check if the email has appeared in any preceding rows. If it has and the leave
 duplicated rows setting is active, it outputs a "duplicate" flag, and adds it to
 the array. If it has and the setting is inactive, it returns the existing
-array.^[[`cleanCsv`, lines 128-148](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L128-L148)]
+array.[^4]
 
 ### Checking for Malformed Emails
 
 The next part is to check for malformed emails, achieved by performing a similar
 check as step two. If the leave malformed rows setting is active, it outputs a "malformed"
 flag, then adds it to the array. If neither of these parts are triggered, the reducer
-does the regular invalid character cleaning.^[[`cleanCsv`, lines 150-161](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L150-L161)]
+does the regular invalid character cleaning.[^5]
 
 ### Cleaning Up Invalid Characters
 
@@ -117,12 +117,12 @@ non-English characters from the first and last names. The email gets line break
 characters stripped. Finally, the function sets a `useState` hook with the cleaned
 data, and another `useState` hook with any duplicated emails. The duplicated emails
 hook is set only if the leave duplicated rows setting is
-active.^[[`cleanCsv`, lines 102-184](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L102-L184)]
+active.[^6]
 
 The final step is to make the preview. It loops over the two-dimensional cleaned
 CSV data to create a table, and if a malformed or duplicate flag is set, it places
 a colour on the email. Red signifies malformed and yellow signifies
-duplicated.^[[Table generation, lines 436-519](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L436-L519)]
+duplicated.[^7]
 
 After a user requests an export using the button below the preview, a [`Blob`](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
 is created by iterating over the cleaned rows to form it back into a CSV. An
@@ -131,10 +131,19 @@ created, with its URL set to the output of
 [`URL.createObjectURL`](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL).
 A download attribute is also set, which sets the filename to "TestFlight Testers
 \- Cleaned.csv". This element is then added to the
-DOM^[[Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)],
+[DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction),
 clicked, then removed. The object URL is also
-revoked.^[[`exportCsv`, lines 220-240](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L220-L240)]
+revoked.[^8]
 
 I hope that this tool comes in handy for you. If it does or you have any feedback,
 please contact me on [Twitter](https://twitter.com/hkamran80) or [Mastodon](https://vmst.io/@hkamran).
 Thank you for reading!
+
+[^1]: [`upload`, lines 186-205](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L186-L205)
+[^2]: [`processCsv`, lines 50-51](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L50-L51)
+[^3]: [`checkForErrors`, lines 62-97](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L62-L97)
+[^4]: [`cleanCsv`, lines 128-148](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L128-L148)
+[^5]: [`cleanCsv`, lines 150-161](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L150-L161)
+[^6]: [`cleanCsv`, lines 102-184](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L102-L184)
+[^7]: [Table generation, lines 436-519](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L436-L519)
+[^8]: [`exportCsv`, lines 220-240](https://github.com/hkamran80/website/blob/1a495839379cec3bbae56ec499ad4feba5cde6eb/pages/program/testflight-cleaner.tsx#L220-L240)
