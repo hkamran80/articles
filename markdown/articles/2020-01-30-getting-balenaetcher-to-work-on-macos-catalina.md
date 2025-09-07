@@ -16,5 +16,3 @@ name of balenaEtcher), had a command-line utility to launch the app.
 The command booted up a graphical interface of balenaEtcher, the difference that,
 because of the “sudo” in the command, it ran under the root user. This bypassed
 the security/privacy restrictions placed (wisely) by Apple on Catalina.
-
-![Image: balenaEtcher after being opened with sudo from the command-line](https://i.imgur.com/EDFFWhw.png)
