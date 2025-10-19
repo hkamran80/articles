@@ -274,6 +274,7 @@
                 "Security",
                 "Linux"
             ],
+            "toc": false,
             "published": "",
             "filename": "ufw-geoblocking",
             "branchName": "article/ufw-geoblocking"
