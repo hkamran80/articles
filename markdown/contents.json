@@ -263,6 +263,20 @@
             "published": "",
             "filename": "ai",
             "branchName": "article/ai"
+        },
+        {
+            "id": "ufw-geoblocking",
+            "title": "Geoblocking with UFW",
+            "description": "I recently decided to add system-level geoblocking to my servers in addition to network-level geoblocking I have through my UDM Pro.",
+            "tags": [
+                "UFW",
+                "Geoblocking",
+                "Security",
+                "Linux"
+            ],
+            "published": "",
+            "filename": "ufw-geoblocking",
+            "branchName": "article/ufw-geoblocking"
         }
     ],
     "notes": [
