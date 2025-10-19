@@ -1,7 +1,7 @@
 As my servers run Ubuntu, I decided to implement the rules through [UFW](https://help.ubuntu.com/community/UFW), the Uncomplicated Firewall.
 After doing some research, the general consensus seemed to be to use [IP sets](https://ipset.netfilter.org/) through `ipset`.
 
-I installed `ipset` from `apt` with `apt install ipset`, then modified the script from [Me Forgetful](https://blog.miragewebstudio.com/2025/08/03/how-to-block-all-ips-from-a-specific-country/) to be more generic.
+I installed `ipset` from `apt` with `apt install ipset`, then modified the script I found from [Me Forgetful](https://blog.miragewebstudio.com/2025/08/03/how-to-block-all-ips-from-a-specific-country/) to be more generic.
 My [changes](https://github.com/hkamran80/sysadmin-utilities/blob/1a4a79cb9e5b861056781dc74c387608e6230a14/ufw-geoblocking/generate-country-ipset.sh) include specifying the [ISO-3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) country code to set the name and URL automatically[^1], using `flush` instead of `destroy`, and saving IP sets to `/var/lib/ipset`.
 
 ```diff
@@ -43,11 +43,11 @@ Before I applied the IP set, I wanted to make sure that it would actually work. 
 ```
 
 I then applied the rule using Me Forgetful's line, `sudo ufw insert 1 deny from "ipset:gb-country-cn"`, but received an error code: `ERROR: Bad source address`.
-I did a search and found the still-open [UFW Bug #1571579](https://bugs.launchpad.net/ufw/+bug/1571579): "Support for ipset".
+I did a search and found the still-open [Bug #1571579](https://bugs.launchpad.net/ufw/+bug/1571579): "Support for ipset".
 
 To get around that, I found Niels Gandraß's [`ufw-ipset-blocklist-autoupdate`](https://github.com/ngandrass/ufw-ipset-blocklist-autoupdate).
 His repository is designed to add arbitrary blocklists, but the `after.init` file, which UFW [runs during `ufw-init`](https://manpages.debian.org/bullseye/ufw/ufw-framework.8.en.html#BOOT_INITIALIZATION), applies IP sets from `/var/lib/ipset` that match a glob.
-I [modified his `after.init`](5e3c31795126b12f0fd89f865e52a33b9000fcc9) to use a different glob (`*.save` instead of `*-inet.save`) and to apply rules on both [the `INPUT` and `OUTPUT` chains](https://superuser.com/a/1267800).
+I [modified his `after.init`](https://github.com/hkamran80/sysadmin-utilities/blob/1a4a79cb9e5b861056781dc74c387608e6230a14/ufw-geoblocking/after.init) to use a different glob (`*.save` instead of `*-inet.save`) and to apply rules on both [the `INPUT` and `OUTPUT` chains](https://superuser.com/a/1267800).
 
 ```diff
 start)
@@ -55,8 +55,8 @@ start)
         # ...
         iptables -I INPUT -m set --match-set "$listname" src -j DROP
         iptables -I INPUT -m set --match-set "$listname" src -j LOG --log-prefix "[UFW BLOCK $listname] "
-+        iptables -I OUTPUT -m set --match-set "$listname" dst -j DROP
-+        iptables -I OUTPUT -m set --match-set "$listname" dst -j LOG --log-prefix "[UFW BLOCK $listname] "
++       iptables -I OUTPUT -m set --match-set "$listname" dst -j DROP
++       iptables -I OUTPUT -m set --match-set "$listname" dst -j LOG --log-prefix "[UFW BLOCK $listname] "
 
 # ...
 
@@ -85,14 +85,14 @@ curl: (28) Failed to connect to baidu.cn port 443: Connection timed out
 The UFW logs show corresponding entries:
 
 ```
-[UFW BLOCK gb-country-cn] IN= OUT=eno1 SRC=xxx.xxx.xxx.xxx DST=39.156.70.37 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=44931 DF PROTO=TCP SPT=46940 DPT=443 WINDOW=64240 RES=0x00 SYN URGP=0
-[UFW BLOCK gb-country-cn] IN= OUT=eno1 SRC=xxx.xxx.xxx.xxx DST=220.181.7.203 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=44931 DF PROTO=TCP SPT=46940 DPT=443 WINDOW=64240 RES=0x00 SYN URGP=0
+[UFW BLOCK gb-country-cn] ... DST=39.156.70.37 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=44931 DF PROTO=TCP SPT=46940 DPT=443 WINDOW=64240 RES=0x00 SYN URGP=0
+[UFW BLOCK gb-country-cn] ... DST=220.181.7.203 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=44931 DF PROTO=TCP SPT=46940 DPT=443 WINDOW=64240 RES=0x00 SYN URGP=0
 ```
 
 Now that I knew the IP sets were working, I searched for a list of countries that host cybercrime in their borders.
 I found a paper from Oxford, UNSW, Monash, and Sciences Po researches, [*Mapping the global geography of cybercrime with the World Cybercrime Index*](https://doi.org/10.1371/journal.pone.0297312), which contained a table of the top 15 countries on the World Cybercrime Index, "a global metric of cybercriminality organised around five types of cybercrime".
 
-![The top 15 countries on the World Cybercrime Index](https://journals.plos.org/plosone/article/figure/image?size=large&download=&id=10.1371/journal.pone.0297312.t001)
+![The top 15 countries on the World Cybercrime Index](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0297312.t001)
 
 The paper has a [complete list in the supporting information](https://doi.org/10.1371/journal.pone.0297312.s001).
 I took the top 25 countries, excluded the U.S., UK, Germany, the Netherlands, and Canada, then ran the IP set generation script for each of the 20 countries.
