@@ -92,7 +92,7 @@ The UFW logs show corresponding entries:
 Now that I knew the IP sets were working, I searched for a list of countries that host cybercrime in their borders.
 I found a paper from Oxford, UNSW, Monash, and Sciences Po researches, [*Mapping the global geography of cybercrime with the World Cybercrime Index*](https://doi.org/10.1371/journal.pone.0297312), which contained a table of the top 15 countries on the World Cybercrime Index, "a global metric of cybercriminality organised around five types of cybercrime".
 
-![The top 15 countries on the World Cybercrime Index](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0297312.t001)
+![The top 15 countries on the World Cybercrime Index](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fjournals.plos.org%2Fplosone%2Farticle%2Ffigure%2Fimage%3Fsize%3Dlarge%26id%3D10.1371%2Fjournal.pone.0297312.t001)
 
 The paper has a [complete list in the supporting information](https://doi.org/10.1371/journal.pone.0297312.s001).
 I took the top 25 countries, excluded the U.S., UK, Germany, the Netherlands, and Canada, then ran the IP set generation script for each of the 20 countries.
