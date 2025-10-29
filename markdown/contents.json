@@ -291,6 +291,17 @@
             ],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
+        },
+        {
+            "id": "ubuntu-subnet-ip-route",
+            "title": "Fixing IP Routing in Ubuntu for Different Subnet",
+            "description": "I spent over a week trying to figure out why I was unable to access my two Ubuntu servers from WireGuard.",
+            "tags": [
+                "Linux",
+                "Networking"
+            ],
+            "published": "",
+            "filename": "ubuntu-subnet-ip-route"
         }
     ]
 }
