@@ -10,5 +10,18 @@ By default, Ubuntu tries to access the gateway for the `192.168.2.0` subnet at `
 sudo ip route add 192.168.2.0/24 via 10.90.100.1
 ```
 
+However, because this is not persistent through restarts, I also added it to my Netplan configuration.
+
+```yaml
+routes:
+    - to: default
+      via: 10.90.100.1
+    - to: 192.168.2.0/24
+      via: 10.90.100.1
+      metric: 100
+```
+
+For more information, check out [Netplan's routing documentation](https://netplan.readthedocs.io/en/stable/netplan-yaml/#routing).
+
 After adding the route, it started working instantly.
 Hopefully this will help someone save time debugging why their VPN clients are failing to connect to specific devices.
