@@ -18,7 +18,6 @@ routes:
       via: 10.90.100.1
     - to: 192.168.2.0/24
       via: 10.90.100.1
-      metric: 100
 ```
 
 For more information, check out [Netplan's routing documentation](https://netplan.readthedocs.io/en/stable/netplan-yaml/#routing).
