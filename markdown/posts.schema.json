@@ -72,6 +72,10 @@
                     "type": "boolean",
                     "description": "Whether the table of contents should be shown"
                 },
+                "oldNotice": {
+                    "type": "boolean",
+                    "description": "Whether the old post notice should be shown"
+                },
                 "published": {
                     "anyOf": [
                         {

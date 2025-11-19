@@ -4,10 +4,9 @@
             "id": "expanding-pkgs-on-macos",
             "title": "Expanding PKGs on macOS",
             "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
-            "tags": [
-                "macOS"
-            ],
+            "tags": ["macOS"],
             "toc": false,
+            "oldNotice": true,
             "imgAlt": "The macOS package icon",
             "published": "2020-01-30",
             "filename": "2020-01-30-expanding-pkgs-on-macos"
@@ -16,10 +15,9 @@
             "id": "getting-balenaetcher-to-work-on-macos-catalina",
             "title": "Getting balenaEtcher to Work on macOS Catalina",
             "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
-            "tags": [
-                "macOS"
-            ],
+            "tags": ["macOS"],
             "toc": false,
+            "oldNotice": true,
             "imgAlt": "The balenaEtcher logo next to an error message reading \"Something went wrong\".",
             "published": "2020-01-30",
             "filename": "2020-01-30-getting-balenaetcher-to-work-on-macos-catalina"
@@ -28,12 +26,8 @@
             "id": "vuetify-dark-mode-toggle",
             "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
             "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
-            "tags": [
-                "Vuetify",
-                "Development",
-                "Theming",
-                "Vue.js"
-            ],
+            "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
+            "oldNotice": true,
             "imgAlt": "A light and dark mode graphic",
             "published": "2020-06-04",
             "filename": "2020-06-04-vuetify-dark-mode-toggle"
@@ -42,10 +36,7 @@
             "id": "changing-google-docs-default-styles",
             "title": "Changing Google Docs' Default Styles",
             "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
-            "tags": [
-                "Styling",
-                "Google Docs"
-            ],
+            "tags": ["Styling", "Google Docs"],
             "toc": false,
             "imgAlt": "An arrow pointing from one font to another",
             "published": "2022-04-19",
@@ -55,11 +46,7 @@
             "id": "generate-typescript-declarations-js-files",
             "title": "Generate TypeScript Declaration Files for JavaScript Files",
             "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
-            "tags": [
-                "Development",
-                "TypeScript",
-                "JavaScript"
-            ],
+            "tags": ["Development", "TypeScript", "JavaScript"],
             "toc": false,
             "imgAlt": "An arrow pointing from JavaScript to TypeScript",
             "published": "2022-05-06",
@@ -69,10 +56,7 @@
             "id": "adding-wildcard-subdomain-support-macos",
             "title": "Adding Wildcard Subdomain Support to macOS",
             "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
-            "tags": [
-                "macOS",
-                "Networking"
-            ],
+            "tags": ["macOS", "Networking"],
             "toc": false,
             "imgAlt": "The macOS logo and \"*.domain.com\"",
             "published": "2023-01-13",
@@ -98,10 +82,7 @@
             "id": "upgrade-openssh-macos",
             "title": "Upgrading OpenSSH on macOS",
             "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
-            "tags": [
-                "macOS",
-                "SSH"
-            ],
+            "tags": ["macOS", "SSH"],
             "toc": false,
             "imgAlt": "The macOS logo next to the `ssh -V` command and \"OpenSSH_8.1p1\"",
             "published": "2023-02-14",
@@ -111,11 +92,7 @@
             "id": "fido2-ssh-keys",
             "title": "Creating FIDO2 SSH Keys",
             "description": "Secure your SSH keys with a FIDO2 security key",
-            "tags": [
-                "SSH",
-                "FIDO2",
-                "Security"
-            ],
+            "tags": ["SSH", "FIDO2", "Security"],
             "toc": false,
             "imgAlt": "A terminal window that says \"SSH\" next to the FIDO Alliance logo",
             "published": "2023-02-14",
@@ -156,10 +133,7 @@
             "id": "securing-your-digital-life",
             "title": "Securing Your Digital Life",
             "description": "Keep your digital life safe by taking a few proactive measures",
-            "tags": [
-                "Security",
-                "Guide"
-            ],
+            "tags": ["Security", "Guide"],
             "imgAlt": "A lock inside of a shield",
             "published": "2023-06-15",
             "filename": "2023-06-15-securing-your-digital-life"
@@ -168,12 +142,7 @@
             "id": "cloudflare-remote-access-home-assistant",
             "title": "Remotely Access Your Home Assistant Instance Securely",
             "description": "Connect to your Home Assistant instance from outside your local network",
-            "tags": [
-                "Home Assistant",
-                "Security",
-                "Guide",
-                "Cloudflare"
-            ],
+            "tags": ["Home Assistant", "Security", "Guide", "Cloudflare"],
             "imgAlt": "The Home Assistant and Cloudflare logos",
             "published": "2024-05-03",
             "filename": "2024-05-03-cloudflare-remote-access-home-assistant"
@@ -182,10 +151,7 @@
             "id": "f1-2024-las-vegas-directives",
             "title": "Formula 1 Las Vegas GP 2024",
             "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Las Vegas Grand Prix weekend.",
-            "tags": [
-                "Formula 1",
-                "FIA"
-            ],
+            "tags": ["Formula 1", "FIA"],
             "imgAlt": "The Formula 1 logo and the Las Vegas track",
             "published": "2024-11-21T22:25:00-08:00",
             "updated": "2024-12-10T22:20:00-08:00",
@@ -195,11 +161,7 @@
             "id": "using-feeds-updating-my-own",
             "title": "Using Feeds and Updating My Own",
             "description": "I've recently started using more RSS/Atom feeds and so I decided to update my site's",
-            "tags": [
-                "Development",
-                "Feeds",
-                "JavaScript"
-            ],
+            "tags": ["Development", "Feeds", "JavaScript"],
             "published": "",
             "filename": "using-feeds-updating-my-own",
             "branchName": "article/feeds"
@@ -208,10 +170,7 @@
             "id": "f1-2024-qatar",
             "title": "Formula 1 Qatar GP 2024",
             "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Qatar Grand Prix weekend.",
-            "tags": [
-                "Formula 1",
-                "FIA"
-            ],
+            "tags": ["Formula 1", "FIA"],
             "imgAlt": "The Formula 1 logo and the Qatar track",
             "published": "2024-11-30T16:44:00-08:00",
             "updated": "2024-12-10T22:20:00-08:00",
@@ -221,10 +180,7 @@
             "id": "f1-2024-abu-dhabi",
             "title": "Formula 1 Abu Dhabi Grand Prix 2024",
             "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Abu Dhabi Grand Prix weekend.",
-            "tags": [
-                "Formula 1",
-                "FIA"
-            ],
+            "tags": ["Formula 1", "FIA"],
             "imgAlt": "The Formula 1 logo and the Abu Dhabi track",
             "published": "2024-12-06T18:38:00-08:00",
             "updated": "2024-12-10T22:20:00-08:00",
@@ -234,10 +190,7 @@
             "id": "why-live-blog-f1",
             "title": "Why I Decided to Live Blog Formula 1",
             "description": "I started (semi-)live blogging about Formula 1 during the Las Vegas Grand Prix and it all started because of the regulations",
-            "tags": [
-                "Formula 1",
-                "FIA"
-            ],
+            "tags": ["Formula 1", "FIA"],
             "published": "",
             "filename": "why-live-blog-f1",
             "branchName": "article/why-live-blog-f1"
@@ -246,10 +199,7 @@
             "id": "optimizing-images",
             "title": "Optimizing SVGs and PNGs",
             "description": "I regularly optimize SVGs and PNGs as a maintainer of the 2FA Directory and the Passkeys Directory, so here's my workflow.",
-            "tags": [
-                "Images",
-                "Guide"
-            ],
+            "tags": ["Images", "Guide"],
             "published": "",
             "filename": "optimizing-images",
             "branchName": "article/optimizing-images"
@@ -258,11 +208,7 @@
             "id": "gdpr",
             "title": "The European Union's General Data Protection Regulation",
             "description": "An overview and analysis of GDPR",
-            "tags": [
-                "Privacy",
-                "Law",
-                "Europe"
-            ],
+            "tags": ["Privacy", "Law", "Europe"],
             "published": "",
             "filename": "gdpr",
             "branchName": "article/gdpr"
@@ -271,10 +217,7 @@
             "id": "ai",
             "title": "\"Artificial Intelligence\"",
             "description": "So-called \"AI\" is becoming embedded in everything we know.",
-            "tags": [
-                "Privacy",
-                "Artificial Intelligence"
-            ],
+            "tags": ["Privacy", "Artificial Intelligence"],
             "published": "",
             "filename": "ai",
             "branchName": "article/ai"
@@ -283,12 +226,7 @@
             "id": "ufw-geoblocking",
             "title": "Geoblocking with UFW",
             "description": "I recently decided to add system-level geoblocking to my servers in addition to network-level geoblocking I have through my UDM Pro.",
-            "tags": [
-                "UFW",
-                "Geoblocking",
-                "Security",
-                "Linux"
-            ],
+            "tags": ["UFW", "Geoblocking", "Security", "Linux"],
             "toc": false,
             "published": "",
             "filename": "ufw-geoblocking",
@@ -300,10 +238,7 @@
             "id": "converting-local-dates-to-utc-with-python",
             "title": "Converting Local Dates to UTC with Python",
             "description": "A quick and easy way to convert local dates to UTC",
-            "tags": [
-                "Development",
-                "Python"
-            ],
+            "tags": ["Development", "Python"],
             "published": "2022-01-26",
             "filename": "2022-01-26-converting-local-dates-to-utc-python"
         },
@@ -311,10 +246,7 @@
             "id": "ubuntu-subnet-ip-route",
             "title": "Fixing IP Routing in Ubuntu for Different Subnets",
             "description": "I spent over a week trying to figure out why I was unable to access my two Ubuntu servers from WireGuard.",
-            "tags": [
-                "Linux",
-                "Networking"
-            ],
+            "tags": ["Linux", "Networking"],
             "published": "2025-10-29",
             "updated": "2025-11-15T12:15:00-08:00",
             "filename": "2025-10-29-ubuntu-subnet-ip-route"
