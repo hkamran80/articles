@@ -250,6 +250,15 @@
             "published": "2025-10-29",
             "updated": "2025-11-15T12:15:00-08:00",
             "filename": "2025-10-29-ubuntu-subnet-ip-route"
+        },
+        {
+            "id": "podman-5-ubuntu-22.04-lts-homebrew",
+            "title": "Installing Podman 5 on Ubuntu 22.04 LTS with Homebrew",
+            "description": "I decided to start switching from Podman to Docker on my servers and ran into a few issues.",
+            "tags": ["Linux", "Podman", "Homebrew"],
+            "published": "",
+            "filename": "podman-5-ubuntu-22.04-lts-homebrew",
+            "branchName": "note/podman-ubuntu-homebrew"
         }
     ]
 }
