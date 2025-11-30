@@ -256,9 +256,8 @@
             "title": "Installing Podman 5 on Ubuntu 22.04 LTS with Homebrew",
             "description": "I decided to start switching from Podman to Docker on my servers and ran into a few issues.",
             "tags": ["Linux", "Podman", "Homebrew"],
-            "published": "",
-            "filename": "podman-5-ubuntu-22.04-lts-homebrew",
-            "branchName": "note/podman-ubuntu-homebrew"
+            "published": "2025-11-30T18:50:00-08:00",
+            "filename": "2025-11-29-podman-5-ubuntu-22.04-lts-homebrew"
         }
     ]
 }
