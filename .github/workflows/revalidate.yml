@@ -1,47 +1,44 @@
 name: Update Website
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "markdown/**"
+    push:
+        branches:
+            - main
+        paths:
+            - "markdown/**"
 
-  workflow_dispatch:
+    workflow_dispatch:
 
 concurrency:
-  group: 'publish'
-  cancel-in-progress: true
-
-env:
-  REVALIDATION_TOKEN: ${{ secrets.REVALIDATION_TOKEN }}
+    group: "publish"
+    cancel-in-progress: true
 
 jobs:
-  revalidate:
-    runs-on: ubuntu-latest
-    if: github.repository == 'hkamran80/articles'
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
+    revalidate:
+        runs-on: ubuntu-latest
+        if: github.repository == 'hkamran80/articles'
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 2
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 9
 
-      - name: Install Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: "pnpm"
+            - name: Install Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+                  cache: "pnpm"
 
-      - name: Install dependencies
-        run: pnpm install
+            - name: Install dependencies
+              run: pnpm install
 
-      - name: Revalidate
-        run: node scripts/update.mjs
+            - name: Update website
+              run: curl -X POST "${{ secrets.SITE_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
 
-      - name: Update feeds
-        run: curl -X POST -d {} "${{ secrets.ASSETS_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
+            - name: Update feeds
+              run: curl -X POST "${{ secrets.ASSETS_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
