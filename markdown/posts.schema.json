@@ -1,38 +1,122 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://assets.hkamran.com/schema/projects",
-    "title": "Projects",
-    "description": "A list of projects for embedding",
-    "type": "object",
-    "properties": {
-        "articles": {
-            "type": "array",
-            "uniqueItems": true,
-            "items": {
-                "allOf": [
-                    {
-                        "$ref": "#/$defs/post"
+    "$id": "https://assets.hkamran.com/schema/posts",
+    "title": "Posts",
+    "description": "A list of posts",
+    "type": "array",
+    "uniqueItems": true,
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The unique ID of the post, also the URL path"
+            },
+            "title": {
+                "type": "string",
+                "description": "The title of the post"
+            },
+            "description": {
+                "type": "string",
+                "description": "A short description of the post"
+            },
+            "type": {
+                "enum": ["article", "note"]
+            },
+            "tags": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                    "type": "string"
+                }
+            },
+            "oldNotice": {
+                "type": "boolean",
+                "description": "Whether the old post notice should be shown",
+                "default": false
+            },
+            "status": {
+                "enum": ["draft", "published", "updated"]
+            },
+            "filename": {
+                "type": "string",
+                "description": "The post's filename",
+                "default": "The post ID"
+            },
+            "branch": {
+                "type": "string",
+                "description": "The name of the branch (if unpublished)",
+                "default": "[post type]/[post ID]"
+            }
+        },
+        "required": ["id", "title", "description", "type", "tags", "status"],
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "status": {
+                            "const": "published"
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "published": {
+                            "$ref": "#/$defs/date"
+                        }
                     },
-                    {
-                        "type": "object",
-                        "properties": {
-                            "imgAlt": {
-                                "type": "string"
+                    "required": ["published"]
+                }
+            },
+            {
+                "if": {
+                    "properties": {
+                        "status": {
+                            "const": "updated"
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "published": {
+                            "$ref": "#/$defs/date"
+                        },
+                        "updated": {
+                            "$ref": "#/$defs/date"
+                        }
+                    },
+                    "required": ["published", "updated"]
+                }
+            },
+            {
+                "if": {
+                    "properties": {
+                        "type": {
+                            "const": "article"
+                        },
+                        "status": {
+                            "not": {
+                                "const": "draft"
                             }
                         }
                     }
-                ]
+                },
+                "then": {
+                    "properties": {
+                        "toc": {
+                            "type": "boolean",
+                            "description": "Whether the table of contents should be shown"
+                        },
+                        "imgAlt": {
+                            "type": "string",
+                            "description": "Alternate text for the hero image"
+                        }
+                    },
+                    "required": ["imgAlt"]
+                }
             }
-        },
-        "notes": {
-            "type": "array",
-            "uniqueItems": true,
-            "items": {
-                "$ref": "#/$defs/post"
-            }
-        }
+        ]
     },
-    "required": ["articles", "notes"],
     "$defs": {
         "date": {
             "anyOf": [
@@ -44,67 +128,6 @@
                     "type": "string",
                     "format": "date-time"
                 }
-            ]
-        },
-        "post": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string",
-                    "description": "The unique ID of the post, also the URL path"
-                },
-                "title": {
-                    "type": "string",
-                    "description": "The title of the post"
-                },
-                "description": {
-                    "type": "string",
-                    "description": "A short description of the post"
-                },
-                "tags": {
-                    "type": "array",
-                    "uniqueItems": true,
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "toc": {
-                    "type": "boolean",
-                    "description": "Whether the table of contents should be shown"
-                },
-                "oldNotice": {
-                    "type": "boolean",
-                    "description": "Whether the old post notice should be shown"
-                },
-                "published": {
-                    "anyOf": [
-                        {
-                            "$ref": "#/$defs/date"
-                        },
-                        {
-                            "const": ""
-                        }
-                    ]
-                },
-                "updated": {
-                    "$ref": "#/$defs/date"
-                },
-                "filename": {
-                    "type": "string",
-                    "description": "The post's filename"
-                },
-                "branchName": {
-                    "type": "string",
-                    "description": "The name of the branch (if unpublished)"
-                }
-            },
-            "required": [
-                "id",
-                "title",
-                "description",
-                "tags",
-                "published",
-                "filename"
             ]
         }
     }
