@@ -30,13 +30,13 @@
                     "type": "string"
                 }
             },
+            "status": {
+                "enum": ["draft", "published", "updated"]
+            },
             "oldNotice": {
                 "type": "boolean",
                 "description": "Whether the old post notice should be shown",
                 "default": false
-            },
-            "status": {
-                "enum": ["draft", "published", "updated"]
             },
             "filename": {
                 "type": "string",
