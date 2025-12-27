@@ -1,0 +1,134 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://assets.hkamran.com/schema/posts",
+    "title": "Posts",
+    "description": "A list of posts",
+    "type": "array",
+    "uniqueItems": true,
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "The unique ID of the post, also the URL path"
+            },
+            "title": {
+                "type": "string",
+                "description": "The title of the post"
+            },
+            "description": {
+                "type": "string",
+                "description": "A short description of the post"
+            },
+            "type": {
+                "enum": ["article", "note"]
+            },
+            "tags": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                    "type": "string"
+                }
+            },
+            "status": {
+                "enum": ["draft", "published", "updated"]
+            },
+            "oldNotice": {
+                "type": "boolean",
+                "description": "Whether the old post notice should be shown",
+                "default": false
+            },
+            "filename": {
+                "type": "string",
+                "description": "The post's filename",
+                "default": "The post ID"
+            },
+            "branch": {
+                "type": "string",
+                "description": "The name of the branch (if unpublished)",
+                "default": "[post type]/[post ID]"
+            }
+        },
+        "required": ["id", "title", "description", "type", "tags", "status"],
+        "allOf": [
+            {
+                "if": {
+                    "properties": {
+                        "status": {
+                            "const": "published"
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "published": {
+                            "$ref": "#/$defs/date"
+                        }
+                    },
+                    "required": ["published"]
+                }
+            },
+            {
+                "if": {
+                    "properties": {
+                        "status": {
+                            "const": "updated"
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "published": {
+                            "$ref": "#/$defs/date"
+                        },
+                        "updated": {
+                            "$ref": "#/$defs/date"
+                        }
+                    },
+                    "required": ["published", "updated"]
+                }
+            },
+            {
+                "if": {
+                    "properties": {
+                        "type": {
+                            "const": "article"
+                        },
+                        "status": {
+                            "not": {
+                                "const": "draft"
+                            }
+                        }
+                    }
+                },
+                "then": {
+                    "properties": {
+                        "toc": {
+                            "type": "boolean",
+                            "description": "Whether the table of contents should be shown"
+                        },
+                        "imgAlt": {
+                            "type": "string",
+                            "description": "Alternate text for the hero image"
+                        }
+                    },
+                    "required": ["imgAlt"]
+                }
+            }
+        ]
+    },
+    "$defs": {
+        "date": {
+            "anyOf": [
+                {
+                    "type": "string",
+                    "format": "date"
+                },
+                {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            ]
+        }
+    }
+}
