@@ -9,7 +9,7 @@ The Markdown sources are in the `posts` folder.
 
 ## Contributions
 
-If you would like to update any of my posts, please [fork this repository](https://github.com/hkamran80/articles/fork), make your contributions, then submit a pull request ([learn about pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)).
+If you would like to update my posts, please [fork this repository](https://github.com/hkamran80/articles/fork), make your contributions, then submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## License
 
