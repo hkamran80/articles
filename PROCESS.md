@@ -1,4 +1,4 @@
-# Article Process
+# Writing Process
 
 ## Definitions
 
