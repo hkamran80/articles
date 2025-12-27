@@ -42,3 +42,19 @@ Replace any contents in square brackets (`[]`) with the appropriate variable as 
 11. Upon completion, rebase atop `main` and update `index.json` with the final post object.
 12. If the post is an article, design an image and upload to assets.
 13. Merge the PR and announce.
+
+## Schema Property Order
+
+1. `id`
+2. `title`
+3. `description`
+4. `tags`
+5. `type`
+6. `status`
+7. `published` (if applicable)
+8. `updated` (if applicable)
+9. `imgAlt` (if applicable)
+10. `toc` (optional)
+11. `oldNotice` (optional)
+12. `filename` (optional)
+13. `branch` ()
