@@ -1,10 +1,11 @@
-# Articles
+# Posts
 
-This is the home of all my articles and notes. Any updates to this repository automatically update my [website](https://hkamran.com) through the [workflow](.github/workflows/revalidate.yml).
+This is the home of my posts.
+Any updates to this repository automatically update my [website](https://hkamran.com) through the [workflow](.github/workflows/revalidate.yml).
 
 ## Structure
 
-The [index file](./index.json) is where all metadata about the articles and notes are stored, including title, subtitle, description, publish date, and more.
+The [index file](./index.json) is where metadata for the posts is stored.
 The Markdown sources are in the `posts` folder.
 
 ## Contributions
@@ -14,4 +15,4 @@ If you would like to update my posts, please [fork this repository](https://gith
 ## License
 
 The license for my articles and notes can be found on [my website](https://hkamran.com/legal/license).
-Unpublished posts are still subject to this license.
+Unpublished posts are subject to this license.
