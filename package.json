@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-        "format": "prettier . --write",
+        "format": "prettier . --write --experimental-cli",
         "validate:posts": "ajv validate --spec draft2020 -c ajv-formats -s markdown/posts.schema.json -d markdown/contents.json"
     },
     "license": "AGPL-3.0",
@@ -15,7 +15,7 @@
         "@hkamran/prettier-config": "^1.1.1",
         "ajv-cli": "^5.0.0",
         "ajv-formats": "^3.0.1",
-        "prettier": "^3.4.2"
+        "prettier": "^3.7.4"
     },
     "prettier": "@hkamran/prettier-config"
 }
