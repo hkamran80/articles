@@ -57,4 +57,4 @@ Replace any contents in square brackets (`[]`) with the appropriate variable as 
 10. `toc` (optional)
 11. `oldNotice` (optional)
 12. `filename` (optional)
-13. `branch` ()
+13. `branch` (optional)
