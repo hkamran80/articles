@@ -258,6 +258,15 @@
             "tags": ["Linux", "Podman", "Homebrew"],
             "published": "2025-11-30T18:50:00-08:00",
             "filename": "2025-11-29-podman-5-ubuntu-22.04-lts-homebrew"
+        },
+        {
+            "id": "smartthings-android-login",
+            "title": "How to Actually Login to SmartThings on Android",
+            "description": "Samsung, a market leader, relies on non-interoperable on the platform built for interoperability.",
+            "tags": ["Samsung", "SmartThings", "Android"],
+            "published": "",
+            "filename": "smartthings-android-login",
+            "branchName": "note/smartthings-android-login"
         }
     ]
 }
