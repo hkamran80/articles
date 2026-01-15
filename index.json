@@ -303,5 +303,13 @@
         "status": "published",
         "published": "2026-01-14T21:56:00-08:00",
         "filename": "2026-01-14-smartthings-android-login"
+    },
+    {
+        "id": "the-test-post",
+        "title": "The Test Post",
+        "description": "This is a test post to ensure that the branch system works.",
+        "tags": ["Test"],
+        "type": "article",
+        "status": "draft"
     }
 ]
