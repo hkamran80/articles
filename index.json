@@ -300,7 +300,8 @@
         "description": "Samsung, a market leader, relies on non-interoperable on the platform built for interoperability.",
         "tags": ["Samsung", "SmartThings", "Android"],
         "type": "note",
-        "status": "draft",
-        "branch": "reorganized-note/smartthings-android-login"
+        "status": "published",
+        "published": "2026-01-14T21:56:00-08:00",
+        "filename": "2026-01-14-smartthings-android-login"
     }
 ]
