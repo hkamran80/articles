@@ -21,7 +21,7 @@ The detailed list of steps is available on the [agency's consumer website](https
     Make sure you save your DROP ID on the confirmation page.
     You will use it to check the status of your request.
 
-[Get started](https://consumer.drop.privacy.ca.gov)!
+[Get started!](https://consumer.drop.privacy.ca.gov)
 
 Data brokers will begin deleting data every 45 days on August 1, 2026.
 
