@@ -5,7 +5,7 @@ On January 1, 2026, the [Delete Request and Opt-Out Platform (DROP)](https://con
 In 2018, California passed the first comprehensive data privacy legislation in the United States, the California Consumer Privacy Act (CCPA).
 Two years later, voters passed [Proposition 24, the California Privacy Rights Act of 2020](https://en.wikipedia.org/wiki/California_Privacy_Rights_Act) (CPRA), which created the [California Privacy Protection Agency (CPPA)](https://cppa.ca.gov).
 
-In 2023, the state passed [SB 362 (Becker)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB362), also known as the California Delete Act, a bill [uniamously supported](https://cppa.ca.gov/announcements/2023/20231011.html) by the CPPA Board.
+In 2023, the state passed the [California Delete Act (SB 362)](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB362), a bill [unanimously supported](https://cppa.ca.gov/announcements/2023/20231011.html) by the CPPA Board.
 It requires data brokers to register with the CPPA and requires the agency to "establish an accessible deletion mechanism" that allows consumers to "request the deletion of all personal information related to that consumer through a single deletion request".
 Data brokers were previously required to register with the Attorney General from 2020 to 2023, and the Office of the Attorney General continues to [host the registries](https://oag.ca.gov/data-brokers) for those years.
 Under the act, data brokers are required to delete the personal information of a consumer who submits a request every 45 days.
