@@ -2,7 +2,7 @@ On January 1, 2026, the [Delete Request and Opt-Out Platform (DROP)](https://con
 
 ## Usage
 
-The detailed list of steps is available on the agency's consumer website, [privacy.ca.gov](https://privacy.ca.gov/drop/how-drop-works/), but here are the basics.
+The detailed list of steps is available on the [agency's consumer website](https://privacy.ca.gov/drop/how-drop-works/).
 
 1. **Verify that you are a California resident**
 
