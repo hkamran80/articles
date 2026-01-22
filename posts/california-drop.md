@@ -17,7 +17,7 @@ The detailed list of steps is available on the [agency's consumer website](https
 1. **Verify that you are a California resident**
 
     If you live in California or are domiciled in California but temporarily away, then you are a resident.
-    The full definition of a California resident is codified in the Franchise Tax Board's regulations, [Cal. Code Regs., tit. 18 § 17014 (2026)](https://govt.westlaw.com/calregs/Document/IEB5956134C8311EC89E5000D3A7C4BC3?transitionType=Default&contextData=%28sc.Default%29&bhcp=1).
+    The full definition of a California resident is codified in the [Franchise Tax Board's regulations](https://govt.westlaw.com/calregs/Document/IEB5956134C8311EC89E5000D3A7C4BC3?transitionType=Default&contextData=%28sc.Default%29&bhcp=1).
 
     This is verified through either [Login.gov](https://login.gov), the federal government's single sign-on platform (developed by now-defunct 18F), or the [California Identity Gateway](https://digitalidstrategy.cdt.ca.gov), a new platform developed by the state Department of Technology that "allows services to confirm eligibility while protecting your privacy".
 
