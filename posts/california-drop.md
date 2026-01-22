@@ -1,4 +1,4 @@
-On January 1, 2026, the Delete Request and Opt-Out Platform (DROP) opened for business, making it easy for Californians to delete their information from the [hundreds of registered data brokers](https://cppa.ca.gov/data_broker_registry/) and prevent them from selling that information, rights granted under the California Consumer Privacy Act.
+On January 1, 2026, the [Delete Request and Opt-Out Platform (DROP)](https://consumer.drop.privacy.ca.gov) opened for business, making it easy for Californians to delete their information from the [hundreds of registered data brokers](https://cppa.ca.gov/data_broker_registry/) and prevent them from selling that information, rights granted under the California Consumer Privacy Act.
 
 ## Usage
 
