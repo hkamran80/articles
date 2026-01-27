@@ -10,9 +10,7 @@ It requires data brokers to register with the CPPA and requires the agency to "e
 Data brokers were previously required to register with the Attorney General from 2020 to 2023, and the Office of the Attorney General continues to [host the registries](https://oag.ca.gov/data-brokers) for those years.
 Under the act, data brokers are required to delete the personal information of a consumer who submits a request every 45 days.
 
-## Usage
-
-The detailed list of steps is available on the [agency's consumer website](https://privacy.ca.gov/drop/how-drop-works/).
+## How the Data Deletion Request Works
 
 1. **Verify that you are a California resident**
 
@@ -33,4 +31,6 @@ The detailed list of steps is available on the [agency's consumer website](https
 
 [Get started!](https://consumer.drop.privacy.ca.gov)
 
-Data brokers will begin deleting data every 45 days on August 1, 2026.
+Data brokers are required to begin deleting data every 45 days on August 1, 2026.
+
+The detailed list of steps is available on the [agency's consumer website](https://privacy.ca.gov/drop/how-drop-works/).
