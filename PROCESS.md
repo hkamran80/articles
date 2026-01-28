@@ -9,7 +9,10 @@ Replace any contents in square brackets (`[]`) with the appropriate variable as 
 
 ## Process
 
-1. Create a branch named `new-[type]/[ID]`.
+1. Create a branch named `[type]/[ID]`.
+
+    For this step only, `type` can refer to the above definition and `post` (either).
+
 2. Amend `index.json` with [a post object](./posts.schema.json#L9-L118).
 
     ```json
@@ -26,18 +29,7 @@ Replace any contents in square brackets (`[]`) with the appropriate variable as 
     The `title` and `description` properties should be set to the preliminary title and description.
     The `tags` array should be populated with a list of tags that best matches the post.
 
-3. Commit and make a PR.
-
-   Title it `Add draft [type]: [brief description]`.
-   Assign the PR the `new [type]` label.
-
-   *See:* [PR #67](https://github.com/hkamran80/articles/pull/67) — Add the unpublished GDPR article
-
-5. Create a branch named `[type]/[ID]` off `main`.
 6. Create a file in `posts` named `[ID].md` with the initial content.
-7. Commit and push.
-8. Merge the new draft post PR.
-9. Create a draft PR for the post branch with the `new [type]` label titled `Add final [type]: [brief description]`.
 10. Write the post.
 11. Upon completion, rebase atop `main` and update `index.json` with the final post object.
 12. If the post is an article, design an image and upload to assets.
