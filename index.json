@@ -310,7 +310,7 @@
         "description": "The new Delete Request and Opt-out Platform gives Californians a way to delete their personal information from hundreds of data brokers at once.",
         "tags": ["Privacy", "California"],
         "type": "article",
-        "status": "draft",
-        "branch": "post/california-drop"
+        "status": "published",
+        "published": "2026-01-28T00:00:00-08:00"
     }
 ]
