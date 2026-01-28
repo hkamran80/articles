@@ -266,6 +266,14 @@
             "tags": ["Samsung", "SmartThings", "Android"],
             "published": "2026-01-14T21:56:00-08:00",
             "filename": "2026-01-14-smartthings-android-login"
+        },
+        {
+            "id": "california-drop",
+            "title": "California's DROP: A New Era of Privacy Protection",
+            "description": "The new Delete Request and Opt-out Platform gives Californians a way to delete their personal information from hundreds of data brokers at once.",
+            "tags": ["Privacy", "California"],
+            "published": "2026-01-28T00:00:00-08:00",
+            "filename": "california-drop"
         }
     ]
 }
