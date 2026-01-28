@@ -47,6 +47,31 @@
                 "type": "string",
                 "description": "The name of the branch (if unpublished)",
                 "default": "[post type]/[post ID]"
+            },
+            "syndication": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "platform": {
+                            "enum": [
+                                "twitter",
+                                "mastodon",
+                                "bluesky",
+                                "medium",
+                                "dev"
+                            ],
+                            "description": "The syndicated platform"
+                        },
+                        "url": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "The syndicated URL"
+                        }
+                    },
+                    "required": ["platform", "url"]
+                }
             }
         },
         "required": ["id", "title", "description", "type", "tags", "status"],
