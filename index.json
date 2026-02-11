@@ -409,5 +409,13 @@
         "status": "published",
         "published": "2026-01-28T15:00:00-08:00",
         "imgAlt": "The DROP logo, a lock with the shape of California as the keyhole, with the word DROP underneath"
+    },
+    {
+        "id": "interborough-express",
+        "title": "The Interborough Express: NYC's First Light Rail",
+        "description": "The Interborough Express is a proposed light rail extension of the NYC transit system",
+        "tags": ["Transit", "New York City", "Light Rail"],
+        "type": "article",
+        "status": "draft"
     }
 ]
