@@ -415,7 +415,7 @@
         "title": "Converting Mailchimp Newsletters to RSS Feeds",
         "description": "Inspired by Josh Müller, I wrote a utility to convert the URLs",
         "tags": ["Utility"],
-        "type": "article",
+        "type": "note",
         "status": "draft"
     }
 ]
