@@ -416,6 +416,7 @@
         "description": "Inspired by Josh Müller, I wrote a utility to convert the URLs",
         "tags": ["Utility"],
         "type": "note",
-        "status": "draft"
+        "status": "published",
+        "published": "2026-03-11T15:50:00-07:00"
     }
 ]
