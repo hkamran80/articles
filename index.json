@@ -140,24 +140,6 @@
         ]
     },
     {
-        "id": "automated-dynamic-selective-website-rebuilds",
-        "title": "Automated Dynamic Selective Rebuilds of My Website",
-        "description": "I recently added dynamic rebuild support to my Next.js website to simplify updating articles and notes",
-        "tags": [
-            "Development",
-            "Next.js",
-            "TypeScript",
-            "GitHub Actions",
-            "CI/CD",
-            "Scripting",
-            "Automation"
-        ],
-        "type": "article",
-        "status": "draft",
-        "filename": "2023-01-29-automated-dynamic-selective-website-rebuilds",
-        "branch": "main"
-    },
-    {
         "id": "upgrade-openssh-macos",
         "title": "Upgrading OpenSSH on macOS",
         "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
@@ -291,16 +273,6 @@
         "filename": "2024-11-21-f1-2024-las-vegas-directives"
     },
     {
-        "id": "using-feeds-updating-my-own",
-        "title": "Using Feeds and Updating My Own",
-        "description": "I've recently started using more RSS/Atom feeds and so I decided to update my site's",
-        "tags": ["Development", "Feeds", "JavaScript"],
-        "type": "article",
-        "status": "draft",
-        "filename": "using-feeds-updating-my-own",
-        "branch": "article/feeds"
-    },
-    {
         "id": "f1-2024-qatar",
         "title": "Formula 1 Qatar GP 2024",
         "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Qatar Grand Prix weekend.",
@@ -323,51 +295,6 @@
         "updated": "2024-12-10T22:20:00-08:00",
         "imgAlt": "The Formula 1 logo and the Abu Dhabi track",
         "filename": "2024-12-06-f1-2024-abu-dhabi"
-    },
-    {
-        "id": "why-live-blog-f1",
-        "title": "Why I Decided to Live Blog Formula 1",
-        "description": "I started (semi-)live blogging about Formula 1 during the Las Vegas Grand Prix and it all started because of the regulations",
-        "tags": ["Formula 1", "FIA"],
-        "type": "article",
-        "status": "draft",
-        "filename": "why-live-blog-f1",
-        "branch": "article/why-live-blog-f1"
-    },
-    {
-        "id": "optimizing-images",
-        "title": "Optimizing SVGs and PNGs",
-        "description": "I regularly optimize SVGs and PNGs as a maintainer of the 2FA Directory and the Passkeys Directory, so here's my workflow.",
-        "tags": ["Images", "Guide"],
-        "type": "article",
-        "status": "draft",
-        "filename": "optimizing-images",
-        "branch": "article/optimizing-images"
-    },
-    {
-        "id": "gdpr",
-        "title": "The European Union's General Data Protection Regulation",
-        "description": "An overview and analysis of GDPR",
-        "tags": ["Privacy", "Law", "Europe"],
-        "type": "article",
-        "status": "draft"
-    },
-    {
-        "id": "ai",
-        "title": "\"Artificial Intelligence\"",
-        "description": "So-called \"AI\" is becoming embedded in everything we know.",
-        "tags": ["Privacy", "Artificial Intelligence"],
-        "type": "article",
-        "status": "draft"
-    },
-    {
-        "id": "ufw-geoblocking",
-        "title": "Geoblocking with UFW",
-        "description": "I recently decided to add system-level geoblocking to my servers in addition to network-level geoblocking I have through my UDM Pro.",
-        "tags": ["UFW", "Geoblocking", "Security", "Linux"],
-        "type": "article",
-        "status": "draft",
-        "toc": false
     },
     {
         "id": "ubuntu-subnet-ip-route",
