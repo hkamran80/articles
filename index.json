@@ -1,0 +1,10 @@
+[
+    {
+        "id": "gdpr",
+        "title": "The European Union's General Data Protection Regulation",
+        "description": "An overview and analysis of GDPR",
+        "tags": ["Privacy", "Law", "Europe"],
+        "type": "article",
+        "status": "draft"
+    }
+]
