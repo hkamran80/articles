@@ -25,6 +25,3 @@ jobs:
 
             - name: Update website
               run: curl -X POST "${{ secrets.SITE_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
-
-            - name: Update feeds
-              run: curl -X POST "${{ secrets.ASSETS_BUILD_HOOK }}" -o /dev/null -w '%{http_code}\n' -s
