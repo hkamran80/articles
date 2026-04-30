@@ -1,0 +1,10 @@
+[
+    {
+        "id": "optimizing-images",
+        "title": "Optimizing SVGs and PNGs",
+        "description": "I regularly optimize SVGs and PNGs as a maintainer of the 2FA Directory and the Passkeys Directory, so here's my workflow.",
+        "tags": ["Images", "Guide"],
+        "type": "article",
+        "status": "draft"
+    }
+]
