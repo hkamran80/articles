@@ -1,6 +1,6 @@
 [
     {
-        "id": "automated-dynamic-selective-website-rebuilds",
+        "id": "selective-rebuilds",
         "title": "Automated Dynamic Selective Rebuilds of My Website",
         "description": "I recently added dynamic rebuild support to my Next.js website to simplify updating articles and notes",
         "tags": [
