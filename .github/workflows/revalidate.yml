@@ -5,7 +5,8 @@ on:
         branches:
             - main
         paths:
-            - "markdown/**"
+            - "index.json"
+            - "posts/**"
 
     workflow_dispatch:
 
