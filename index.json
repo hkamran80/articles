@@ -345,5 +345,13 @@
         "type": "note",
         "status": "published",
         "published": "2026-03-11T15:50:00-07:00"
+    },
+    {
+        "id": "redesigned-website-2026",
+        "title": "My Redesigned Website - 2026 Edition",
+        "description": "The redesign of my website just went live. Here's what I changed.",
+        "tags": ["Website"],
+        "type": "note",
+        "status": "draft"
     }
 ]
