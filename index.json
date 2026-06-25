@@ -3,7 +3,9 @@
         "id": "expanding-pkgs-on-macos",
         "title": "Expanding PKGs on macOS",
         "description": "Ever needed to expand a PKG without using Installer? Here's a guide.",
-        "tags": ["macOS"],
+        "tags": [
+            "macOS"
+        ],
         "type": "article",
         "status": "published",
         "published": "2020-01-30",
@@ -26,7 +28,9 @@
         "id": "getting-balenaetcher-to-work-on-macos-catalina",
         "title": "Getting balenaEtcher to Work on macOS Catalina",
         "description": "balenaEtcher was throwing an error when trying to flash an image to a microSD card, here's how I fixed it",
-        "tags": ["macOS"],
+        "tags": [
+            "macOS"
+        ],
         "type": "article",
         "status": "published",
         "published": "2020-01-30",
@@ -49,7 +53,12 @@
         "id": "vuetify-dark-mode-toggle",
         "title": "Dark Mode Toggle for Vue.js Apps with Vuetify",
         "description": "Here's a simple way to set Vuetify's dark mode state and make it user-changeable",
-        "tags": ["Vuetify", "Development", "Theming", "Vue.js"],
+        "tags": [
+            "Vuetify",
+            "Development",
+            "Theming",
+            "Vue.js"
+        ],
         "type": "article",
         "status": "published",
         "published": "2020-06-04",
@@ -71,7 +80,10 @@
         "id": "converting-local-dates-to-utc-with-python",
         "title": "Converting Local Dates to UTC with Python",
         "description": "A quick and easy way to convert local dates to UTC",
-        "tags": ["Development", "Python"],
+        "tags": [
+            "Development",
+            "Python"
+        ],
         "type": "note",
         "status": "published",
         "published": "2022-01-26",
@@ -81,7 +93,10 @@
         "id": "changing-google-docs-default-styles",
         "title": "Changing Google Docs' Default Styles",
         "description": "It's easy to change the default text styles, like fonts and spacing, in Google Docs",
-        "tags": ["Styling", "Google Docs"],
+        "tags": [
+            "Styling",
+            "Google Docs"
+        ],
         "type": "article",
         "status": "published",
         "published": "2022-04-19",
@@ -99,7 +114,11 @@
         "id": "generate-typescript-declarations-js-files",
         "title": "Generate TypeScript Declaration Files for JavaScript Files",
         "description": "Here's the way you can generate TypeScript declaration files for your JavaScript project",
-        "tags": ["Development", "TypeScript", "JavaScript"],
+        "tags": [
+            "Development",
+            "TypeScript",
+            "JavaScript"
+        ],
         "type": "article",
         "status": "published",
         "published": "2022-05-06",
@@ -121,7 +140,10 @@
         "id": "adding-wildcard-subdomain-support-macos",
         "title": "Adding Wildcard Subdomain Support to macOS",
         "description": "I needed to set up wildcard subdomain support for my home network, this is how I did it",
-        "tags": ["macOS", "Networking"],
+        "tags": [
+            "macOS",
+            "Networking"
+        ],
         "type": "article",
         "status": "published",
         "published": "2023-01-13",
@@ -143,7 +165,10 @@
         "id": "upgrade-openssh-macos",
         "title": "Upgrading OpenSSH on macOS",
         "description": "macOS ships with OpenSSH 8.1, but some newer features require 8.2 or higher",
-        "tags": ["macOS", "SSH"],
+        "tags": [
+            "macOS",
+            "SSH"
+        ],
         "type": "article",
         "status": "published",
         "published": "2023-02-14",
@@ -155,7 +180,11 @@
         "id": "fido2-ssh-keys",
         "title": "Creating FIDO2 SSH Keys",
         "description": "Secure your SSH keys with a FIDO2 security key",
-        "tags": ["SSH", "FIDO2", "Security"],
+        "tags": [
+            "SSH",
+            "FIDO2",
+            "Security"
+        ],
         "type": "article",
         "status": "published",
         "published": "2023-02-14",
@@ -222,7 +251,10 @@
         "id": "securing-your-digital-life",
         "title": "Securing Your Digital Life",
         "description": "Keep your digital life safe by taking a few proactive measures",
-        "tags": ["Security", "Guide"],
+        "tags": [
+            "Security",
+            "Guide"
+        ],
         "type": "article",
         "status": "published",
         "published": "2023-06-15",
@@ -243,7 +275,12 @@
         "id": "cloudflare-remote-access-home-assistant",
         "title": "Remotely Access Your Home Assistant Instance Securely",
         "description": "Connect to your Home Assistant instance from outside your local network",
-        "tags": ["Home Assistant", "Security", "Guide", "Cloudflare"],
+        "tags": [
+            "Home Assistant",
+            "Security",
+            "Guide",
+            "Cloudflare"
+        ],
         "type": "article",
         "status": "published",
         "published": "2024-05-03",
@@ -264,7 +301,10 @@
         "id": "f1-2024-las-vegas-directives",
         "title": "Formula 1 Las Vegas GP 2024",
         "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Las Vegas Grand Prix weekend.",
-        "tags": ["Formula 1", "FIA"],
+        "tags": [
+            "Formula 1",
+            "FIA"
+        ],
         "type": "article",
         "status": "updated",
         "published": "2024-11-21T22:25:00-08:00",
@@ -276,7 +316,10 @@
         "id": "f1-2024-qatar",
         "title": "Formula 1 Qatar GP 2024",
         "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Qatar Grand Prix weekend.",
-        "tags": ["Formula 1", "FIA"],
+        "tags": [
+            "Formula 1",
+            "FIA"
+        ],
         "type": "article",
         "status": "updated",
         "published": "2024-11-30T16:44:00-08:00",
@@ -288,7 +331,10 @@
         "id": "f1-2024-abu-dhabi",
         "title": "Formula 1 Abu Dhabi Grand Prix 2024",
         "description": "A semi-live blog of the penalties, critical flags, classifications, and more throughout the Abu Dhabi Grand Prix weekend.",
-        "tags": ["Formula 1", "FIA"],
+        "tags": [
+            "Formula 1",
+            "FIA"
+        ],
         "type": "article",
         "status": "updated",
         "published": "2024-12-06T18:38:00-08:00",
@@ -300,7 +346,10 @@
         "id": "ubuntu-subnet-ip-route",
         "title": "Fixing IP Routing in Ubuntu for Different Subnets",
         "description": "I spent over a week trying to figure out why I was unable to access my two Ubuntu servers from WireGuard.",
-        "tags": ["Linux", "Networking"],
+        "tags": [
+            "Linux",
+            "Networking"
+        ],
         "type": "note",
         "status": "updated",
         "published": "2025-10-29",
@@ -311,7 +360,11 @@
         "id": "podman-5-ubuntu-22.04-lts-homebrew",
         "title": "Installing Podman 5 on Ubuntu 22.04 LTS with Homebrew",
         "description": "I decided to start switching from Podman to Docker on my servers and ran into a few issues.",
-        "tags": ["Linux", "Podman", "Homebrew"],
+        "tags": [
+            "Linux",
+            "Podman",
+            "Homebrew"
+        ],
         "type": "note",
         "status": "published",
         "published": "2025-11-30T18:50:00-08:00",
@@ -321,7 +374,11 @@
         "id": "smartthings-android-login",
         "title": "How to Actually Login to SmartThings on Android",
         "description": "Samsung, a market leader, relies on non-interoperablity on the platform built for interoperability.",
-        "tags": ["Samsung", "SmartThings", "Android"],
+        "tags": [
+            "Samsung",
+            "SmartThings",
+            "Android"
+        ],
         "type": "note",
         "status": "published",
         "published": "2026-01-14T21:56:00-08:00",
@@ -331,7 +388,10 @@
         "id": "california-drop",
         "title": "California's DROP: A New Era of Privacy Protection",
         "description": "The new Delete Request and Opt-out Platform gives Californians a way to delete their personal information from hundreds of data brokers at once.",
-        "tags": ["Privacy", "California"],
+        "tags": [
+            "Privacy",
+            "California"
+        ],
         "type": "article",
         "status": "published",
         "published": "2026-01-28T15:00:00-08:00",
@@ -341,9 +401,21 @@
         "id": "mailchimp-rss",
         "title": "Converting Mailchimp Newsletters to RSS Feeds",
         "description": "Inspired by Josh Müller, I wrote a utility to convert the URLs",
-        "tags": ["Utility"],
+        "tags": [
+            "Utility"
+        ],
         "type": "note",
         "status": "published",
         "published": "2026-03-11T15:50:00-07:00"
+    },
+    {
+        "id": "new-mastodon-instance",
+        "title": "Moving to a New Mastodon Instance",
+        "description": "I'm moving to a new Mastodon instance as my current one is shutting down.",
+        "tags": [
+            "Mastodon"
+        ],
+        "type": "note",
+        "status": "draft"
     }
 ]
