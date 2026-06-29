@@ -345,5 +345,14 @@
         "type": "note",
         "status": "published",
         "published": "2026-03-11T15:50:00-07:00"
+    },
+    {
+        "id": "new-mastodon-instance",
+        "title": "Moving to a New Mastodon Instance",
+        "description": "I'm moving to a new Mastodon instance as my current one is shutting down.",
+        "tags": ["Social", "Mastodon"],
+        "type": "note",
+        "status": "published",
+        "published": "2026-06-29T16:00:00-07:00"
     }
 ]
